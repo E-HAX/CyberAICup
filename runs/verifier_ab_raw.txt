@@ -1,0 +1,14 @@
+│                                                                              │
+│ ❱ 659 return _open_file(name_or_buffer, mode)                                │
+│                                                                              │
+│                                                                              │
+│ /usr/local/lib/python3.11/site-packages/torch/serialization.py:640 in        │
+│ __init__                                                                     │
+│                                                                              │
+│ ❱ 640 super().__init__(open(name, mode))                                     │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+FileNotFoundError: [Errno 2] No such file or directory: 
+'/ckpt/stage2_ab/last.pt'
+
+[exited with code 0]

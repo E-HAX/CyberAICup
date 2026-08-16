@@ -1,0 +1,14 @@
+[project]
+name = "pmdm"
+version = "0.1.0"
+description = "Packaging Material Difference Mining"
+requires-python = ">=3.11"
+dependencies = [
+    "modal>=1.5",
+    "numpy",
+    "opencv-python-headless",
+    "pandas",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,47 @@
+======================================================================
+2. Alignment (is registration needed?)
+======================================================================
+pair   0 (842, 596) blocks=  6 |dx| p50/p95 [0.03 0.07] |dy| p50/p95 [0.02 0.04]
+pair  20 (2339, 1653) blocks= 48 |dx| p50/p95 [0.05 0.25] |dy| p50/p95 [0.05 0.26]
+pair  40 (2339, 1654) blocks= 51 |dx| p50/p95 [0.02 0.04] |dy| p50/p95 [0.04 0.08]
+pair  60 (2338, 1654) blocks= 34 |dx| p50/p95 [2.00e-02 1.27e+02] |dy| p50/p95 [0.02 0.52]
+pair  80 (6571, 5000) blocks=423 |dx| p50/p95 [0.03 0.18] |dy| p50/p95 [0.04 0.15]
+pair 100 (2200, 1700) blocks= 48 |dx| p50/p95 [0.02 0.05] |dy| p50/p95 [0.05 0.07]
+pair 120 (4342, 2394) blocks=144 |dx| p50/p95 [0.02 0.04] |dy| p50/p95 [0.01 0.04]
+pair 140 (992, 656) blocks=  5 |dx| p50/p95 [0.   0.03] |dy| p50/p95 [0.01 0.03]
+pair 160 (2200, 1700) blocks= 29 |dx| p50/p95 [0.02 0.07] |dy| p50/p95 [0.05 0.1 ]
+pair 180 (2200, 1700) blocks= 48 |dx| p50/p95 [0.02 0.06] |dy| p50/p95 [0.02 0.05]
+
+======================================================================
+3. Box size distribution
+======================================================================
+width  percentiles [1,25,50,75,99]: [ 6 12 23 30 97]
+height percentiles [1,25,50,75,99]: [ 6 12 22 28 88]
+relative width median: 1.47% of image width
+boxes with both sides < 16 px: 419 / 1407
+boxes exactly 8x8: 83
+
+======================================================================
+4. Change polarity (additions vs deletions)
+======================================================================
+boxes analysed: 1404
+addition   (template blank, photo inked): 842
+deletion   (photo blank, template inked): 0
+modification (both inked):                558
+fraction with more ink in photo: 0.965
+
+======================================================================
+5. Blur and shadow mismatch
+======================================================================
+pair   0 Laplacian variance template   3348.9 photo   1785.2
+pair   4 Laplacian variance template   4615.1 photo   3495.2
+pair   8 Laplacian variance template   7074.7 photo   4995.6
+shadow-heavy pairs (photo mean 20+ darker): 9 / 50 sampled
+
+======================================================================
+6. Classical baseline floor
+======================================================================
+40 pairs: TP 170 FP 11144 FN 127
+precision 0.0150 recall 0.5724 F1 0.0293
+
+[exited with code 0]
