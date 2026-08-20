@@ -1,0 +1,11 @@
+label,train_flows,source_calls,flows_per_call,implied_test_flows,implied_test_share
+Discord_voice,238,40,5.95,59.5,0.185
+Discord_video,256,40,6.4,64.0,0.199
+GoogleMeet_voice,40,40,1.0,10.0,0.031
+GoogleMeet_video,112,40,2.8,28.0,0.087
+Messenger_voice,94,40,2.35,23.5,0.073
+Messenger_video,131,40,3.275,32.75,0.102
+WhatsApp_voice,80,40,2.0,20.0,0.062
+WhatsApp_video,82,40,2.05,20.5,0.064
+Zoom_voice,80,40,2.0,20.0,0.062
+Zoom_video,172,40,4.3,43.0,0.134

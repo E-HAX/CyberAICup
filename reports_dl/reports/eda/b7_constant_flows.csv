@@ -1,0 +1,11 @@
+label,constant_length_flows,total_flows,share
+Discord_voice,58.0,238,0.244
+Discord_video,37.0,256,0.145
+GoogleMeet_voice,0.0,40,0.0
+GoogleMeet_video,2.0,112,0.018
+Messenger_voice,1.0,94,0.011
+Messenger_video,4.0,131,0.031
+WhatsApp_voice,5.0,80,0.062
+WhatsApp_video,0.0,82,0.0
+Zoom_voice,1.0,80,0.012
+Zoom_video,17.0,172,0.099

@@ -1,0 +1,33 @@
+{
+  "aux_flows": 90610,
+  "checkpoint": "/cache/pretrain/encoder.pt",
+  "p1_train_acc": 0.5003310892837435,
+  "p1_classes": [
+    "Discord",
+    "Skype",
+    "Zoom",
+    "Teams",
+    "Messenger",
+    "Twitch",
+    "Slack",
+    "Meet",
+    "Webex",
+    "Crunchyroll",
+    "GotoMeeting",
+    "Telegram",
+    "Trueconf",
+    "Omlet",
+    "Signal",
+    "JitsiMeet",
+    "Line",
+    "WhatsApp",
+    "ClashRoyale",
+    "KakaoTalk"
+  ],
+  "p2_train_acc": 0.9956848030018761,
+  "p3_log_bitrate_r2": 0.9475095367338164,
+  "p3_log_mean_gap_r2": 0.9534666121767517,
+  "p3_frac_mtu_r2": 0.9500128500880778,
+  "p5_explained_variance": 0.964198112487793,
+  "n_probe_features": 46
+}

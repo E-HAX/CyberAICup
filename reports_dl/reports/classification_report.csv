@@ -1,0 +1,14 @@
+,precision,recall,f1-score,support
+Discord_voice,0.829,0.916,0.87,238.0
+Discord_video,0.905,0.859,0.882,256.0
+GoogleMeet_voice,0.705,0.775,0.738,40.0
+GoogleMeet_video,0.804,0.661,0.725,112.0
+Messenger_voice,0.883,0.883,0.883,94.0
+Messenger_video,0.835,0.847,0.841,131.0
+WhatsApp_voice,0.976,1.0,0.988,80.0
+WhatsApp_video,0.901,0.89,0.896,82.0
+Zoom_voice,0.468,0.462,0.465,80.0
+Zoom_video,0.736,0.744,0.74,172.0
+accuracy,0.821,0.821,0.821,0.821
+macro avg,0.804,0.804,0.803,1285.0
+weighted avg,0.821,0.821,0.82,1285.0

@@ -1,0 +1,11 @@
+label,sub_ms,over_20ms,median_iat_s
+Discord_voice,0.9779,0.0179,0.0001
+Discord_video,0.9658,0.0049,0.0
+GoogleMeet_voice,0.9812,0.0062,0.0001
+GoogleMeet_video,0.8415,0.0179,0.0002
+Messenger_voice,0.8245,0.1117,0.0003
+Messenger_video,0.9141,0.0172,0.0001
+WhatsApp_voice,0.8875,0.0656,0.0003
+WhatsApp_video,0.9543,0.0061,0.0001
+Zoom_voice,0.9062,0.025,0.0001
+Zoom_video,0.9375,0.0116,0.0001
