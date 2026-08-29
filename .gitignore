@@ -1,0 +1,13 @@
+# Python virtual environments
+.venv/
+.venv312/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+# OS cruft
+.DS_Store
+
+# Redundant archives (the extracted CSVs and docx are tracked instead)
+*.zip
