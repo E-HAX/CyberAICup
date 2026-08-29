@@ -1,0 +1,10 @@
+{
+  "N1_shuffled_label_accuracy": 0.154863813229572,
+  "N1_expected_range": [
+    0.08,
+    0.2
+  ],
+  "N1_passes": true,
+  "N2_prior_only_accuracy": 0.1992217898832685,
+  "round_valid": true
+}

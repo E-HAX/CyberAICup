@@ -1,0 +1,103 @@
+{
+  "oof_source": "lgbm_7585cc52",
+  "accuracy": 0.8210116731517509,
+  "zoom": {
+    "n_flows": 252,
+    "n_voice": 80,
+    "n_video": 172,
+    "flat_10class_accuracy_on_zoom": 0.6547619047619048,
+    "binary_specialist_accuracy": 0.6746031746031746,
+    "binary_specialist_macro_f1": 0.6193633952254642,
+    "majority_baseline": 0.6825396825396826,
+    "top_features": {
+      "log_len_0": 0.21949330555869406,
+      "len_0": 0.20735342824024539,
+      "frac_mid": 0.19576084313575537,
+      "len_2": 0.19465087506150147,
+      "len_4": 0.18833429701873317,
+      "first_is_mid": 0.1860506294076847,
+      "len_q75": 0.18033790628424717,
+      "inst_rate_range": 0.1795624134514795,
+      "n_audio": 0.17696362186859704,
+      "n_mid": 0.17318550181041426,
+      "log_len_2": 0.17160764844684628,
+      "log_len_4": 0.17042189636823712
+    },
+    "constant_size_flows": 18,
+    "error_rate_constant_size": 0.05555555555555555,
+    "error_rate_variable_size": 0.36752136752136755
+  },
+  "error_budget": [
+    {
+      "class": "Discord_voice",
+      "support": 238,
+      "errors": 20,
+      "error_share_of_total": 0.08695652173913043,
+      "mean_confidence_when_wrong": 0.701807975769043
+    },
+    {
+      "class": "Discord_video",
+      "support": 256,
+      "errors": 36,
+      "error_share_of_total": 0.1565217391304348,
+      "mean_confidence_when_wrong": 0.8525899648666382
+    },
+    {
+      "class": "GoogleMeet_voice",
+      "support": 40,
+      "errors": 9,
+      "error_share_of_total": 0.0391304347826087,
+      "mean_confidence_when_wrong": 0.6138007640838623
+    },
+    {
+      "class": "GoogleMeet_video",
+      "support": 112,
+      "errors": 38,
+      "error_share_of_total": 0.16521739130434782,
+      "mean_confidence_when_wrong": 0.7254853844642639
+    },
+    {
+      "class": "Messenger_voice",
+      "support": 94,
+      "errors": 11,
+      "error_share_of_total": 0.04782608695652174,
+      "mean_confidence_when_wrong": 0.853651225566864
+    },
+    {
+      "class": "Messenger_video",
+      "support": 131,
+      "errors": 20,
+      "error_share_of_total": 0.08695652173913043,
+      "mean_confidence_when_wrong": 0.8228985071182251
+    },
+    {
+      "class": "WhatsApp_voice",
+      "support": 80,
+      "errors": 0,
+      "error_share_of_total": 0.0,
+      "mean_confidence_when_wrong": 0.0
+    },
+    {
+      "class": "WhatsApp_video",
+      "support": 82,
+      "errors": 9,
+      "error_share_of_total": 0.0391304347826087,
+      "mean_confidence_when_wrong": 0.859639048576355
+    },
+    {
+      "class": "Zoom_voice",
+      "support": 80,
+      "errors": 43,
+      "error_share_of_total": 0.18695652173913044,
+      "mean_confidence_when_wrong": 0.8150999546051025
+    },
+    {
+      "class": "Zoom_video",
+      "support": 172,
+      "errors": 44,
+      "error_share_of_total": 0.19130434782608696,
+      "mean_confidence_when_wrong": 0.7660329937934875
+    }
+  ],
+  "total_errors": 230
+}
