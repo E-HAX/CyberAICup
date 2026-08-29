@@ -217,7 +217,72 @@ Useful functions: `hier_stage` / `hier_point` (the shipped design),
 `run_controls` (leakage controls), `compare_families` (McNemar),
 `rebuild_cv_results` (recover results from stored per-point files).
 
-## 9. Environment
+## 9. Reproducibility
+
+Four tiers, in descending order of how much you can trust a claim that "the
+same numbers come out".
+
+### Tier 1 — bit-identical, no training (proven)
+
+The final `submission.csv` and the reported grouped-CV metrics reproduce
+**exactly** from the committed probability matrices and fold indices:
+
+```bash
+RTC_WORK=/tmp/rtcwork python scripts/predict.py \
+    --runs artifacts/hier/hier_tabicl_2803104002.npz --score-oof
+```
+
+This was verified: the output diffed empty against the shipped
+`submission.csv`, and it re-prints accuracy 0.8342 / macro-F1 0.8292. No model
+weights, no GPU, no external network required. The other five base learners are
+in `artifacts/hier/`, and the canonical folds are `artifacts/folds.npz`.
+
+### Tier 2 — deterministic retraining (features and tree models)
+
+The feature pipeline (`src/features/base.py`, blocks F1-F8) is pure NumPy/SciPy
+with no randomness, and the tree families (LightGBM, XGBoost, RandomForest,
+ExtraTrees, CatBoost) are seeded. Fold construction is seeded and the fold
+indices are committed. Given the pinned library versions, `scripts/train.py
+--model lgbm` reproduces the tree numbers exactly. One known sensitivity: SciPy
+emits precision warnings on skew/kurtosis for near-constant packet windows, so a
+*changed SciPy version* could shift a few of those columns slightly.
+
+### Tier 3 — the shipped TabICL model: reproducible to the noise floor, not bit-identical
+
+The shipped model is TabICL. Its reproducibility has three honest caveats:
+
+1. **External weights.** TabICL downloads its checkpoint from Hugging Face
+   (`tabicl-classifier-v2-20260212.ckpt`) unless a `model_path` is given. The
+   package and checkpoint are pinned by version in `requirements.txt` and
+   `src/modal_app.py` (`tabicl==2.1.1`), but the checkpoint is not vendored in
+   this repo — a future retrain depends on that file still being served.
+2. **GPU non-determinism.** TabICL runs with AMP and possibly flash attention
+   (`use_amp="auto"`, `use_fa3="auto"`). These do not guarantee bit-identical
+   outputs across runs or hardware. The *scores* should land within the
+   reported noise floor (sd ≈ 0.003), but the probability matrices need not be
+   bit-identical.
+3. **numpy resolution.** The image that ran the shipped model has numpy 1.26.4,
+   not the 2.2.6 pinned in `BASE_PKGS`, because tabpfn requires numpy<2. The
+   resolved set is what `requirements.txt` records.
+
+### Tier 4 — not reproducible from this repo (by design)
+
+The MIRAGE pretraining and linear-probe branch. It depends on the 6.97 GB
+external archive (`rtc-mirage/raw/MIRAGE-AppAct-2024.zip`) and on
+`rtc-cache/pretrain/encoder.pt` (~96 MB), neither of which is committed. This
+branch was measured neutral-to-harmful and is not part of the shipped result;
+`artifacts/pretrain_history.json` documents it, and
+`src/transformer/pretrain.py` + `probe.py` remain runnable if the archive is
+re-obtained.
+
+**If you need to harden Tier 3 to Tier 2:** vendor the TabICL checkpoint
+(`fetch_tabpfn_weights` shows the pattern; a `tabicl`-equivalent fetch plus an
+explicit `model_path` does it) and run TabICL with AMP disabled. Neither was
+done because the scores, not the bits, are what the task asks for.
+
+---
+
+## 10. Environment
 
 Python 3.12. Training needs `numpy pandas scikit-learn lightgbm xgboost
 catboost scipy`; the shipped model additionally needs `tabicl` (and a GPU to be
@@ -226,7 +291,7 @@ transformer branch needs `torch`. The repository carries local virtual
 environments (`.venv` for the Modal client, `.venv312` for local analysis)
 which are not part of the deliverable.
 
-## 10. Where the remaining headroom is
+## 11. Where the remaining headroom is
 
 Google Meet, at F1 0.759 (voice) and 0.765 (video) on 152 flows — the smallest
 application in the corpus and the one whose audio-only windows are least

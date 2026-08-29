@@ -33,6 +33,8 @@ DATA_DIR = ROOT / "Task3" / "RTC_CyberAICup2026"
 PY_VERSION = "3.12"
 
 # Pinned so an image rebuilt weeks from now reproduces today's numbers.
+# NOTE: the TabPFN image (IMG_TABPFN) resolves numpy to 1.26.4 because tabpfn
+# requires numpy<2; see requirements.txt for the authoritative resolved set.
 BASE_PKGS = [
     "numpy==2.2.6",
     "pandas==2.2.3",
@@ -75,7 +77,7 @@ _base_build = (
 )
 _ml_build = _base_build.uv_pip_install(*ML_PKGS)
 _gpu_build = _ml_build.uv_pip_install(*GPU_PKGS, extra_index_url="https://download.pytorch.org/whl/cu124")
-_tabpfn_build = _gpu_build.uv_pip_install("tabpfn", "tabicl").env(
+_tabpfn_build = _gpu_build.uv_pip_install("tabpfn==8.3.0", "tabicl==2.1.1").env(
     {"HF_HOME": "/cache/hf", "TABPFN_MODEL_CACHE_DIR": "/cache/tabpfn"}
 )
 
@@ -1308,3 +1310,15 @@ def run_geometry() -> dict:
     from analysis import geometry
 
     return geometry.report()
+
+
+@app.function(image=IMG_TABPFN, gpu="L4", volumes={"/cache": cache_vol}, cpu=2.0, timeout=1800)
+def dump_versions() -> dict:
+    """Exact package versions in the image, so the pins can be honest."""
+    _bootstrap()
+    import importlib.metadata as md
+
+    names = ["numpy", "pandas", "scipy", "scikit-learn", "xgboost", "lightgbm",
+             "catboost", "torch", "tabicl", "tabpfn", "optuna", "shap",
+             "umap-learn", "imbalanced-learn", "matplotlib", "seaborn", "pyarrow"]
+    return {n: md.version(n) for n in names}
