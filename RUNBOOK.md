@@ -81,6 +81,80 @@ exiting 0, which is how one checkpoint was lost (`HANDOVER.md` §6).
   and back it up with `modal volume get`, not `modal volume cp` (which refuses directories while
   still exiting 0).
 
+## Hugging Face mirror
+
+The full working state lives in the private repo <https://huggingface.co/siddhant20/task1>: code,
+docs, `runs/`, and all checkpoints. Give a teammate a collaborator invite on `siddhant20` and this
+one link replaces both the repo tarball and Modal access.
+
+```bash
+hf download siddhant20/task1 --local-dir task1        # everything
+hf download siddhant20/task1 checkpoints/stage1_fold0_convnext_tiny/best.pt --local-dir .
+```
+
+The dataset is uploaded separately because 600 page-scale PNGs at 2.5 GB take hours on a home
+uplink. Run it when the machine can stay awake; it is resumable, so a killed run continues rather
+than restarting:
+
+```bash
+.venv/bin/python scripts/push_dataset_to_hf.py
+```
+
+Re-push code and weights after a new run:
+
+```bash
+python - <<'PY'
+from huggingface_hub import HfApi
+HfApi().upload_large_folder(
+    repo_id="siddhant20/task1", repo_type="model", folder_path=".",
+    ignore_patterns=[".venv/**", "__pycache__/**", "**/__pycache__/**",
+                     ".DS_Store", "**/.DS_Store", "*.zip", ".git/**", "Task1/**"])
+PY
+```
+
+## Current pipeline (the one that produced 0.9465)
+
+```bash
+# 0. synthetic corpus, once (16 CPU shards, ~25 min)
+modal run --detach modal_app.py::synth --shards 16 --per-shard 400 --small-bias 0.6
+modal run modal_app.py::merge_synth        # separate step: shards commit in their own containers
+
+# 1. two recipes x five folds (8 x A100, ~1 h wall)
+modal run --detach modal_app.py::train_all --folds "0,1,2,3,4" --epochs 40 --tag _aug --n-synth 0
+modal run --detach modal_app.py::train_all --folds "0,1,2,3,4" --epochs 15 --tag _augsyn \
+    --n-synth 1500 --samples-per-pair 2 --real-repeat 4 --eval-every 2 --no-wh-relative
+
+# 2. ensemble out-of-fold candidates (5 x L4, ~10 min)
+modal run --detach modal_app.py::oof_ens_all --folds "0,1,2,3,4" --tags "_aug,_augsyn" \
+    --flips --score-thr 0.02 --max-boxes 300 --suffix _ens
+
+# 3. cross-fold verifier (5 x L4, ~10 min)
+modal run --detach modal_app.py::verify_cv --suffix _ens --epochs 8 --folds "0,1,2,3,4"
+
+# 4. pooled score, locally
+PMDM_DATA=Task1/PackagingMaterialDifferenceMiningDataset .venv/bin/python -m pmdm.evaluate_cv \
+    --suffix _ens_verified --root /tmp/pool
+
+# 5. submission (5 x L4, ~15 min)
+modal run --detach modal_app.py::predict --folds "0,1,2,3,4" --tags "_aug,_augsyn" --flips \
+    --score-thr 0.02 --max-boxes 300 --use-verifier --threshold 0.43 --n-shards 5
+modal volume get pmdm-ckpt /submission.csv ./submission.csv
+```
+
+`--threshold` comes from the pooled sweep in step 4, never a guess. Check the reported
+`boxes_per_image` against the training average of 7.04 — a large mismatch means the threshold did
+not transfer from 2-model out-of-fold scoring to 10-model test scoring.
+
+### Traps worth knowing
+
+- **`--detach` does not protect `starmap` entrypoints.** The fan-out is client-driven; a network
+  blip kills the map. `train_all`, `oof_ens_all`, `verify_cv` and `predict` now fan out inside
+  remote functions for this reason.
+- **Never launch a detached run inside a foreground command that can time out** — the SIGTERM
+  takes the whole process group and Modal stops the app.
+- **`setsid` does not exist on macOS.** A launch wrapped in it silently does nothing.
+- **Volume writes from one container are invisible to another until `.reload()`.**
+
 ## Order of operations
 
 1. `prep`, then `smoke`. The smoke test must show `hm_shape` at output stride 2 and finite losses.

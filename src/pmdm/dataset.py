@@ -80,6 +80,43 @@ def encode_targets(boxes: np.ndarray, tile: int = TILE, stride: int = OUT_STRIDE
     return hm, wh, off, reg, seg
 
 
+def geometric_aug(imgs: tuple, boxes: np.ndarray, tile: int, rng: np.random.RandomState):
+    """Dihedral augmentation of a square tile and its boxes.
+
+    The training set is 160 pages, and until now the only augmentation was photometric — the
+    same page geometry was seen every epoch, which is a plausible part of why both runs
+    plateaued at epoch ~20. Flips and transposes are label-preserving here because a
+    difference is a difference in any orientation, and they multiply the effective page count
+    by eight at no I/O cost. Scale jitter is deliberately not included: box size is what the
+    wh head must regress in original pixels, and the metric is size-sensitive at IoU 0.5.
+    """
+    t, p, tn, pn = imgs
+    b = boxes.copy()
+
+    if rng.rand() < 0.5:                                    # horizontal flip
+        t, p = t[:, ::-1], p[:, ::-1]
+        tn, pn = tn[:, ::-1], pn[:, ::-1]
+        if len(b):
+            x1 = tile - b[:, 2]
+            b[:, 2] = tile - b[:, 0]
+            b[:, 0] = x1
+    if rng.rand() < 0.5:                                    # vertical flip
+        t, p = t[::-1], p[::-1]
+        tn, pn = tn[::-1], pn[::-1]
+        if len(b):
+            y1 = tile - b[:, 3]
+            b[:, 3] = tile - b[:, 1]
+            b[:, 1] = y1
+    if rng.rand() < 0.5:                                    # transpose
+        t, p = t.transpose(1, 0, 2), p.transpose(1, 0, 2)
+        tn, pn = tn.T, pn.T
+        if len(b):
+            b = b[:, [1, 0, 3, 2]]
+
+    return (np.ascontiguousarray(t), np.ascontiguousarray(p),
+            np.ascontiguousarray(tn), np.ascontiguousarray(pn)), b
+
+
 def photometric_jitter(photo: np.ndarray, rng: np.random.RandomState) -> np.ndarray:
     """Extra print/scan-like noise on the photo stream only."""
     out = photo.astype(np.float32)
@@ -170,11 +207,12 @@ class PairTileDataset(Dataset):
 
         sl = (slice(y0, y0 + self.tile), slice(x0, x0 + self.tile))
         tc, pc, tnc, pnc = t[sl], p[sl], tn[sl], pn[sl]
+        local = boxes_in_tile(boxes, x0, y0, self.tile)
         if self.augment:
+            (tc, pc, tnc, pnc), local = geometric_aug((tc, pc, tnc, pnc), local, self.tile, rng)
             pc = photometric_jitter(pc, rng)
 
         a, b = stream_tensors(tc, pc, tnc, pnc)
-        local = boxes_in_tile(boxes, x0, y0, self.tile)
         hm, wh, off, reg, seg = encode_targets(local, self.tile)
         return {
             "a": torch.from_numpy(a),

@@ -1,0 +1,15 @@
+fold0_convnext_tiny_ens.npz
+  candidates  10388  ceiling 258/268 = 0.9627   <12px 60/64 = 0.9375
+  best F1 at a single global threshold: 0.9266 (P 0.935 R 0.918 thr 0.23)
+fold1_convnext_tiny_ens.npz
+  candidates   9142  ceiling 257/270 = 0.9519   <12px 61/70 = 0.8714
+  best F1 at a single global threshold: 0.9414 (P 0.961 R 0.922 thr 0.30)
+fold2_convnext_tiny_ens.npz
+  candidates   6708  ceiling 273/285 = 0.9579   <12px 62/64 = 0.9688
+  best F1 at a single global threshold: 0.9288 (P 0.942 R 0.916 thr 0.24)
+fold3_convnext_tiny_ens.npz
+  candidates   6757  ceiling 279/289 = 0.9654   <12px 67/67 = 1.0000
+  best F1 at a single global threshold: 0.9544 (P 0.968 R 0.941 thr 0.32)
+fold4_convnext_tiny_ens.npz
+  candidates  11010  ceiling 285/295 = 0.9661   <12px 53/56 = 0.9464
+  best F1 at a single global threshold: 0.9494 (P 0.978 R 0.922 thr 0.32)

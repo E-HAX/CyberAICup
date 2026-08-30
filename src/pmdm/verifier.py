@@ -109,36 +109,109 @@ class CandidateDataset(Dataset):
         }
 
 
-def build_records(candidates: dict, gt: dict) -> list[dict]:
-    """candidates: key -> (split, idx, boxes, scores); gt: key -> boxes."""
+def build_records(candidates: dict, gt: dict, max_neg_per_pos: int = 8,
+                  seed: int = 0) -> list[dict]:
+    """candidates: key -> (split, idx, boxes, scores); gt: key -> boxes.
+
+    Negatives outnumber positives ~26:1 in a generous candidate set, which costs a lot of
+    epoch time for very little extra signal — `pos_weight` in the loss already rebalances the
+    gradient. Capping the ratio per image keeps the hard negatives near real content (they are
+    the ones the detector actually proposed) while cutting the record count several-fold.
+    """
     records = []
     for key, (split, idx, boxes, _scores) in candidates.items():
         g = gt.get(key, np.zeros((0, 4), np.float32))
         ious = iou_matrix(boxes, g) if len(boxes) and len(g) else np.zeros((len(boxes), len(g)))
+        negatives, neg_index, n_pos_here = [], [], 0
         for i in range(len(boxes)):
             best = float(ious[i].max()) if ious.size else 0.0
             j = int(ious[i].argmax()) if ious.size else -1
             if best >= POS_IOU:
+                n_pos_here += 1
                 records.append({"split": split, "idx": idx, "box": boxes[i].tolist(),
                                 "label": 1, "gt": g[j].tolist()})
             elif best < NEG_IOU:
-                records.append({"split": split, "idx": idx, "box": boxes[i].tolist(),
-                                "label": 0, "gt": boxes[i].tolist()})
+                negatives.append({"split": split, "idx": idx, "box": boxes[i].tolist(),
+                                  "label": 0, "gt": boxes[i].tolist()})
+                neg_index.append(i)
+        keep = max_neg_per_pos * max(1, n_pos_here)
+        if len(negatives) > keep:
+            # highest-scoring negatives first: those are the ones the detector was most
+            # confident about, and the only ones that survive the global threshold anyway
+            order = np.argsort(-np.asarray([_scores[i] for i in neg_index], np.float32))
+            negatives = [negatives[j] for j in order[:keep]]
+        records += negatives
     return records
 
 
+class PrecomputedCrops(Dataset):
+    """Cuts every candidate's crop once, in page order, and serves them from memory."""
+
+    def __init__(self, records: list[dict], prep_root: Path | None = None):
+        import time
+
+        root = prep_root or PREP
+        order = sorted(range(len(records)), key=lambda i: (records[i]["split"],
+                                                           records[i]["idx"]))
+        n = len(records)
+        self.x = np.zeros((n, 8, CROP, CROP), np.uint8)
+        self.box = np.zeros((n, 4), np.float32)
+        self.label = np.zeros(n, np.float32)
+        self.delta = np.zeros((n, 4), np.float32)
+
+        t0 = time.time()
+        cache_key, cache_val = None, None
+        for slot, i in enumerate(order):
+            r = records[i]
+            key = (r["split"], r["idx"])
+            if key != cache_key:
+                cache_val = load_prepared(r["split"], r["idx"], root)
+                cache_key = key
+            t, p, tn, pn = cache_val
+            box = np.asarray(r["box"], np.float32)
+            stack, local, _ = make_crop(t, p, tn, pn, box)
+            self.x[slot] = np.clip(stack * 255.0, 0, 255).astype(np.uint8)
+            self.box[slot] = local
+            self.label[slot] = float(r["label"])
+            if r["label"] > 0:
+                gt = np.asarray(r["gt"], np.float32)
+                x0, y0, side, _ = crop_window(box, t.shape[0], t.shape[1])
+                scale = CROP / side
+                gt_local = np.array([(gt[0] - x0) * scale, (gt[1] - y0) * scale,
+                                     (gt[2] - x0) * scale, (gt[3] - y0) * scale], np.float32)
+                self.delta[slot] = gt_local - local
+        print(f"[verifier] cut {n} crops in {time.time() - t0:.0f}s", flush=True)
+
+    def __len__(self) -> int:
+        return len(self.label)
+
+    def __getitem__(self, i: int):
+        return {
+            "x": torch.from_numpy(self.x[i].astype(np.float32) / 255.0),
+            "box": torch.from_numpy(self.box[i]),
+            "label": torch.tensor(self.label[i]),
+            "delta": torch.from_numpy(self.delta[i]),
+        }
+
+
 def train_verifier(records: list[dict], epochs: int = 8, batch: int = 64, lr: float = 3e-4,
-                   device: str = "cuda", out_dir: Path | None = None) -> dict:
+                   device: str = "cuda", out_dir: Path | None = None,
+                   prep_root: Path | None = None) -> dict:
     out_dir = Path(out_dir) if out_dir is not None else Path(CKPT) / "stage2"
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "records.json").write_text(json.dumps(records[:50000]))
     print(f"[verifier] {len(records)} records, "
           f"{sum(r['label'] for r in records)} positive", flush=True)
 
-    ds = CandidateDataset(records)
+    # Crops are cut once, up front, in page order, then training reads them from memory.
+    # The previous arrangement decoded four full-page PNGs per sample on every cache miss, and
+    # shuffling tens of thousands of records across 160 pages meant the cache almost never hit
+    # — an epoch took ~60 minutes instead of ~3. A 96x96x8 uint8 crop is 74 KB, so even 20k
+    # records fit comfortably in the container's memory.
+    ds = PrecomputedCrops(records, prep_root=prep_root)
     batch = min(batch, max(1, len(records)))
     drop_last = len(records) >= 2 * batch      # never leave the loader empty
-    dl = DataLoader(ds, batch_size=batch, shuffle=True, num_workers=4, drop_last=drop_last)
+    dl = DataLoader(ds, batch_size=batch, shuffle=True, num_workers=2, drop_last=drop_last)
     if len(dl) == 0:
         raise ValueError(f"verifier loader is empty for {len(records)} records")
     model = Verifier().to(device)

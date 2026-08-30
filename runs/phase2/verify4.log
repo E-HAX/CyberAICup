@@ -1,0 +1,15 @@
+[verifier] 11076 records, 1272 positive
+[verifier] 10963 records, 1256 positive
+[verifier] 11087 records, 1249 positive
+[verifier] 11019 records, 1252 positive
+[verifier] 10995 records, 1263 positive
+[verifier] cut 11076 crops in 50s
+[verifier] cut 10963 crops in 55s
+[verifier] cut 11087 crops in 54s
+[verifier] cut 11019 crops in 53s
+[verifier] cut 10995 crops in 53s
+{'fold': 0, 'records': 11076, 'before': {'tp': 246, 'fp': 17, 'fn': 22, 'precision': 0.935361216730038, 'recall': 0.917910447761194, 'f1': 0.9265536723163841, 'threshold': 0.23000000000000004}, 'after': {'tp': 248, 'fp': 10, 'fn': 20, 'precision': 0.9612403100775194, 'recall': 0.9253731343283582, 'f1': 0.9429657794676807, 'threshold': 0.42000000000000004}, 'delta_f1': 0.016412107151296595}
+{'fold': 1, 'records': 10963, 'before': {'tp': 249, 'fp': 10, 'fn': 21, 'precision': 0.9613899613899614, 'recall': 0.9222222222222223, 'f1': 0.9413988657844992, 'threshold': 0.30000000000000004}, 'after': {'tp': 255, 'fp': 9, 'fn': 15, 'precision': 0.9659090909090909, 'recall': 0.9444444444444444, 'f1': 0.9550561797752809, 'threshold': 0.38000000000000006}, 'delta_f1': 0.013657313990781739}
+{'fold': 2, 'records': 11087, 'before': {'tp': 261, 'fp': 16, 'fn': 24, 'precision': 0.9422382671480144, 'recall': 0.9157894736842105, 'f1': 0.9288256227758008, 'threshold': 0.24000000000000005}, 'after': {'tp': 265, 'fp': 17, 'fn': 20, 'precision': 0.9397163120567376, 'recall': 0.9298245614035088, 'f1': 0.9347442680776015, 'threshold': 0.27}, 'delta_f1': 0.00591864530180064}
+{'fold': 3, 'records': 11019, 'before': {'tp': 272, 'fp': 9, 'fn': 17, 'precision': 0.9679715302491103, 'recall': 0.9411764705882353, 'f1': 0.9543859649122807, 'threshold': 0.32000000000000006}, 'after': {'tp': 270, 'fp': 3, 'fn': 19, 'precision': 0.989010989010989, 'recall': 0.9342560553633218, 'f1': 0.9608540925266903, 'threshold': 0.5600000000000002}, 'delta_f1': 0.0064681276144096245}
+{'fold': 4, 'records': 10995, 'before': {'tp': 272, 'fp': 6, 'fn': 23, 'precision': 0.9784172661870504, 'recall': 0.9220338983050848, 'f1': 0.9493891797556719, 'threshold': 0.32000000000000006}, 'after': {'tp': 284, 'fp': 8, 'fn': 11, 'precision': 0.9726027397260274, 'recall': 0.9627118644067797, 'f1': 0.9676320272572403, 'threshold': 0.36000000000000004}, 'delta_f1': 0.01824284750156835}

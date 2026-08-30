@@ -1,2 +1,10 @@
 checkpoints
 Task1
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# OS cruft
+.DS_Store

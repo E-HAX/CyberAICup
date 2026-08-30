@@ -1,0 +1,1 @@
+{'rows': 668, 'images': 100, 'missing_images': [], 'boxes_per_image': 6.68, 'shards': [{'shard': 0, 'images': 20, 'candidates': 5902}, {'shard': 1, 'images': 20, 'candidates': 6000}, {'shard': 2, 'images': 20, 'candidates': 6000}, {'shard': 3, 'images': 20, 'candidates': 5964}, {'shard': 4, 'images': 20, 'candidates': 6000}], 'threshold': 0.43, 'path': '/ckpt/submission.csv'}

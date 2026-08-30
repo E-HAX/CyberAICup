@@ -1,0 +1,43 @@
+flowchart LR
+    subgraph DET["Stage 1 · SiamCenterNet (shared ConvNeXt-tiny, per stream 4 ch: BGR + ink)"]
+        direction TB
+        IN["a = template stream (4ch)<br/>b = photo stream (4ch)"]
+        STEM["stride-2 stem off stacked input<br/>concat(a,b,signed_ink,abs(a-b)) → 32ch"]
+        ENCA["convnext_tiny encoder a<br/>strides 4 · 8 · 16 · 32"]
+        ENCB["convnext_tiny encoder b<br/>SHARED WEIGHTS"]
+        FUZE["fuse at each scale<br/>conv(concat(a, b, abs(a-b)))"]
+        UP3["up3 256·192"] --> UP2["up2 192·128"] --> UP1["up1 128·96"] --> UP0["up0 96·48"]
+        H1["hm head — Gaussian-focal centre heatmap"]
+        H2["wh head — width/height regression"]
+        H3["off head — sub-pixel offset"]
+        H4["seg head — auxiliary change mask"]
+        IN --> STEM
+        IN --> ENCA
+        IN --> ENCB
+        ENCA --> FUZE
+        ENCB --> FUZE
+        STEM --> UP0
+        FUZE --> UP3 & UP2 & UP1
+        UP3 --> H1 & H2 & H3 & H4
+    end
+
+    subgraph DEC["Decode & fuse per tile/view"]
+        D1["topk(64) on heatmap · nms via 3×3 max-pool<br/>boxes from (cx+off)·2 ± wh/2"]
+        D2["WBF over 25%-overlap tiles × 8 TTA views<br/>coord-averaging, agreement-scaled scores"]
+        D3["postprocess: polarity, ink-snap, margin<br/>max 300 boxes/image"]
+    end
+
+    subgraph VER["Stage 2 · Verifier (per fold, trained on folds ≠ k)"]
+        V0["candidate → 96×96 crop, context 2.5×box, 8ch"]
+        R18["ResNet-18 (8-ch stem)"]
+        VC["cls head: P(real difference)"]
+        VB["box head: Δ(x1,y1,x2,y2)"]
+        V0 --> R18 --> VC & VB
+    end
+
+    H1 --> D1 --> D2 --> D3
+    D3 --> V0
+    VC --> BL["score = p^0.5 · s^0.5"]
+    VB --> REF["box' = box + Δ"]
+    BL --> OUT["pooled candidates → global threshold 0.43"]
+    REF --> OUT

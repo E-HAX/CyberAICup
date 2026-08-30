@@ -1,0 +1,57 @@
+%%{init: {"theme":"base", "themeVariables": {
+  "fontFamily":"-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+  "fontSize":"14px",
+  "primaryColor":"#c95f83",
+  "primaryTextColor":"#ffffff",
+  "primaryBorderColor":"#a34866",
+  "lineColor":"#d98aa4",
+  "secondaryColor":"#fbeef3",
+  "tertiaryColor":"#ffffff",
+  "clusterBkg":"#fdf6f8",
+  "clusterBorder":"#edcdd9",
+  "edgeLabelBackground":"#ffffff",
+  "nodeBorder":"#c95f83"
+}}}%%
+flowchart TB
+    classDef fold fill:#fdf3e3,stroke:#d99b3d,stroke-width:1.4px,color:#5b3d12;
+    classDef step fill:#dcebf7,stroke:#3b6ea5,stroke-width:1.4px,color:#1d3a5f;
+    classDef honest fill:#e7f2e9,stroke:#5e9d6b,stroke-width:1.4px,color:#23482a;
+    classDef bias fill:#fdeaea,stroke:#c05050,stroke-width:1.4px,color:#5c1d1d;
+    classDef metric fill:#fbe9ee,stroke:#c95f83,stroke-width:1.4px,color:#5c1d33;
+
+    subgraph T1["Task 1 · 5-fold out-of-fold (detection)"]
+        direction TB
+        F1["200 pairs → 5 folds × 40 (seeded)"]:::fold
+        F2["train 2 detector recipes on 160 pairs<br/>+ fold-safe synthetic"]:::step
+        F3["predict the 40 held-out pairs<br/>with ensemble + 8× TTA"]:::step
+        F4["verifier trained on folds ≠ k<br/>applied to fold k"]:::step
+        F5["pool all 200 pairs' candidates<br/>one global threshold swept on OOF"]:::step
+        F6["global F1 = 0.9465"]:::metric
+        F7["nested threshold honesty: 0.9435"]:::honest
+        F8["checkpoint-selection bias: +0.005..+0.034<br/>hyperparams chosen on fold 0"]:::bias
+        F1 --> F2 --> F3 --> F4 --> F5 --> F6
+        F5 --> F7
+        F6 --> F8
+    end
+
+    subgraph T3["Task 3 · grouped vs plain CV (classification)"]
+        direction TB
+        G1["1,285 flows from 400 calls<br/>(no call id published)"]:::fold
+        G2["pseudo-group key = length-tuple<br/>+ log duration (1,107 groups)"]:::step
+        G3["grouped: StratifiedGroupKFold ×5<br/>siblings cannot split"]:::step
+        G4["plain: RepeatedStratifiedKFold<br/>optimistic reference"]:::step
+        G5["grouped acc 0.8342 · macro-F1 0.8292"]:::metric
+        G6["plain acc 0.8062 (optimistic)"]:::bias
+        G7["negative controls: shuffle 0.1549 · prior 0.1992"]:::honest
+        G1 --> G2 --> G3 --> G5
+        G1 --> G4 --> G6
+        G3 --> G7
+    end
+
+    subgraph T2["Task 2 · dev-set evaluation (no CV)"]
+        direction TB
+        H1["no labels provided → hand-labelled<br/>10-case dev set (410 decisions)"]:::fold
+        H2["iterate prompts vs scorer"]:::step
+        H3["dev accuracy 90.98% (best)"]:::metric
+        H1 --> H2 --> H3
+    end

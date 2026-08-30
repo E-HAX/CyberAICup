@@ -1,0 +1,70 @@
+%%{init: {"theme":"base", "themeVariables": {
+  "fontFamily":"-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+  "fontSize":"14px",
+  "primaryColor":"#2e9e7e",
+  "primaryTextColor":"#ffffff",
+  "primaryBorderColor":"#22745c",
+  "lineColor":"#6fbba4",
+  "secondaryColor":"#e7f6f0",
+  "tertiaryColor":"#ffffff",
+  "clusterBkg":"#f5fbf8",
+  "clusterBorder":"#c5e5d8",
+  "edgeLabelBackground":"#ffffff",
+  "nodeBorder":"#2e9e7e"
+}}}%%
+flowchart TB
+    classDef data fill:#fdf3e3,stroke:#d99b3d,stroke-width:1.4px,color:#5b3d12;
+    classDef stage fill:#e7f6f0,stroke:#2e9e7e,stroke-width:1.4px,color:#174d3a;
+    classDef model fill:#dcebf7,stroke:#3b6ea5,stroke-width:1.4px,color:#1d3a5f;
+    classDef aux fill:#f1edf9,stroke:#7d66b8,stroke-width:1.4px,color:#3a2a66;
+    classDef score fill:#fbe9ee,stroke:#c95f83,stroke-width:1.4px,color:#5c1d33;
+
+    subgraph D["Data"]
+        D1["1,285 train flows · 327 test<br/>5 packets × (size, IAT)"]:::data
+        D2["10 classes: 5 apps × voice/video"]:::data
+        D3["no call identifiers published"]:::data
+    end
+
+    subgraph E["EDA (label-free)"]
+        E1["integrity · exchangeability ·<br/>adversarial validation AUC 0.529"]:::stage
+        E2["size/timing structure · separability<br/>imbalance · per-call prior"]:::stage
+    end
+
+    subgraph F["Feature engineering"]
+        F1["F1–F8 deterministic<br/>241 columns (size dominates)"]:::stage
+        F2["F9–F11 label-aware<br/>Markov / density / neighbourhood"]:::stage
+        F3["F12 probe block (46 cols)<br/>from MIRAGE encoder"]:::stage
+    end
+
+    subgraph M["Model families (2,377 points searched)"]
+        M1["boosted trees: LGBM · XGB · CatBoost · HistGB"]:::model
+        M2["bagged / kernel / linear / MLP / kNN"]:::model
+        M3["PacketFormer transformer"]:::model
+        M4["TabICL in-context classifier"]:::model
+    end
+
+    subgraph A["Auxiliary · MIRAGE-AppAct-2024"]
+        A1["7 GB archive · 20 apps · 90,610 flows"]:::aux
+        A2["PacketFormer pretraining<br/>(masked + contrastive + adversarial)"]:::aux
+        A3["linear probes P1–P5"]:::aux
+    end
+
+    subgraph V["Validation"]
+        V1["grouped CV (pseudo-group key)<br/>decisive · 2,377 points"]:::stage
+        V2["plain repeated 5-fold<br/>optimistic reference"]:::stage
+        V3["negative controls N1/N2"]:::stage
+    end
+
+    subgraph S["Decision & submission"]
+        S1["TabICL flat + hierarchical<br/>views averaged"]:::model
+        S2["derived Zoom rule<br/>(audio-only window → Zoom_voice)"]:::model
+        S3["327 rows · index,label"]:::score
+    end
+
+    D1 --> E
+    E --> F
+    F --> M
+    A1 --> A2 --> A3
+    A3 --> F3
+    M --> V
+    V --> S1 --> S2 --> S3

@@ -1,0 +1,46 @@
+%%{init: {"theme":"base", "themeVariables": {
+  "fontFamily":"-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+  "fontSize":"15px",
+  "primaryColor":"#3b6ea5",
+  "primaryTextColor":"#ffffff",
+  "primaryBorderColor":"#2c5480",
+  "lineColor":"#8aa4c0",
+  "secondaryColor":"#eef4fa",
+  "tertiaryColor":"#ffffff",
+  "clusterBkg":"#f6f9fc",
+  "clusterBorder":"#c9d8e8",
+  "edgeLabelBackground":"#ffffff",
+  "nodeBorder":"#3b6ea5"
+}}}%%
+flowchart LR
+    classDef data fill:#fdf3e3,stroke:#d99b3d,stroke-width:1.4px,color:#5b3d12;
+    classDef model fill:#e7f2e9,stroke:#5e9d6b,stroke-width:1.4px,color:#23482a;
+    classDef out fill:#fbe9ee,stroke:#c95f83,stroke-width:1.4px,color:#5c1d33;
+    classDef metric fill:#efe9f7,stroke:#7d66b8,stroke-width:1.4px,color:#3a2a66;
+
+    subgraph T1["Task 1 · Packaging Material Difference Mining"]
+        direction LR
+        T1i["200 train / 100 test<br/>template–photo pairs"]:::data
+        T1m["Siamese detector + verifier"]:::model
+        T1o["difference bounding boxes"]:::out
+        T1r["Global F1 0.9465<br/>pooled 5-fold OOF"]:::metric
+        T1i --> T1m --> T1o --> T1r
+    end
+
+    subgraph T2["Task 2 · FRECA Compliance Audit"]
+        direction LR
+        T2i["100 farms · 9 tracks<br/>41 CPs each"]:::data
+        T2m["grounded LLM inference<br/>full-context"]:::model
+        T2o["1 / 0 / N/A verdicts<br/>(4,100 decisions)"]:::out
+        T2r["dev acc 90.98%<br/>shipped Gemini 3.5 Flash"]:::metric
+        T2i --> T2m --> T2o --> T2r
+    end
+
+    subgraph T3["Task 3 · Encrypted RTC Identification"]
+        direction LR
+        T3i["1,285 / 327 flows<br/>5 packets (size + IAT)"]:::data
+        T3m["TabICL + hierarchical<br/>+ Zoom rule"]:::model
+        T3o["1 of 10 classes<br/>app × voice / video"]:::out
+        T3r["grouped acc 0.8342<br/>macro-F1 0.8292"]:::metric
+        T3i --> T3m --> T3o --> T3r
+    end

@@ -40,9 +40,23 @@ def decode_heatmap(hm_logits: torch.Tensor, wh: torch.Tensor, off: torch.Tensor,
     return boxes[m].cpu().numpy(), scores[m].cpu().numpy()
 
 
-def wbf(boxes: np.ndarray, scores: np.ndarray, iou_thr: float = WBF_IOU):
+def wbf(boxes: np.ndarray, scores: np.ndarray, iou_thr: float = WBF_IOU,
+        n_sources: int | None = None):
     """Weighted Boxes Fusion. Averages coordinates instead of discarding them,
-    which matters at IoU 0.5 on 8x8 boxes."""
+    which matters at IoU 0.5 on 8x8 boxes.
+
+    `n_sources` is how many independent views fed the candidate pool — tiles overlap by 25%,
+    so one view already contributes up to ~2 members per box, and each extra TTA view or
+    ensemble member multiplies that. The fused score is the cluster mean scaled by how many
+    of the expected sources actually agreed, which is the standard WBF confidence and is
+    invariant to the number of views.
+
+    Leaving `n_sources` as None keeps the original heuristic (sum over a divisor capped at 3).
+    That form silently saturates once clusters grow past three members: with 16 views every
+    candidate fused to 1.0, the global threshold had nothing to separate on, and precision
+    collapsed to 0.67. It is retained only so previously reported single-view numbers stay
+    reproducible.
+    """
     if len(boxes) == 0:
         return boxes, scores
     order = np.argsort(-scores)
@@ -69,7 +83,16 @@ def wbf(boxes: np.ndarray, scores: np.ndarray, iou_thr: float = WBF_IOU):
             fused_scores.append(float(scores[i]))
 
     f = np.asarray(fused, np.float32)
-    s = np.clip(np.asarray(fused_scores, np.float32), 0, 1)
+    if n_sources is None:
+        s = np.clip(np.asarray(fused_scores, np.float32), 0, 1)
+    else:
+        # Recomputed from cluster membership at the end rather than incrementally, so that
+        # singleton clusters — a box only one view proposed — are scaled down too. Updating
+        # in the loop only touches clusters that gained a second member, which would leave
+        # lone false positives sitting at their full raw score.
+        s = np.asarray([scores[m].mean() * min(len(m), n_sources) / n_sources
+                        for m in clusters], np.float32)
+        s = np.clip(s, 0, 1)
     order = np.argsort(-s)
     return f[order], s[order]
 
@@ -130,7 +153,8 @@ def clip_boxes(boxes: np.ndarray, h: int, w: int) -> np.ndarray:
 
 
 def postprocess(boxes: np.ndarray, scores: np.ndarray, tn: np.ndarray, pn: np.ndarray,
-                use_snap: bool = True, use_polarity: bool = True):
+                use_snap: bool = True, use_polarity: bool = True,
+                max_boxes: int = MAX_BOXES_PER_IMAGE):
     if len(boxes) == 0:
         return boxes, scores
     h, w = tn.shape[:2]
@@ -141,7 +165,7 @@ def postprocess(boxes: np.ndarray, scores: np.ndarray, tn: np.ndarray, pn: np.nd
         boxes = snap_to_ink(boxes, tn, pn)
     keep = (boxes[:, 2] - boxes[:, 0] > 2) & (boxes[:, 3] - boxes[:, 1] > 2)
     boxes, scores = boxes[keep], scores[keep]
-    if len(boxes) > MAX_BOXES_PER_IMAGE:
-        order = np.argsort(-scores)[:MAX_BOXES_PER_IMAGE]
+    if len(boxes) > max_boxes:
+        order = np.argsort(-scores)[:max_boxes]
         boxes, scores = boxes[order], scores[order]
     return boxes, scores

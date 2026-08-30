@@ -26,6 +26,20 @@ def masked_l1(pred: torch.Tensor, target: torch.Tensor, mask: torch.Tensor) -> t
     return (F.l1_loss(pred * m, target * m, reduction="sum") / m.sum().clamp(min=1.0))
 
 
+def masked_rel_l1(pred: torch.Tensor, target: torch.Tensor, mask: torch.Tensor,
+                  eps: float = 4.0) -> torch.Tensor:
+    """Size-relative L1 for the width/height head.
+
+    Plain L1 in pixels makes a 4 px error on a 100 px box cost the same as a 4 px error on an
+    8 px box, but at IoU 0.5 the second one loses the box and the first is harmless. Dividing
+    by the target size puts every box on the same footing, which is the regime that owns the
+    remaining misses. `eps` keeps the denominator away from zero for the smallest targets.
+    """
+    m = mask.expand_as(pred)
+    rel = (pred - target).abs() / (target.abs() + eps)
+    return (rel * m).sum() / m.sum().clamp(min=1.0)
+
+
 def dice_bce(pred_logits: torch.Tensor, target: torch.Tensor) -> torch.Tensor:
     pred_logits = pred_logits.float()
     target = target.float()
@@ -36,11 +50,12 @@ def dice_bce(pred_logits: torch.Tensor, target: torch.Tensor) -> torch.Tensor:
     return bce + (1 - num / den)
 
 
-def total_loss(out: dict, batch: dict, w_hm: float = 1.0, w_wh: float = 0.2,
-               w_off: float = 1.0, w_seg: float = 0.5):
+def total_loss(out: dict, batch: dict, w_hm: float = 1.0, w_wh: float = 1.0,
+               w_off: float = 1.0, w_seg: float = 0.5, wh_relative: bool = True):
+    wh_loss = masked_rel_l1 if wh_relative else masked_l1
     losses = {
         "hm": w_hm * gaussian_focal(out["hm"], batch["hm"]),
-        "wh": w_wh * masked_l1(out["wh"], batch["wh"], batch["reg"]),
+        "wh": w_wh * wh_loss(out["wh"], batch["wh"], batch["reg"]),
         "off": w_off * masked_l1(out["off"], batch["off"], batch["reg"]),
         "seg": w_seg * dice_bce(out["seg"], batch["seg"]),
     }

@@ -3,8 +3,13 @@
 Everything needed to continue this work: what the task is, what the data actually looks like,
 what was built, what the numbers are, what failed and why, and what to do next.
 
-**Current result: fold-0 out-of-fold global F1 = 0.905** (precision 0.922, recall 0.888, threshold 0.31).
-Classical baseline floor is 0.03. No submission has been produced yet.
+**Current result: pooled 5-fold out-of-fold global F1 = 0.9465** (precision 0.963, recall 0.930,
+threshold 0.43, measured over all 1407 boxes). Classical baseline floor is 0.03.
+`submission.csv` is produced: 668 boxes over the 100 test images.
+
+**Read `RESULTS.md` first** — it supersedes the fold-0 numbers throughout this file, which
+describe the earlier single-model state (0.905). The architecture sections below are still
+accurate; the results sections are historical.
 
 ---
 
@@ -305,6 +310,12 @@ The exact command that produced the current 0.905 model was
 
 Nothing is running. Fold 0 stopped at epoch 35 of 40; the missing 4 epochs are not worth running
 given the flat curve.
+
+**Hugging Face**: the whole thing — weights, code, docs, `runs/`, and the dataset — is pushed to the
+private repo <https://huggingface.co/siddhant20/task1>. That is the single link to hand a teammate;
+they need a collaborator invite on the `siddhant20` account, nothing else. Clone with
+`git clone https://huggingface.co/siddhant20/task1` (needs git-lfs) or
+`hf download siddhant20/task1 --local-dir task1`.
 
 Everything on `pmdm-ckpt` except the timm cache and one duplicate directory has been mirrored into
 `checkpoints/` in this repo, so the weights survive without access to the Modal account. The

@@ -22,6 +22,14 @@ from .preprocess import local_norm, match_blur
 
 EDIT_WEIGHTS = {"swap": 0.40, "insert": 0.30, "mark": 0.30}
 
+# Error analysis on fold 0: boxes under 12 px match 82.8% of the time against 97.5% for
+# everything larger, and 10 of the 11 completely undetected boxes are in that band. The
+# small-biased mix exists to feed that band specifically; SMALL_BIAS=0 reproduces the
+# original distribution for a controlled comparison.
+MARK_SIZES_DEFAULT = [6, 8, 8, 10, 12, 16, 24]
+MARK_SIZES_SMALL = [4, 5, 6, 6, 7, 8, 8, 9, 10, 11, 12, 14, 16, 20]
+SMALL_EDIT_WEIGHTS = {"swap": 0.25, "insert": 0.25, "mark": 0.50}
+
 
 def ink_components(img: np.ndarray, min_area: int = 12, max_area: int = 8000):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -51,15 +59,17 @@ def blank_spot(ink: np.ndarray, size: int, rng: np.random.RandomState, tries: in
 
 
 def apply_edits(template: np.ndarray, rng: np.random.RandomState,
-                n_edits: tuple[int, int] = (3, 11)):
+                n_edits: tuple[int, int] = (3, 11), small_bias: float = 0.0):
     """Return (edited image, boxes). Edits only add or change ink, never remove it."""
     edited = template.copy()
     ink = local_norm(template)
     comps = ink_components(template)
     boxes: list[list[int]] = []
     n = rng.randint(*n_edits)
-    kinds = list(EDIT_WEIGHTS)
-    probs = np.array([EDIT_WEIGHTS[k] for k in kinds], np.float32)
+    weights = SMALL_EDIT_WEIGHTS if rng.rand() < small_bias else EDIT_WEIGHTS
+    mark_sizes = MARK_SIZES_SMALL if weights is SMALL_EDIT_WEIGHTS else MARK_SIZES_DEFAULT
+    kinds = list(weights)
+    probs = np.array([weights[k] for k in kinds], np.float32)
     probs /= probs.sum()
 
     for _ in range(n):
@@ -92,7 +102,7 @@ def apply_edits(template: np.ndarray, rng: np.random.RandomState,
             boxes.append([x, y, x + sw, y + sh])
 
         else:  # mark
-            size = int(rng.choice([6, 8, 8, 10, 12, 16, 24]))
+            size = int(rng.choice(mark_sizes))
             spot = blank_spot(ink, size, rng)
             if spot is None:
                 continue
@@ -143,26 +153,46 @@ def degrade(img: np.ndarray, rng: np.random.RandomState) -> np.ndarray:
     return cv2.imdecode(buf, cv2.IMREAD_COLOR) if ok else out
 
 
+def _template_pool(source_splits: tuple[str, ...]) -> list[tuple[str, int, Path]]:
+    """(split, page index, path) for every template we are allowed to synthesize from."""
+    pool: list[tuple[str, int, Path]] = []
+    for sp in source_splits:
+        for path in sorted((DATA / sp / "template").glob("*.png")):
+            idx = int(path.stem.split("_")[-1])
+            pool.append((sp, idx, path))
+    if not pool:
+        raise FileNotFoundError(f"no templates under {DATA} for splits {source_splits}")
+    return pool
+
+
 def generate(n: int, seed: int = 0, out_root: Path | None = None,
-             source_split: str = "train", max_side: int = 2400) -> dict:
-    """Write n synthetic pairs in prepared form. Returns {index: boxes}."""
+             source_split: str = "train", max_side: int = 2400,
+             source_splits: tuple[str, ...] | None = None,
+             small_bias: float = 0.0) -> dict:
+    """Write n synthetic pairs in prepared form.
+
+    Returns {index: {"boxes": [...], "src_split": str, "src_idx": int}}. The source page is
+    recorded so a fold can exclude synthetic pairs derived from its own validation templates —
+    without that, a validation page's layout reaches the training set and the fold score is
+    no longer honest. Test templates carry no labels, so synthesizing onto them leaks nothing
+    and adds 100 layouts the model would otherwise never see.
+    """
     out_root = Path(out_root or SYNTH) / "synth"
     out_root.mkdir(parents=True, exist_ok=True)
-    templates = sorted((DATA / source_split / "template").glob("*.png"))
-    if not templates:
-        raise FileNotFoundError(f"no templates under {DATA / source_split / 'template'}")
+    pool = _template_pool(source_splits or (source_split,))
 
-    boxes_by_index: dict[int, list] = {}
+    boxes_by_index: dict[int, dict] = {}
     for i in range(n):
         rng = np.random.RandomState(seed * 100003 + i)
-        src = cv2.imread(str(templates[rng.randint(len(templates))]), cv2.IMREAD_COLOR)
+        src_split, src_idx, src_path = pool[rng.randint(len(pool))]
+        src = cv2.imread(str(src_path), cv2.IMREAD_COLOR)
         if src is None:
             continue
         if max(src.shape[:2]) > max_side:
             scale = max_side / max(src.shape[:2])
             src = cv2.resize(src, None, fx=scale, fy=scale, interpolation=cv2.INTER_AREA)
 
-        edited, boxes = apply_edits(src, rng)
+        edited, boxes = apply_edits(src, rng, small_bias=small_bias)
         if len(boxes) == 0:
             continue
         photo = degrade(edited, rng)
@@ -175,7 +205,8 @@ def generate(n: int, seed: int = 0, out_root: Path | None = None,
         cv2.imwrite(str(d / "p.png"), photo)
         cv2.imwrite(str(d / "tn.png"), local_norm(template_matched))
         cv2.imwrite(str(d / "pn.png"), local_norm(photo))
-        boxes_by_index[index] = boxes.tolist()
+        boxes_by_index[index] = {"boxes": boxes.tolist(),
+                                 "src_split": src_split, "src_idx": src_idx}
 
     return boxes_by_index
 
@@ -183,6 +214,7 @@ def generate(n: int, seed: int = 0, out_root: Path | None = None,
 def merge_box_index(out_root: Path | None = None) -> int:
     """Merge per-shard box files into the single boxes.json the loader reads."""
     root = Path(out_root or SYNTH) / "synth"
+    root.mkdir(parents=True, exist_ok=True)
     merged: dict[str, list] = {}
     for shard in sorted(root.glob("boxes_shard_*.json")):
         merged.update(json.loads(shard.read_text()))
