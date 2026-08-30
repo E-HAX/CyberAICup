@@ -1,0 +1,990 @@
+<title>FRECA Verification Desk</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+/* ---------- tokens ---------- */
+:root{
+  --ink:#1c2321; --ink-soft:#4a534e;
+  --paper:#f6f3ec; --surface:#ffffff; --surface-2:#efece3;
+  --line:#dad3c2; --line-strong:#c3baa4;
+  --accent:#2b5d63; --accent-ink:#ffffff; --accent-soft:#e1ecec;
+  --ok:#3f7d53; --ok-soft:#e2f0e5;
+  --bad:#b33f2e; --bad-soft:#f6e3df;
+  --na:#8a7f68; --na-soft:#eee9dd;
+  --warn:#c1892e; --warn-soft:#f6ead4;
+  --focus:#2b5d63;
+  --shadow: 0 1px 2px rgba(28,35,33,.06), 0 6px 20px -8px rgba(28,35,33,.18);
+  --shadow-lg: 0 8px 16px rgba(20,24,22,.14), 0 30px 60px -18px rgba(20,24,22,.35);
+  --font-serif: "Iowan Old Style","Palatino Linotype","Book Antiqua",Georgia,serif;
+  --font-sans: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-mono: ui-monospace,"SF Mono","Cascadia Code","Roboto Mono",Consolas,monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --ink:#e7e2d4; --ink-soft:#a9a394;
+    --paper:#14181a; --surface:#1b2124; --surface-2:#20272a;
+    --line:#2b3335; --line-strong:#3a4446;
+    --accent:#6fb8be; --accent-ink:#0d1516; --accent-soft:#1e3436;
+    --ok:#62b67f; --ok-soft:#1c3226;
+    --bad:#e28468; --bad-soft:#3a241f;
+    --na:#b8aa8c; --na-soft:#2b2820;
+    --warn:#e1b65e; --warn-soft:#332711;
+    --focus:#6fb8be;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#e7e2d4; --ink-soft:#a9a394;
+  --paper:#14181a; --surface:#1b2124; --surface-2:#20272a;
+  --line:#2b3335; --line-strong:#3a4446;
+  --accent:#6fb8be; --accent-ink:#0d1516; --accent-soft:#1e3436;
+  --ok:#62b67f; --ok-soft:#1c3226;
+  --bad:#e28468; --bad-soft:#3a241f;
+  --na:#b8aa8c; --na-soft:#2b2820;
+  --warn:#e1b65e; --warn-soft:#332711;
+  --focus:#6fb8be;
+  color-scheme: dark;
+}
+:root[data-theme="light"]{
+  --ink:#1c2321; --ink-soft:#4a534e;
+  --paper:#f6f3ec; --surface:#ffffff; --surface-2:#efece3;
+  --line:#dad3c2; --line-strong:#c3baa4;
+  --accent:#2b5d63; --accent-ink:#ffffff; --accent-soft:#e1ecec;
+  --ok:#3f7d53; --ok-soft:#e2f0e5;
+  --bad:#b33f2e; --bad-soft:#f6e3df;
+  --na:#8a7f68; --na-soft:#eee9dd;
+  --warn:#c1892e; --warn-soft:#f6ead4;
+  --focus:#2b5d63;
+  color-scheme: light;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--paper); color:var(--ink); font-family:var(--font-sans);
+  font-size:14px; line-height:1.5; -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+::selection{ background:var(--accent-soft); }
+a{color:var(--accent);}
+button{font-family:inherit;}
+:focus-visible{ outline:2px solid var(--focus); outline-offset:2px; border-radius:3px; }
+@media (prefers-reduced-motion: reduce){ *{transition:none !important; animation:none !important;} }
+
+.mono{ font-family:var(--font-mono); font-variant-numeric:tabular-nums; }
+.serif{ font-family:var(--font-serif); }
+.emptynote{ color:var(--ink-soft); font-size:12.5px; padding:6px 0; }
+
+/* ---------- shared chip / pill / button vocabulary ---------- */
+.chip{
+  font-size:9.5px; font-weight:600; letter-spacing:.02em; padding:1.5px 6px; border-radius:99px;
+  display:inline-flex; align-items:center; gap:3px; white-space:nowrap;
+}
+.chip.c-missing{ background:var(--bad-soft); color:var(--bad); }
+.chip.c-defic{ background:var(--warn-soft); color:var(--warn); }
+.chip.c-lang{ background:var(--accent-soft); color:var(--accent); }
+.chip.c-doubled{ background:var(--na-soft); color:var(--na); }
+
+.pill{
+  font-size:10.5px; font-weight:700; letter-spacing:.02em; padding:2px 8px; border-radius:99px; text-transform:uppercase;
+}
+.pill.v-1{ background:var(--ok-soft); color:var(--ok); }
+.pill.v-0{ background:var(--bad-soft); color:var(--bad); }
+.pill.v-na{ background:var(--na-soft); color:var(--na); }
+.pill.v-none{ background:var(--surface-2); color:var(--ink-soft); }
+
+.btn{
+  font-size:12.5px; padding:7px 12px; border-radius:7px; border:1px solid var(--line-strong);
+  background:var(--surface); color:var(--ink); cursor:pointer; display:inline-flex; align-items:center; gap:6px;
+  transition:background .12s ease, border-color .12s ease;
+}
+.btn:hover{ background:var(--surface-2); }
+.btn.primary{ background:var(--accent); color:var(--accent-ink); border-color:var(--accent); }
+.btn.primary:hover{ filter:brightness(1.06); }
+.btn:disabled{ opacity:.4; cursor:default; pointer-events:none; }
+input[type=file]{ display:none; }
+.iconbtn{
+  width:28px;height:28px; border-radius:7px; border:1px solid var(--line-strong); background:var(--surface);
+  color:var(--ink-soft); display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:13px; flex:0 0 auto;
+}
+.iconbtn:hover{ background:var(--surface-2); }
+.iconbtn.active{ background:var(--warn-soft); color:var(--warn); border-color:var(--warn); }
+
+.seg{ display:inline-flex; border:1px solid var(--line-strong); border-radius:8px; overflow:hidden; }
+.seg button{
+  border:none; background:var(--surface); color:var(--ink-soft); font-size:12.5px; font-weight:600; padding:7px 13px;
+  cursor:pointer; border-right:1px solid var(--line-strong);
+}
+.seg button:last-child{ border-right:none; }
+.seg button.sel-1.on{ background:var(--ok); color:#fff; }
+.seg button.sel-0.on{ background:var(--bad); color:#fff; }
+.seg button.sel-na.on{ background:var(--na); color:#fff; }
+.seg button:hover:not(.on){ background:var(--surface-2); }
+
+.statusdot{ width:9px;height:9px;border-radius:50%; flex:0 0 auto; border:1.5px solid transparent; }
+.statusdot.sd-1{ background:var(--ok); }
+.statusdot.sd-0{ background:var(--bad); }
+.statusdot.sd-na{ background:var(--na); }
+.statusdot.sd-pending{ background:transparent; border-color:var(--line-strong); }
+
+/* ring */
+.ring svg{ display:block; }
+.ring .bg{ fill:none; stroke:var(--line); stroke-width:3; }
+.ring .fg{ fill:none; stroke:var(--accent); stroke-width:3; stroke-linecap:round; transition:stroke-dashoffset .2s ease; }
+.ring text{ font-family:var(--font-mono); font-size:9px; fill:var(--ink-soft); text-anchor:middle; dominant-baseline:middle; }
+
+mark{ background:var(--warn-soft); color:var(--ink); border-radius:2px; padding:0 1px; }
+mark.cur{ background:var(--warn); color:#1c1305; }
+
+/* ---------- app shell / topbar ---------- */
+#app{ min-height:100vh; display:flex; flex-direction:column; }
+#topbar{
+  display:flex; align-items:center; gap:16px; padding:10px 22px; background:var(--surface);
+  border-bottom:1px solid var(--line); box-shadow:var(--shadow); z-index:20; position:sticky; top:0;
+}
+#topbar .brand{ display:flex; align-items:baseline; gap:9px; flex:0 0 auto; cursor:pointer; }
+#topbar .brand .mark{
+  width:26px;height:26px;border-radius:6px;background:var(--accent);color:var(--accent-ink);
+  display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);
+  font-weight:700; font-size:15px; flex:0 0 auto;
+}
+#topbar h1{ font-family:var(--font-serif); font-size:16.5px; font-weight:600; margin:0; letter-spacing:.2px; }
+#topbar .sub{ font-size:11px; color:var(--ink-soft); letter-spacing:.03em; }
+#topbar-context{ display:flex; align-items:center; gap:10px; flex:1 1 auto; min-width:0; }
+#topbar-context .crumb{ font-size:12.5px; color:var(--ink-soft); white-space:nowrap; }
+#topbar-context .crumb b{ color:var(--ink); font-family:var(--font-mono); font-weight:600; }
+#topbar-context .ctxprogress{ display:flex; align-items:center; gap:8px; max-width:220px; flex:1 1 auto; }
+#topbar-context .track{ flex:1; height:6px; border-radius:99px; background:var(--surface-2); overflow:hidden; border:1px solid var(--line); }
+#topbar-context .fill{ height:100%; background:var(--accent); width:0%; transition:width .25s ease; }
+#topbar-context .count{ font-family:var(--font-mono); font-size:11.5px; color:var(--ink-soft); white-space:nowrap; }
+
+.annot{ display:flex; align-items:center; gap:6px; font-size:12px; color:var(--ink-soft); flex:0 0 auto; }
+.annot select{
+  font:inherit; font-size:12.5px; padding:5px 8px; border-radius:6px; border:1px solid var(--line-strong);
+  background:var(--surface); color:var(--ink);
+}
+.topbtns{ display:flex; gap:8px; flex:0 0 auto; }
+
+#root{ flex:1 1 auto; min-height:0; }
+
+/* ================= CASES PAGE ================= */
+#casespage{ max-width:1320px; margin:0 auto; padding:26px 28px 70px; }
+#casespage .pagehead{ display:flex; align-items:flex-end; justify-content:space-between; gap:18px; margin-bottom:20px; flex-wrap:wrap; }
+#casespage h2{ font-family:var(--font-serif); font-size:26px; font-weight:600; margin:0; text-wrap:balance; }
+#casespage .pagesub{ font-size:12.5px; color:var(--ink-soft); margin-top:4px; max-width:640px; }
+#casefilter{
+  font:inherit; font-size:13px; padding:8px 12px; border-radius:8px; border:1px solid var(--line-strong);
+  background:var(--surface); color:var(--ink); width:230px;
+}
+.cases-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(288px,1fr)); gap:14px; }
+.case-card-lg{
+  background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:17px;
+  box-shadow:var(--shadow); cursor:pointer; display:flex; flex-direction:column; gap:11px;
+  transition:transform .12s ease, border-color .12s ease; text-align:left;
+}
+.case-card-lg:hover{ transform:translateY(-2px); border-color:var(--accent); }
+.cclg-top{ display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
+.cclg-id{ font-family:var(--font-mono); font-size:14.5px; font-weight:700; line-height:1.3; }
+.cclg-state{ font-size:10px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft); margin-top:2px; }
+.cclg-flags{ display:flex; flex-wrap:wrap; gap:5px; min-height:16px; }
+.cclg-stats{ display:flex; gap:14px; font-size:11.5px; color:var(--ink-soft); }
+.cclg-stats b{ color:var(--ink); font-family:var(--font-mono); }
+.cclg-cta{ margin-top:auto; display:flex; justify-content:space-between; align-items:center; font-size:12.5px; color:var(--accent); font-weight:600; padding-top:9px; border-top:1px solid var(--line); }
+
+/* ================= CASE DETAIL PAGE ================= */
+#casepage{ max-width:960px; margin:0 auto; padding:22px 28px 70px; }
+#casepage .backlink{ font-size:12.5px; color:var(--accent); background:none; border:none; cursor:pointer; padding:0; margin-bottom:14px; display:inline-flex; align-items:center; gap:5px; }
+#casepage .casehead{ margin-bottom:18px; }
+#casepage .casetitle{ font-family:var(--font-serif); font-size:24px; font-weight:600; text-wrap:balance; }
+#casepage .casesub{ font-size:12.5px; color:var(--ink-soft); margin-top:3px; }
+#casepage .headrow{ display:flex; align-items:flex-start; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+#casepage .headbtns{ display:flex; gap:8px; flex:0 0 auto; }
+#casepage .flagsline{ display:flex; gap:6px; margin-top:11px; flex-wrap:wrap; }
+#casepage .flagsline .chip{ font-size:10.5px; padding:3px 9px; }
+
+.elemhead{
+  font-family:var(--font-serif); font-size:12px; text-transform:uppercase; letter-spacing:.08em;
+  color:var(--accent); margin:20px 0 8px; padding-top:8px; border-top:1px solid var(--line);
+}
+.elemhead:first-child{ border-top:none; margin-top:6px; }
+.subhead{ font-size:11px; color:var(--ink-soft); margin:2px 0 9px; }
+
+.cprow-compact{
+  display:flex; align-items:center; gap:12px; padding:11px 13px; border:1px solid var(--line); border-radius:9px;
+  background:var(--surface); margin-bottom:7px; cursor:pointer; box-shadow:var(--shadow); text-align:left; width:100%;
+}
+.cprow-compact:hover{ border-color:var(--accent); }
+.cprow-compact.flagged{ outline:1.5px dashed var(--warn); outline-offset:-1px; }
+.cprow-compact .cpcode{ font-family:var(--font-mono); font-size:11.5px; font-weight:700; background:var(--surface-2); padding:2px 7px; border-radius:5px; flex:0 0 auto; }
+.cprow-compact .cptext-trunc{ flex:1; font-size:13px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; min-width:0; }
+.cprow-compact .draftmini{ flex:0 0 auto; }
+.cprow-compact .chev{ color:var(--ink-soft); flex:0 0 auto; font-size:13px; }
+
+/* ================= CP VERIFICATION MODAL ================= */
+#cpmodalwrap{ position:fixed; inset:0; background:rgba(10,12,11,.46); z-index:50; display:none; align-items:center; justify-content:center; padding:16px; }
+#cpmodalwrap.show{ display:flex; }
+#cpmodal{
+  background:var(--surface); border-radius:14px; width:min(1180px,100%); height:min(860px,94vh);
+  display:flex; flex-direction:column; box-shadow:var(--shadow-lg); overflow:hidden;
+}
+.cpm-top{ display:flex; align-items:center; gap:12px; padding:13px 18px; border-bottom:1px solid var(--line); flex:0 0 auto; }
+.cpm-top .cpm-code{ font-family:var(--font-mono); font-weight:700; font-size:14px; background:var(--surface-2); padding:3px 9px; border-radius:6px; }
+.cpm-top .cpm-elem{ font-size:11.5px; color:var(--ink-soft); }
+.cpm-top .cpm-progress{ font-size:11.5px; color:var(--ink-soft); font-family:var(--font-mono); }
+.cpm-top .cpm-nav{ margin-left:auto; display:flex; gap:6px; align-items:center; }
+
+.cpm-body{ flex:1; display:grid; grid-template-columns:360px 1fr; min-height:0; }
+@media (max-width:860px){ .cpm-body{ grid-template-columns:1fr; grid-template-rows:auto 1fr; } }
+
+.cpm-detail{ border-right:1px solid var(--line); overflow-y:auto; padding:18px 20px 30px; }
+@media (max-width:860px){ .cpm-detail{ border-right:none; border-bottom:1px solid var(--line); max-height:38vh; } }
+.cpm-detail .cptext-full{ font-size:14.5px; line-height:1.55; margin-bottom:16px; }
+.cpm-detail .sectionlab{ font-size:10px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft); margin:16px 0 7px; }
+.cpm-detail .sectionlab:first-of-type{ margin-top:0; }
+.draftbox{ background:var(--surface-2); border-radius:9px; padding:11px 12px; font-size:12.5px; }
+.draftbox .draftlinehead{ display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+.confbar{ width:44px; height:5px; border-radius:99px; background:var(--surface); overflow:hidden; flex:0 0 auto; }
+.confbar i{ display:block; height:100%; background:var(--ink-soft); }
+.draftbox .lab{ font-size:9.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-soft); margin-top:8px; }
+.draftbox .lab:first-child{ margin-top:0; }
+.draftbox .cited-link{ color:var(--accent); cursor:pointer; text-decoration:underline; text-underline-offset:2px; }
+
+.goldbox{ margin-top:4px; }
+.goldbox .goldrow{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:9px; }
+.unconfirmed-note{ font-size:11px; color:var(--warn); font-style:italic; }
+.notesbtn{ font-size:11.5px; color:var(--accent); background:none; border:none; cursor:pointer; padding:0; }
+textarea.notes{
+  width:100%; margin-top:8px; font:inherit; font-size:12.5px; padding:8px 10px; border-radius:7px;
+  border:1px solid var(--line); background:var(--surface-2); color:var(--ink); resize:vertical; min-height:56px;
+}
+.kbdhint{ font-size:10.5px; color:var(--ink-soft); margin-top:14px; line-height:1.7; border-top:1px solid var(--line); padding-top:10px; }
+.kbdhint kbd{ font-family:var(--font-mono); background:var(--surface-2); border:1px solid var(--line-strong); border-radius:4px; padding:0 5px; font-size:10px; }
+
+.cpm-doc{ display:flex; flex-direction:column; min-height:0; }
+.doc-tabs{ display:flex; gap:4px; padding:10px 16px 0; border-bottom:1px solid var(--line); overflow-x:auto; flex:0 0 auto; }
+.ttab{
+  font-size:11px; font-family:var(--font-mono); padding:6px 9px; border-radius:6px 6px 0 0; border:1px solid transparent;
+  background:transparent; color:var(--ink-soft); cursor:pointer; white-space:nowrap; display:flex; align-items:center; gap:5px;
+}
+.ttab.on{ background:var(--surface-2); color:var(--ink); border-color:var(--line); border-bottom-color:var(--surface-2); }
+.ttab.missing{ color:var(--bad); text-decoration:line-through; opacity:.6; }
+.ttab .cited-dot{ width:5px;height:5px;border-radius:50%; background:var(--warn); }
+.doc-search{ display:flex; gap:6px; padding:9px 16px; border-bottom:1px solid var(--line); flex:0 0 auto; }
+.doc-search input{
+  flex:1; font:inherit; font-size:12.5px; padding:7px 10px; border-radius:7px; border:1px solid var(--line-strong);
+  background:var(--surface-2); color:var(--ink);
+}
+.doc-body{ flex:1; overflow-y:auto; padding:14px 18px 40px; font-size:12.5px; }
+.doc-body .fname{ font-family:var(--font-mono); font-size:10.5px; color:var(--ink-soft); margin-bottom:9px; }
+.doc-body pre{ white-space:pre-wrap; word-break:break-word; font-family:var(--font-sans); font-size:12.5px; line-height:1.65; margin:0; }
+
+/* browse-full-evidence modal (secondary, no CP context) */
+#evmodalwrap{ position:fixed; inset:0; background:rgba(10,12,11,.4); z-index:45; display:none; align-items:center; justify-content:center; padding:18px; }
+#evmodalwrap.show{ display:flex; }
+#evmodal{ background:var(--surface); border-radius:14px; width:min(720px,100%); height:min(760px,90vh); display:flex; flex-direction:column; box-shadow:var(--shadow-lg); overflow:hidden; }
+#evmodal .dhead{ padding:14px 18px 0; display:flex; justify-content:space-between; align-items:center; }
+#evmodal .dtitle{ font-family:var(--font-serif); font-size:16px; font-weight:600; }
+
+/* import conflicts modal */
+#modalwrap{ position:fixed; inset:0; background:rgba(10,12,11,.4); z-index:55; display:none; align-items:center; justify-content:center; padding:20px; }
+#modalwrap.show{ display:flex; }
+#modal{ background:var(--surface); border-radius:12px; width:min(720px,100%); max-height:82vh; display:flex; flex-direction:column; box-shadow:var(--shadow-lg); }
+#modal .mhead{ padding:16px 20px; border-bottom:1px solid var(--line); font-family:var(--font-serif); font-size:17px; font-weight:600; display:flex; justify-content:space-between; align-items:center;}
+#modal .mbody{ padding:14px 20px; overflow-y:auto; }
+#modal .mfoot{ padding:12px 20px; border-top:1px solid var(--line); display:flex; justify-content:flex-end; gap:8px; }
+.conflictrow{ border:1px solid var(--line); border-radius:8px; padding:10px 12px; margin-bottom:8px; }
+.conflictrow .cf-head{ font-family:var(--font-mono); font-size:12px; font-weight:700; margin-bottom:6px;}
+.cf-opts{ display:flex; gap:14px; font-size:12.5px; }
+.cf-opts label{ display:flex; align-items:center; gap:5px; cursor:pointer; }
+
+#toast{
+  position:fixed; bottom:18px; left:50%; transform:translateX(-50%) translateY(20px); background:var(--ink); color:var(--paper);
+  padding:9px 16px; border-radius:8px; font-size:12.5px; opacity:0; pointer-events:none; transition:all .2s ease; z-index:60;
+}
+#toast.show{ opacity:1; transform:translateX(-50%) translateY(0); }
+
+@media (max-width:700px){
+  #topbar{ flex-wrap:wrap; }
+  #topbar-context{ order:3; width:100%; }
+}
+</style>
+
+<div id="app">
+  <div id="topbar">
+    <div class="brand" id="brand-home">
+      <span class="mark">F</span>
+      <div><h1>FRECA Verification Desk</h1><div class="sub">Dev-set gold-labeling</div></div>
+    </div>
+    <div id="topbar-context"></div>
+    <div class="annot">
+      <label for="annotator">Annotator</label>
+      <select id="annotator">
+        <option value="You">You</option>
+        <option value="Mahek">Mahek</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="topbtns">
+      <button class="btn" id="btn-import">Import &amp; merge…</button>
+      <input type="file" id="file-import" accept="application/json" />
+      <button class="btn" id="btn-export-csv">Export CSV</button>
+      <button class="btn primary" id="btn-export">Export JSON</button>
+    </div>
+  </div>
+
+  <div id="root"></div>
+</div>
+
+<div id="cpmodalwrap">
+  <div id="cpmodal">
+    <div class="cpm-top">
+      <span class="cpm-code" id="cpm-code"></span>
+      <span class="cpm-elem" id="cpm-elem"></span>
+      <span class="cpm-progress" id="cpm-progress"></span>
+      <div class="cpm-nav">
+        <button class="btn" id="cpm-prev">← Prev</button>
+        <button class="btn" id="cpm-next">Next →</button>
+        <button class="iconbtn" id="cpm-close" title="Close (Esc)">✕</button>
+      </div>
+    </div>
+    <div class="cpm-body">
+      <div class="cpm-detail" id="cpm-detail"></div>
+      <div class="cpm-doc">
+        <div class="doc-tabs" id="cpm-tabs"></div>
+        <div class="doc-search">
+          <input type="text" id="cpm-search" placeholder="Search this document…" />
+          <button class="btn" id="cpm-search-prev">↑</button>
+          <button class="btn" id="cpm-search-next">↓</button>
+        </div>
+        <div class="doc-body" id="cpm-docbody"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="evmodalwrap">
+  <div id="evmodal">
+    <div class="dhead">
+      <span class="dtitle" id="ev-title">Evidence</span>
+      <button class="iconbtn" id="ev-close">✕</button>
+    </div>
+    <div class="doc-search" style="margin-top:10px;">
+      <input type="text" id="ev-search" placeholder="Search evidence text…" />
+      <button class="btn" id="ev-search-prev">↑</button>
+      <button class="btn" id="ev-search-next">↓</button>
+    </div>
+    <div class="doc-tabs" id="ev-tabs"></div>
+    <div class="doc-body" id="ev-docbody"></div>
+  </div>
+</div>
+
+<div id="modalwrap">
+  <div id="modal">
+    <div class="mhead"><span>Merge imported labels</span><button class="iconbtn" id="modal-close">✕</button></div>
+    <div class="mbody" id="modal-body"></div>
+    <div class="mfoot">
+      <button class="btn" id="modal-cancel">Cancel</button>
+      <button class="btn primary" id="modal-apply">Apply merge</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script id="appdata" type="application/json">__DATA_JSON__</script>
+
+<script>
+(function(){
+"use strict";
+const DATA = JSON.parse(document.getElementById('appdata').textContent);
+const CASES = DATA.cases;
+const CPS = DATA.cps;               // 41, in order
+const TRACK_NAMES = DATA.track_names;
+const STORE_KEY = "freca_verify_v1";
+const TOTAL_CELLS = CASES.length * CPS.length;
+const CASE_BY_ID = {}; CASES.forEach(c=> CASE_BY_ID[c.id]=c);
+const CP_BY_CODE = {}; CPS.forEach(cp=> CP_BY_CODE[cp.cp]=cp);
+const CP_INDEX = {}; CPS.forEach((cp,i)=> CP_INDEX[cp.cp]=i);
+
+/* ---------- persistence ---------- */
+function loadStore(){
+  try{ const raw = localStorage.getItem(STORE_KEY); if(raw) return JSON.parse(raw); }catch(e){}
+  return { annotator:"You", entries:{} };
+}
+function saveStore(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(store)); }catch(e){} }
+let store = loadStore();
+
+function entryKey(caseId, cp){ return caseId+"::"+cp; }
+function getEntry(caseId, cp){
+  return store.entries[entryKey(caseId,cp)] || { verdict:null, touched:false, notes:"", flagged:false };
+}
+function setEntry(caseId, cp, patch){
+  const k = entryKey(caseId,cp);
+  const cur = store.entries[k] || { verdict:null, touched:false, notes:"", flagged:false };
+  store.entries[k] = Object.assign({}, cur, patch);
+  saveStore();
+}
+function caseProgress(caseId){
+  let n=0; for(const cp of CPS){ if(getEntry(caseId, cp.cp).touched) n++; } return n;
+}
+function overallProgress(){ let n=0; for(const c of CASES){ n += caseProgress(c.id); } return n; }
+function caseVerdictCounts(caseId){
+  const out = {1:0,0:0,"N/A":0};
+  for(const cp of CPS){ const e=getEntry(caseId,cp.cp); if(e.touched && out[e.verdict]!==undefined) out[e.verdict]++; }
+  return out;
+}
+
+/* ---------- helpers ---------- */
+function verdictClass(v){ return v==="1"?"v-1": v==="0"?"v-0": v==="N/A"?"v-na":"v-none"; }
+function verdictLabel(v){ return v==="1"?"Compliant": v==="0"?"Non-compliant": v==="N/A"?"N/A":"No verdict yet"; }
+function statusDotClass(v){ return v==="1"?"sd-1": v==="0"?"sd-0": v==="N/A"?"sd-na":"sd-pending"; }
+function escapeHtml(s){ return String(s==null?"":s).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function toast(msg){
+  const t = document.getElementById('toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toast._h); toast._h = setTimeout(()=>t.classList.remove('show'), 2200);
+}
+function isTypingTarget(el){
+  if(!el) return false;
+  const tag = el.tagName;
+  return tag==="TEXTAREA" || tag==="INPUT" || el.isContentEditable;
+}
+function flagChip(f){
+  const cls = f.type==="missing"?"c-missing": f.type==="deficiency"?"c-defic": "c-lang";
+  const icon = f.type==="missing"?"⚠": f.type==="deficiency"?"✳": "字";
+  return `<span class="chip ${cls}" data-track="${f.track}" title="${escapeHtml(f.label)}">${icon} ${escapeHtml(f.label)}</span>`;
+}
+function ringSvg(done, total, size=34){
+  const r = (size-6)/2, c = 2*Math.PI*r, pct = total? done/total : 0;
+  const off = c*(1-pct);
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+    <circle class="bg" cx="${size/2}" cy="${size/2}" r="${r}"></circle>
+    <circle class="fg" cx="${size/2}" cy="${size/2}" r="${r}" stroke-dasharray="${c}" stroke-dashoffset="${off}"
+      transform="rotate(-90 ${size/2} ${size/2})"></circle>
+    <text x="${size/2}" y="${size/2+1}">${done}</text>
+  </svg>`;
+}
+function firstPresentTrack(c){ for(let t=1;t<=9;t++){ if(c.tracks[String(t)].present) return t; } return 1; }
+
+/* parse a draft's "evidence" string like:
+   "Track 6 §8.1: 'Records are maintained in Mandarin'" -> {tracks:[6], quote:"Records are maintained in Mandarin"} */
+function parseCitedTracks(evidenceStr){
+  if(!evidenceStr) return { tracks:[], quote:null };
+  const tracks = Array.from(new Set(Array.from(evidenceStr.matchAll(/Track\s+(\d+)/gi)).map(m=>parseInt(m[1],10))));
+  const quotes = Array.from(evidenceStr.matchAll(/'([^']{6,})'|"([^"]{6,})"/g)).map(m=>m[1]||m[2]);
+  quotes.sort((a,b)=>b.length-a.length);
+  return { tracks, quote: quotes[0]||null };
+}
+
+/* ---------- routing ---------- */
+function parseHash(){
+  const h = location.hash.replace(/^#\/?/, '');
+  const parts = h.split('/').filter(Boolean);
+  if(parts[0]==='case' && parts[1]){
+    const caseId = decodeURIComponent(parts[1]);
+    if(!CASE_BY_ID[caseId]) return { view:'cases' };
+    if(parts[2]==='cp' && parts[3] && CP_BY_CODE[decodeURIComponent(parts[3])]) return { view:'case', caseId, cp:decodeURIComponent(parts[3]) };
+    return { view:'case', caseId };
+  }
+  return { view:'cases' };
+}
+function go(hash){ location.hash = hash; }
+
+function render(){
+  const r = parseHash();
+  const root = document.getElementById('root');
+  if(r.view==='cases'){
+    root.innerHTML = casesPageHtml();
+    wireCasesPage();
+    hideCpModal();
+    renderTopbarContext(null);
+  } else {
+    root.innerHTML = casePageHtml(r.caseId);
+    wireCasePage(r.caseId);
+    renderTopbarContext(r.caseId);
+    if(r.cp){ showCpModal(r.caseId, r.cp); } else { hideCpModal(); }
+  }
+}
+window.addEventListener('hashchange', render);
+document.getElementById('brand-home').addEventListener('click', ()=> go('#/cases'));
+
+function renderTopbarContext(caseId){
+  const el = document.getElementById('topbar-context');
+  if(!caseId){
+    const done = overallProgress();
+    el.innerHTML = `<div class="ctxprogress"><span class="count">${done} / ${TOTAL_CELLS} confirmed</span>
+      <div class="track"><div class="fill" style="width:${(100*done/TOTAL_CELLS).toFixed(1)}%"></div></div></div>`;
+    return;
+  }
+  const c = CASE_BY_ID[caseId];
+  const done = caseProgress(caseId);
+  el.innerHTML = `<span class="crumb"><a href="#/cases" style="color:inherit;text-decoration:none;">All cases</a> / <b>${escapeHtml(c.folder_id)}</b></span>
+    <div class="ctxprogress"><span class="count">${done} / ${CPS.length}</span>
+      <div class="track"><div class="fill" style="width:${(100*done/CPS.length).toFixed(1)}%"></div></div></div>`;
+}
+
+/* ================= CASES PAGE ================= */
+function casesPageHtml(){
+  return `<div id="casespage">
+    <div class="pagehead">
+      <div><h2>Cases</h2><div class="pagesub">10 dev cases selected for state/irregularity coverage. Open a case to work through its 41 checking points.</div></div>
+      <input type="text" id="casefilter" placeholder="Filter by RE number or state…" />
+    </div>
+    <div class="cases-grid" id="cases-grid"></div>
+  </div>`;
+}
+function caseCardHtml(c){
+  const done = caseProgress(c.id);
+  const counts = caseVerdictCounts(c.id);
+  const state = c.folder_id.split('-')[1] || '';
+  const flagChips = c.flags.slice(0,3).map(f=>{
+    const cls = f.type==="missing"?"c-missing": f.type==="deficiency"?"c-defic":"c-lang";
+    const icon = f.type==="missing"?"⚠": f.type==="deficiency"?"✳":"字";
+    return `<span class="chip ${cls}" title="${escapeHtml(f.label)}">${icon} ${escapeHtml(f.type)}</span>`;
+  }).join("");
+  const subsetChip = c.subset_note ? `<span class="chip c-doubled" title="Split from a doubled folder — ${escapeHtml(c.subset_note)} establishment">⧉ split</span>` : "";
+  return `<button class="case-card-lg" data-case="${c.id}" data-search="${escapeHtml((c.folder_id+' '+state).toLowerCase())}">
+    <div class="cclg-top">
+      <div><div class="cclg-id">${escapeHtml(c.folder_id)}</div><div class="cclg-state">${escapeHtml(state)}</div></div>
+      <span class="ring">${ringSvg(done, CPS.length)}</span>
+    </div>
+    <div class="cclg-flags">${subsetChip}${flagChips || '<span class="emptynote">no auto-flags</span>'}</div>
+    <div class="cclg-stats">
+      <span><b>${counts[1]}</b> ok</span><span><b>${counts[0]}</b> fail</span><span><b>${counts["N/A"]}</b> n/a</span>
+    </div>
+    <div class="cclg-cta"><span>${done===0?'Start verifying':(done===CPS.length?'Review complete':'Continue verifying')}</span><span>→</span></div>
+  </button>`;
+}
+function wireCasesPage(){
+  function paint(filter){
+    const grid = document.getElementById('cases-grid');
+    const f = (filter||"").toLowerCase().trim();
+    const list = CASES.filter(c => !f || (c.folder_id.toLowerCase()+' '+c.folder_id.split('-')[1].toLowerCase()).includes(f));
+    grid.innerHTML = list.map(caseCardHtml).join("") || '<div class="emptynote">No cases match that filter.</div>';
+    grid.querySelectorAll('.case-card-lg').forEach(btn=> btn.addEventListener('click', ()=> go('#/case/'+encodeURIComponent(btn.dataset.case))));
+  }
+  paint("");
+  document.getElementById('casefilter').addEventListener('input', e=> paint(e.target.value));
+}
+
+/* ================= CASE DETAIL PAGE ================= */
+function casePageHtml(caseId){
+  const c = CASE_BY_ID[caseId];
+  const done = caseProgress(caseId);
+  const subsetNote = c.subset_note
+    ? `<div class="casesub">Split from doubled folder <span class="mono">${escapeHtml(c.folder_id)}</span> — this is the <b>${escapeHtml(c.subset_note)}</b> establishment.</div>` : "";
+  return `<div id="casepage">
+    <button class="backlink" id="case-back">← All cases</button>
+    <div class="casehead">
+      <div class="headrow">
+        <div><div class="casetitle">${escapeHtml(c.folder_id)}</div><div class="casesub">${done} / ${CPS.length} checking points confirmed</div>${subsetNote}</div>
+        <div class="headbtns">
+          <button class="btn" id="btn-browse-evidence">📄 Browse full evidence</button>
+          <button class="btn primary" id="btn-start-verifying">Start verifying →</button>
+        </div>
+      </div>
+      <div class="flagsline">${c.flags.map(flagChip).join("") || '<span class="emptynote">No auto-detected flags for this case.</span>'}</div>
+    </div>
+    <div id="cptable"></div>
+  </div>`;
+}
+function cpRowHtml(caseId, cp){
+  const c = CASE_BY_ID[caseId];
+  const draft = c.draft[cp.cp] || null;
+  const entry = getEntry(caseId, cp.cp);
+  const verdict = entry.touched ? entry.verdict : null;
+  return `<button class="cprow-compact ${entry.flagged?'flagged':''}" data-cp="${cp.cp}">
+    <span class="statusdot ${statusDotClass(verdict)}"></span>
+    <span class="cpcode">${cp.cp}</span>
+    <span class="cptext-trunc" title="${escapeHtml(cp.text)}">${escapeHtml(cp.text)}</span>
+    <span class="draftmini">${draft? `<span class="pill ${verdictClass(draft.verdict)}">draft ${verdictLabel(draft.verdict)}</span>` : ''}</span>
+    ${entry.flagged? '<span title="Flagged for discussion">🚩</span>':''}
+    <span class="chev">›</span>
+  </button>`;
+}
+function renderCpTable(caseId){
+  let html = ""; let lastSub = null;
+  for(const cp of CPS){
+    if(cp.subelement !== lastSub){ lastSub = cp.subelement; html += `<div class="elemhead">${escapeHtml(cp.element)} — ${escapeHtml(cp.subelement)}</div>`; }
+    html += cpRowHtml(caseId, cp);
+  }
+  document.getElementById('cptable').innerHTML = html;
+  document.querySelectorAll('#cptable .cprow-compact').forEach(btn=>{
+    btn.addEventListener('click', ()=> go('#/case/'+encodeURIComponent(caseId)+'/cp/'+encodeURIComponent(btn.dataset.cp)));
+  });
+}
+function wireCasePage(caseId){
+  renderCpTable(caseId);
+  document.getElementById('case-back').addEventListener('click', ()=> go('#/cases'));
+  document.getElementById('btn-browse-evidence').addEventListener('click', ()=> openEvidenceModal(caseId));
+  document.getElementById('btn-start-verifying').addEventListener('click', ()=>{
+    const firstUnconfirmed = CPS.find(cp=> !getEntry(caseId, cp.cp).touched) || CPS[0];
+    go('#/case/'+encodeURIComponent(caseId)+'/cp/'+encodeURIComponent(firstUnconfirmed.cp));
+  });
+}
+
+/* ================= CP VERIFICATION MODAL ================= */
+let cpm = { caseId:null, cp:null, activeTrack:1, matches:[], idx:-1 };
+
+function showCpModal(caseId, cpCode){
+  cpm.caseId = caseId; cpm.cp = cpCode;
+  const c = CASE_BY_ID[caseId];
+  const draft = c.draft[cpCode] || null;
+  const cited = parseCitedTracks(draft && draft.evidence);
+  cpm.activeTrack = cited.tracks[0] || firstPresentTrack(c);
+  renderCpModalChrome();
+  renderCpModalDetail();
+  renderDocTabs('cpm-tabs', c, cpm.activeTrack, cited.tracks, onTrackTabClick);
+  renderDocBody('cpm-docbody', c, cpm.activeTrack);
+  document.getElementById('cpm-search').value = "";
+  if(cited.quote){ document.getElementById('cpm-search').value = cited.quote; }
+  applyDocSearch('cpm-docbody', c, cpm.activeTrack, document.getElementById('cpm-search').value, true);
+  document.getElementById('cpmodalwrap').classList.add('show');
+}
+function hideCpModal(){ document.getElementById('cpmodalwrap').classList.remove('show'); }
+
+function onTrackTabClick(t){
+  cpm.activeTrack = t;
+  const c = CASE_BY_ID[cpm.caseId];
+  const draft = c.draft[cpm.cp] || null;
+  const cited = parseCitedTracks(draft && draft.evidence);
+  renderDocTabs('cpm-tabs', c, cpm.activeTrack, cited.tracks, onTrackTabClick);
+  renderDocBody('cpm-docbody', c, cpm.activeTrack);
+  applyDocSearch('cpm-docbody', c, cpm.activeTrack, document.getElementById('cpm-search').value, false);
+}
+
+function renderCpModalChrome(){
+  const cp = CP_BY_CODE[cpm.cp];
+  const idx = CP_INDEX[cpm.cp];
+  document.getElementById('cpm-code').textContent = cp.cp;
+  document.getElementById('cpm-elem').textContent = cp.element + ' — ' + cp.subelement;
+  document.getElementById('cpm-progress').textContent = `CP ${idx+1} of ${CPS.length}`;
+  document.getElementById('cpm-prev').disabled = idx<=0;
+  document.getElementById('cpm-next').disabled = idx>=CPS.length-1;
+}
+function navCp(delta){
+  const idx = CP_INDEX[cpm.cp] + delta;
+  if(idx<0 || idx>=CPS.length) return;
+  go('#/case/'+encodeURIComponent(cpm.caseId)+'/cp/'+encodeURIComponent(CPS[idx].cp));
+}
+document.getElementById('cpm-prev').addEventListener('click', ()=> navCp(-1));
+document.getElementById('cpm-next').addEventListener('click', ()=> navCp(1));
+document.getElementById('cpm-close').addEventListener('click', ()=> go('#/case/'+encodeURIComponent(cpm.caseId)));
+
+function renderCpModalDetail(){
+  const c = CASE_BY_ID[cpm.caseId];
+  const cp = CP_BY_CODE[cpm.cp];
+  const draft = c.draft[cpm.cp] || null;
+  const entry = getEntry(cpm.caseId, cpm.cp);
+  const verdict = entry.touched ? entry.verdict : null;
+  const confPct = draft && draft.confidence!=null ? Math.round(draft.confidence*100) : null;
+  const cited = parseCitedTracks(draft && draft.evidence);
+
+  const detail = document.getElementById('cpm-detail');
+  detail.innerHTML = `
+    <div class="cptext-full">${escapeHtml(cp.text)}</div>
+
+    <div class="sectionlab">Independent draft (reference only)</div>
+    ${draft ? `
+    <div class="draftbox">
+      <div class="draftlinehead">
+        <span class="pill ${verdictClass(draft.verdict)}">${verdictLabel(draft.verdict)}</span>
+        ${confPct!=null? `<span class="confbar" title="confidence ${confPct}%"><i style="width:${confPct}%"></i></span><span class="mono" style="font-size:11px;">${confPct}%</span>`:''}
+      </div>
+      <div class="lab">Reason</div><div>${escapeHtml(draft.reason||"—")}</div>
+      <div class="lab">Cited evidence</div><div>${escapeHtml(draft.evidence||"—")}
+        ${cited.tracks.length? ` <span class="cited-link" id="jump-cited">→ jump to Track ${cited.tracks[0]}</span>`:''}
+      </div>
+    </div>` : `<div class="emptynote">No draft available for this checking point.</div>`}
+
+    <div class="sectionlab">Your verdict</div>
+    <div class="goldbox">
+      <div class="seg" role="group" aria-label="Gold verdict">
+        <button data-v="1" class="sel-1 ${verdict==='1'?'on':''}">Compliant</button>
+        <button data-v="0" class="sel-0 ${verdict==='0'?'on':''}">Non-compliant</button>
+        <button data-v="N/A" class="sel-na ${verdict==='N/A'?'on':''}">N/A</button>
+      </div>
+      <div class="goldrow">
+        ${entry.touched ? "" : `<span class="unconfirmed-note">not yet confirmed</span>`}
+        <button class="iconbtn ${entry.flagged?'active':''}" id="cpm-flagbtn" title="Flag for discussion">🚩</button>
+        <button class="notesbtn" id="cpm-notesbtn">${entry.notes ? "edit note" : "+ add note"}</button>
+      </div>
+      <div id="cpm-notesholder" style="display:${entry.notes?'block':'none'}">
+        <textarea class="notes" id="cpm-notes" placeholder="Reasoning, disagreement, evidence quote…">${escapeHtml(entry.notes)}</textarea>
+      </div>
+    </div>
+
+    <div class="kbdhint">
+      <kbd>1</kbd> compliant · <kbd>0</kbd> non-compliant · <kbd>N</kbd> n/a &nbsp;·&nbsp; <kbd>←</kbd>/<kbd>→</kbd> prev/next · <kbd>Esc</kbd> close
+    </div>
+  `;
+
+  detail.querySelectorAll('.seg button').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      setEntry(cpm.caseId, cpm.cp, { verdict: btn.dataset.v, touched:true });
+      renderCpModalDetail();
+      refreshBackground();
+    });
+  });
+  const flagBtn = document.getElementById('cpm-flagbtn');
+  if(flagBtn) flagBtn.addEventListener('click', ()=>{
+    const e = getEntry(cpm.caseId, cpm.cp);
+    setEntry(cpm.caseId, cpm.cp, { flagged: !e.flagged });
+    renderCpModalDetail();
+    refreshBackground();
+  });
+  const notesBtn = document.getElementById('cpm-notesbtn');
+  if(notesBtn) notesBtn.addEventListener('click', ()=>{
+    const holder = document.getElementById('cpm-notesholder');
+    holder.style.display = holder.style.display==='none' ? 'block':'none';
+    if(holder.style.display==='block') document.getElementById('cpm-notes').focus();
+  });
+  const ta = document.getElementById('cpm-notes');
+  if(ta){
+    let deb;
+    ta.addEventListener('input', ()=>{ clearTimeout(deb); deb=setTimeout(()=> setEntry(cpm.caseId, cpm.cp, {notes: ta.value}), 350); });
+  }
+  const jumpLink = document.getElementById('jump-cited');
+  if(jumpLink) jumpLink.addEventListener('click', ()=> onTrackTabClick(cited.tracks[0]));
+}
+function refreshBackground(){
+  if(document.getElementById('cptable')) renderCpTable(cpm.caseId);
+  renderTopbarContext(cpm.caseId);
+  renderCpModalChrome();
+}
+
+/* ---------- shared document-viewer rendering (used by CP modal + evidence modal) ---------- */
+function renderDocTabs(containerId, c, activeTrack, citedTracks, onClick){
+  const tabs = document.getElementById(containerId);
+  tabs.innerHTML = "";
+  for(let t=1;t<=9;t++){
+    const present = c.tracks[String(t)].present;
+    const b = document.createElement('button');
+    b.className = "ttab" + (t===activeTrack?" on":"") + (present?"":" missing");
+    const citedDot = citedTracks && citedTracks.includes(t) ? '<span class="cited-dot" title="Cited by draft"></span>' : '';
+    b.innerHTML = `${citedDot}${t}. ${escapeHtml(TRACK_NAMES[String(t)].split(" ").slice(0,2).join(" "))}`;
+    b.title = TRACK_NAMES[String(t)] + (present? "" : " (not provided)");
+    b.addEventListener('click', ()=> onClick(t));
+    tabs.appendChild(b);
+  }
+}
+function renderDocBody(containerId, c, track){
+  const tr = c.tracks[String(track)];
+  const body = document.getElementById(containerId);
+  if(!tr.present){
+    body.innerHTML = `<div class="emptynote">Track ${track} (${escapeHtml(TRACK_NAMES[String(track)])}) was not provided for this case.</div>`;
+    return;
+  }
+  body.innerHTML = `<div class="fname">${escapeHtml(tr.filename)}</div><pre>${escapeHtml(tr.text)}</pre>`;
+}
+function applyDocSearch(containerId, c, track, query, silentIfNoMatch){
+  const body = document.getElementById(containerId);
+  const pre = body.querySelector('pre');
+  if(!pre) return { matches:[], idx:-1 };
+  const raw = c.tracks[String(track)].text;
+  const q = (query||"").trim();
+  if(!q){ pre.innerHTML = escapeHtml(raw); return { matches:[], idx:-1 }; }
+  const esc = q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  const re = new RegExp(esc, 'gi');
+  let html="", last=0, m, i=0;
+  while((m = re.exec(raw))){
+    html += escapeHtml(raw.slice(last, m.index)) + `<mark data-i="${i}">` + escapeHtml(m[0]) + `</mark>`;
+    last = m.index + m[0].length; i++;
+  }
+  html += escapeHtml(raw.slice(last));
+  if(i===0 && silentIfNoMatch){ pre.innerHTML = escapeHtml(raw); return { matches:[], idx:-1 }; }
+  pre.innerHTML = html;
+  const matches = Array.from(pre.querySelectorAll('mark'));
+  const idx = matches.length? 0 : -1;
+  if(idx>=0){ matches[idx].classList.add('cur'); matches[idx].scrollIntoView({block:'center'}); }
+  return { matches, idx };
+}
+function focusMatch(state){
+  state.matches.forEach(el=>el.classList.remove('cur'));
+  if(state.idx>=0 && state.matches[state.idx]){ state.matches[state.idx].classList.add('cur'); state.matches[state.idx].scrollIntoView({block:'center'}); }
+}
+
+document.getElementById('cpm-search').addEventListener('input', (e)=>{
+  const c = CASE_BY_ID[cpm.caseId];
+  const state = applyDocSearch('cpm-docbody', c, cpm.activeTrack, e.target.value, false);
+  cpm.matches = state.matches; cpm.idx = state.idx;
+});
+document.getElementById('cpm-search-next').addEventListener('click', ()=>{
+  if(!cpm.matches.length) return; cpm.idx=(cpm.idx+1)%cpm.matches.length; focusMatch(cpm);
+});
+document.getElementById('cpm-search-prev').addEventListener('click', ()=>{
+  if(!cpm.matches.length) return; cpm.idx=(cpm.idx-1+cpm.matches.length)%cpm.matches.length; focusMatch(cpm);
+});
+
+/* ================= EVIDENCE BROWSER MODAL (no CP context) ================= */
+let evm = { caseId:null, track:1, matches:[], idx:-1 };
+function evTabClick(t){
+  const c = CASE_BY_ID[evm.caseId];
+  evm.track = t;
+  renderDocTabs('ev-tabs', c, evm.track, [], evTabClick);
+  renderDocBody('ev-docbody', c, evm.track);
+  document.getElementById('ev-search').value = "";
+}
+function openEvidenceModal(caseId){
+  const c = CASE_BY_ID[caseId];
+  evm.caseId = caseId; evm.track = firstPresentTrack(c);
+  document.getElementById('ev-title').textContent = c.folder_id + ' — full evidence';
+  document.getElementById('ev-search').value = "";
+  renderDocTabs('ev-tabs', c, evm.track, [], evTabClick);
+  renderDocBody('ev-docbody', c, evm.track);
+  document.getElementById('evmodalwrap').classList.add('show');
+}
+document.getElementById('ev-close').addEventListener('click', ()=> document.getElementById('evmodalwrap').classList.remove('show'));
+document.getElementById('ev-search').addEventListener('input', (e)=>{
+  const c = CASE_BY_ID[evm.caseId];
+  const state = applyDocSearch('ev-docbody', c, evm.track, e.target.value, false);
+  evm.matches = state.matches; evm.idx = state.idx;
+});
+document.getElementById('ev-search-next').addEventListener('click', ()=>{ if(!evm.matches.length) return; evm.idx=(evm.idx+1)%evm.matches.length; focusMatch(evm); });
+document.getElementById('ev-search-prev').addEventListener('click', ()=>{ if(!evm.matches.length) return; evm.idx=(evm.idx-1+evm.matches.length)%evm.matches.length; focusMatch(evm); });
+
+/* ================= export / import ================= */
+function buildExportPayload(){
+  return { annotator: store.annotator, exported_at: new Date().toISOString(), schema: "freca_verify_v1", entries: store.entries };
+}
+function csvCell(v){
+  const s = String(v==null?"":v);
+  return /[",\n]/.test(s) ? '"'+s.replace(/"/g,'""')+'"' : s;
+}
+function buildGoldCsv(){
+  const header = ["case_id","folder_id","subset_note"].concat(CPS.map(cp=>cp.cp));
+  const rows = [header];
+  for(const c of CASES){
+    const row = [c.id, c.folder_id, c.subset_note||""];
+    for(const cp of CPS){
+      const e = getEntry(c.id, cp.cp);
+      row.push(e.touched ? e.verdict : "");
+    }
+    rows.push(row);
+  }
+  return rows.map(r=> r.map(csvCell).join(",")).join("\r\n");
+}
+function downloadText(text, filename, mime){
+  if(window.claude && window.claude.downloads){
+    window.claude.downloads.save({ filename, data: text }).then(()=> toast("Saved "+filename)).catch(()=> browserDownloadRaw(text, filename, mime));
+  } else { browserDownloadRaw(text, filename, mime); }
+}
+function browserDownloadRaw(text, filename, mime){
+  try{
+    const blob = new Blob([text], { type: mime||"text/plain" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href=url; a.download=filename;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(()=> URL.revokeObjectURL(url), 4000);
+    toast("Saved "+filename);
+  }catch(e){
+    try{ navigator.clipboard.writeText(text); toast("Download unavailable — CSV copied to clipboard instead"); }
+    catch(e2){ toast("Could not save or copy — see console"); console.log(filename, text); }
+  }
+}
+function downloadJson(payload, filename){
+  const text = JSON.stringify(payload, null, 1);
+  if(window.claude && window.claude.downloads){
+    window.claude.downloads.save({ filename, data: text }).then(()=> toast("Saved "+filename)).catch(()=> browserDownload(text, filename));
+  } else { browserDownload(text, filename); }
+}
+function browserDownload(text, filename){
+  try{
+    const blob = new Blob([text], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href=url; a.download=filename;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(()=> URL.revokeObjectURL(url), 4000);
+    toast("Saved "+filename);
+  }catch(e){
+    try{ navigator.clipboard.writeText(text); toast("Download unavailable — JSON copied to clipboard instead"); }
+    catch(e2){ toast("Could not save or copy — see console"); console.log(filename, text); }
+  }
+}
+function mergeImport(payload){
+  const incoming = payload.entries || {};
+  const conflicts = []; const autoApply = {};
+  Object.keys(incoming).forEach(k=>{
+    const theirs = incoming[k]; const mine = store.entries[k];
+    if(!mine || !mine.touched){ autoApply[k] = theirs; }
+    else if(theirs.touched && (theirs.verdict !== mine.verdict)){ conflicts.push({ key:k, mine, theirs }); }
+    else if(theirs.touched && theirs.verdict===mine.verdict){ autoApply[k] = Object.assign({}, mine, { notes: mine.notes||theirs.notes, flagged: mine.flagged||theirs.flagged }); }
+  });
+  return { autoApply, conflicts, importedAnnotator: payload.annotator||"unknown" };
+}
+function showImportModal(mergeResult){
+  const body = document.getElementById('modal-body');
+  if(mergeResult.conflicts.length===0){
+    body.innerHTML = `<div class="emptynote">No conflicts. ${Object.keys(mergeResult.autoApply).length} entr${Object.keys(mergeResult.autoApply).length===1?'y':'ies'} from <b>${escapeHtml(mergeResult.importedAnnotator)}</b> will be merged in.</div>`;
+  } else {
+    body.innerHTML = `<div class="emptynote">${mergeResult.conflicts.length} conflicting verdict(s) between you and <b>${escapeHtml(mergeResult.importedAnnotator)}</b>. Choose which to keep:</div>` +
+      mergeResult.conflicts.map((cf,i)=>{
+        const [caseId, cp] = cf.key.split("::");
+        return `<div class="conflictrow" data-i="${i}">
+          <div class="cf-head">${escapeHtml(caseId)} — ${escapeHtml(cp)}</div>
+          <div class="cf-opts">
+            <label><input type="radio" name="cf-${i}" value="mine" checked> Mine: <span class="pill ${verdictClass(cf.mine.verdict)}">${verdictLabel(cf.mine.verdict)}</span></label>
+            <label><input type="radio" name="cf-${i}" value="theirs"> ${escapeHtml(mergeResult.importedAnnotator)}: <span class="pill ${verdictClass(cf.theirs.verdict)}">${verdictLabel(cf.theirs.verdict)}</span></label>
+          </div>
+        </div>`;
+      }).join("");
+  }
+  document.getElementById('modalwrap').classList.add('show');
+  document.getElementById('modal-apply').onclick = ()=>{
+    Object.keys(mergeResult.autoApply).forEach(k=>{ store.entries[k] = mergeResult.autoApply[k]; });
+    mergeResult.conflicts.forEach((cf,i)=>{
+      const sel = document.querySelector(`input[name="cf-${i}"]:checked`).value;
+      if(sel==="theirs") store.entries[cf.key] = cf.theirs;
+    });
+    saveStore();
+    document.getElementById('modalwrap').classList.remove('show');
+    render();
+    toast("Merge applied");
+  };
+}
+
+/* ================= global wiring ================= */
+document.getElementById('annotator').value = store.annotator || "You";
+document.getElementById('annotator').addEventListener('change', e=>{ store.annotator = e.target.value; saveStore(); });
+document.getElementById('btn-export').addEventListener('click', ()=>{
+  const p = buildExportPayload();
+  downloadJson(p, `freca_labels_${store.annotator.replace(/\s+/g,'')}.json`);
+});
+document.getElementById('btn-export-csv').addEventListener('click', ()=>{
+  const done = overallProgress();
+  downloadText(buildGoldCsv(), `freca_gold_labels_${store.annotator.replace(/\s+/g,'')}.csv`, "text/csv");
+  if(done < TOTAL_CELLS) toast(`Saved CSV — ${TOTAL_CELLS-done} cell(s) still unconfirmed (blank)`);
+});
+document.getElementById('btn-import').addEventListener('click', ()=> document.getElementById('file-import').click());
+document.getElementById('file-import').addEventListener('change', (e)=>{
+  const f = e.target.files[0]; if(!f) return;
+  const reader = new FileReader();
+  reader.onload = ()=>{
+    try{ const payload = JSON.parse(reader.result); showImportModal(mergeImport(payload)); }
+    catch(err){ toast("Could not parse that file as FRECA export JSON"); }
+  };
+  reader.readAsText(f); e.target.value = "";
+});
+document.getElementById('modal-close').addEventListener('click', ()=> document.getElementById('modalwrap').classList.remove('show'));
+document.getElementById('modal-cancel').addEventListener('click', ()=> document.getElementById('modalwrap').classList.remove('show'));
+
+document.addEventListener('keydown', (e)=>{
+  if(e.key==='Escape'){
+    if(document.getElementById('cpmodalwrap').classList.contains('show')){ go('#/case/'+encodeURIComponent(cpm.caseId)); return; }
+    if(document.getElementById('evmodalwrap').classList.contains('show')){ document.getElementById('evmodalwrap').classList.remove('show'); return; }
+    document.getElementById('modalwrap').classList.remove('show');
+    return;
+  }
+  if(!document.getElementById('cpmodalwrap').classList.contains('show')) return;
+  if(isTypingTarget(document.activeElement)) return;
+  if(e.key==='ArrowRight'){ navCp(1); }
+  else if(e.key==='ArrowLeft'){ navCp(-1); }
+  else if(e.key==='1'){ setEntry(cpm.caseId, cpm.cp, {verdict:'1', touched:true}); renderCpModalDetail(); refreshBackground(); }
+  else if(e.key==='0'){ setEntry(cpm.caseId, cpm.cp, {verdict:'0', touched:true}); renderCpModalDetail(); refreshBackground(); }
+  else if(e.key.toLowerCase()==='n'){ setEntry(cpm.caseId, cpm.cp, {verdict:'N/A', touched:true}); renderCpModalDetail(); refreshBackground(); }
+});
+
+/* ---------- boot ---------- */
+if(!location.hash) location.hash = '#/cases';
+render();
+})();
+</script>

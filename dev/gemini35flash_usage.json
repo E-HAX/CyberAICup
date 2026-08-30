@@ -1,0 +1,109 @@
+{
+  "model": "google/gemini-3.5-flash",
+  "cases": 10,
+  "total_prompt_tokens": 255940,
+  "total_completion_tokens": 185716,
+  "total_tokens": 441656,
+  "records": [
+    {
+      "case_id": "RE-WA-2021-0077__Goldfields",
+      "prompt_tokens": 25334,
+      "completion_tokens": 19553,
+      "total_tokens": 44887,
+      "finish_reason": "stop",
+      "elapsed_s": 102.5,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-QLD-2022-0077",
+      "prompt_tokens": 24968,
+      "completion_tokens": 16743,
+      "total_tokens": 41711,
+      "finish_reason": "stop",
+      "elapsed_s": 74.8,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-SA-2021-0066",
+      "prompt_tokens": 24486,
+      "completion_tokens": 20545,
+      "total_tokens": 45031,
+      "finish_reason": "stop",
+      "elapsed_s": 93.9,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-QLD-2022-0144",
+      "prompt_tokens": 25772,
+      "completion_tokens": 18245,
+      "total_tokens": 44017,
+      "finish_reason": "stop",
+      "elapsed_s": 84.9,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-NSW-2021-0044",
+      "prompt_tokens": 26039,
+      "completion_tokens": 20683,
+      "total_tokens": 46722,
+      "finish_reason": "stop",
+      "elapsed_s": 95.9,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-VIC-2020-0093",
+      "prompt_tokens": 26290,
+      "completion_tokens": 19713,
+      "total_tokens": 46003,
+      "finish_reason": "stop",
+      "elapsed_s": 89.7,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-SA-2020-0120",
+      "prompt_tokens": 25757,
+      "completion_tokens": 18045,
+      "total_tokens": 43802,
+      "finish_reason": "stop",
+      "elapsed_s": 82.8,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-NSW-2020-0033",
+      "prompt_tokens": 25637,
+      "completion_tokens": 14128,
+      "total_tokens": 39765,
+      "finish_reason": "stop",
+      "elapsed_s": 63.6,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-TAS-2021-0006",
+      "prompt_tokens": 25761,
+      "completion_tokens": 19118,
+      "total_tokens": 44879,
+      "finish_reason": "stop",
+      "elapsed_s": 84.7,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-NT-2022-0008",
+      "prompt_tokens": 25896,
+      "completion_tokens": 18943,
+      "total_tokens": 44839,
+      "finish_reason": "stop",
+      "elapsed_s": 87.0,
+      "parsed_cps": 41,
+      "parse_ok": true
+    }
+  ]
+}

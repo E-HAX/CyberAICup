@@ -1,0 +1,7 @@
+{
+  "total_prompt_tokens": 288044,
+  "total_completion_tokens": 153216,
+  "total_tokens": 441260,
+  "wasted_on_truncated_retry": 41538,
+  "accuracy": 0.7658536585365854
+}

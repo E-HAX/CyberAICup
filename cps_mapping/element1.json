@@ -1,0 +1,37 @@
+[
+  {
+    "cp": "CP1",
+    "citations": ["policy/section_4-1.md", "policy/section_4-5.md"],
+    "rationale": "Section 4-1 states that an establishment is registered for 'a kind of export operations in relation to a kind of prescribed plants or plant products', and section 4-5 prescribes that the conditions of registration likewise apply 'for a kind of export operations in relation to a kind of prescribed plants or plant products', together establishing that lawful operation at the establishment is bounded by the specific export operations for which it is registered."
+  },
+  {
+    "cp": "CP2",
+    "citations": ["policy/section_4-18.md", "policy/section_4-19.md"],
+    "rationale": "Sections 4-18 and 4-19 prescribe the circumstances and grounds on which the registration of an establishment may be suspended (at the occupier's request or by the Secretary), which is the legal basis for the requirement that export operations not be carried out while the registration covering those operations or functions is suspended."
+  },
+  {
+    "cp": "CP3",
+    "citations": ["policy/section_4-1.md", "policy/section_4-2.md"],
+    "rationale": "Section 4-1 ties registration to a specific establishment being registered for a kind of export operations, and section 4-2(2)-(4) requires that establishment to have the buildings, equipment, facilities and services necessary for those operations, together defining the registered area of premises that must be documented as the basis of registration."
+  },
+  {
+    "cp": "CP4",
+    "citations": ["policy/section_4-2.md"],
+    "rationale": "Section 4-2(2) and (4) require an establishment to have the buildings, equipment, facilities and services necessary for export operations to be carried out compliantly, which is the substantive requirement that plans/specifications documenting the important features of the registered area and adjoining buildings, facilities and services must demonstrate."
+  },
+  {
+    "cp": "CP5",
+    "citations": ["policy/section_4-2.md"],
+    "rationale": "Section 4-2(4) requires the establishment and its equipment and facilities to be designed and constructed to provide suitable assessment areas, adequate lighting/ventilation, effective cleaning, minimised infestation/contamination risk, waste disposal, safe treatment, and sample-taking capability, which is the layout-governing text that plans showing permanent fixtures and equipment layout must reflect."
+  },
+  {
+    "cp": "CP6",
+    "citations": ["policy/section_4-23.md"],
+    "rationale": "Section 4-23(c)(i) identifies an application under section 120 of the Act 'to vary the registration, or the particulars relating to the registration, of the establishment' as the formal mechanism through which relevant changes to a registered establishment (such as its business structure, trading name, address and contact details) must be notified to and recorded by the department."
+  },
+  {
+    "cp": "CP7",
+    "citations": ["policy/section_4-6.md", "policy/section_4-16.md", "policy/section_4-23.md"],
+    "rationale": "Section 4-6's note states that alterations of a registered establishment (other than those prescribed by section 4-16) must not be made unless approved under subsection 120(2) of the Act; section 4-16 prescribes which alterations do NOT require approval (those not affecting compliance with the conditions of registration), implying by exclusion that alterations, extensions or rearrangements that may affect compliance do require approval; and section 4-23(c)(ii) confirms that 'approve an alteration of the establishment' is the relevant application type under section 120 of the Act, together forming the basis for the requirement that such notices be submitted to and approved by the department."
+  }
+]

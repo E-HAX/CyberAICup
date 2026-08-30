@@ -1,0 +1,72 @@
+# Section 4-2 — Construction, equipment and facilities
+
+4-2  Construction, equipment and facilities 
+Application of this section 
+ 
+(1) The requirements prescribed by this section apply in relation to all 
+establishments. 
+Buildings, equipment, facilities and services 
+ 
+(2) An establishment must have the buildings, equipment, facilities and services that 
+are necessary to ensure that export operations in relation to prescribed plants or 
+plant products can be carried out in a way that will ensure that the requirements 
+of the Act are complied with. 
+ 
+(3) An establishment must have handwashing and toilet facilities. 
+Design and construction—general 
+ 
+(4) An establishment and its equipment and facilities must be designed and 
+constructed: 
+ 
+(a) to provide: 
+ 
+(i) areas that are suitable for assessments of prescribed plants or plant 
+products to be carried out; and 
+ 
+(ii) adequate lighting and ventilation; and 
+ 
+(b) to facilitate effective cleaning; and 
+ 
+(c) to minimise the possibility of infestation or contamination of prescribed 
+plants or plant products during export operations; and 
+ 
+(d) to provide for the disposal of all waste material (including liquids and 
+solids) in an appropriate and hygienic manner; and 
+ 
+(e) to facilitate safe and effective treatments of prescribed plants and plant 
+products; and 
+ 
+(f) to allow samples of prescribed plants and plant products to be taken. 
+Note: 
+See Division 2 of Part 6 of Chapter 11 of the Act and Part 2 of Chapter 11 of this 
+instrument in relation to samples. 
+Authorised Version F2023C00759 registered 25/08/2023
+
+Chapter 4  Registered establishments 
+Part 1  Requirements for registration 
+   
+ 
+Section 4-3 
+ 
+ 
+36 
+Export Control (Plants and Plant Products) Rules 2021 
+ 
+Compilation No. 3 
+Compilation date: 04/08/2023 
+ 
+ 
+Design and construction—establishments where testing and analysis of samples 
+is to be carried out 
+ 
+(5) If testing and analysis of samples of prescribed plants or plant products or other 
+things is to be carried out at an establishment, the establishment and its 
+equipment and facilities must be designed and constructed to allow the testing 
+and analysis to be carried out. 
+Design and construction—establishments where screening of prescribed grain 
+etc. is to be carried out 
+ 
+(6) If screening of prescribed plants or plant products described in 
+paragraph 4-9(1)(a) or (b) is to be carried out at an establishment, the 
+establishment and its equipment and facilities must be designed and constructed 
+to allow the screening to be carried out.

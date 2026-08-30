@@ -1,0 +1,100 @@
+{
+  "model": "lightning-ai/nvidia-nemotron-3-ultra-550b-a55b",
+  "cases": 9,
+  "total_prompt_tokens": 236121,
+  "total_completion_tokens": 123198,
+  "total_tokens": 359319,
+  "records": [
+    {
+      "case_id": "RE-WA-2021-0077__Goldfields",
+      "prompt_tokens": 25917,
+      "completion_tokens": 12022,
+      "total_tokens": 37939,
+      "finish_reason": "stop",
+      "elapsed_s": 147.3,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-QLD-2022-0077",
+      "prompt_tokens": 25538,
+      "completion_tokens": 16000,
+      "total_tokens": 41538,
+      "finish_reason": "length",
+      "elapsed_s": 188.7,
+      "parse_ok": false,
+      "parse_error": "Unterminated string starting at: line 17 column 293 (char 8478)",
+      "raw_tail": "ck 2 deficiency note is for a different establishment). Track 8 describes internal flow from 'Receival' but not property-level traceability. Track 9 is a different establishment.\", \"verdict\": \"0\", \"confidence\": 0.85, \"cited_evidence\": \"Track 4 has no traceability section. Track 8 Section 2: 'Receival -> ID Labelling -> Segregated Storage...' but no mention of property/paddock origin. Track 9 header: 'Establishment: Sunridge Packing 080' (different establishment).\"},\n  {\"cp\": \"CP30\", \"reasoning\":"
+    },
+    {
+      "case_id": "RE-SA-2021-0066",
+      "prompt_tokens": 25033,
+      "completion_tokens": 14651,
+      "total_tokens": 39684,
+      "finish_reason": "stop",
+      "elapsed_s": 172.9,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-QLD-2022-0144",
+      "prompt_tokens": 26437,
+      "completion_tokens": 10130,
+      "total_tokens": 36567,
+      "finish_reason": "stop",
+      "elapsed_s": 120.1,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-NSW-2021-0044",
+      "prompt_tokens": 26658,
+      "completion_tokens": 14346,
+      "total_tokens": 41004,
+      "finish_reason": "stop",
+      "elapsed_s": 169.4,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-VIC-2020-0093",
+      "prompt_tokens": 26911,
+      "completion_tokens": 15963,
+      "total_tokens": 42874,
+      "finish_reason": "stop",
+      "elapsed_s": 188.3,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-SA-2020-0120",
+      "prompt_tokens": 26596,
+      "completion_tokens": 12657,
+      "total_tokens": 39253,
+      "finish_reason": "stop",
+      "elapsed_s": 150.0,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-NSW-2020-0033",
+      "prompt_tokens": 26527,
+      "completion_tokens": 13126,
+      "total_tokens": 39653,
+      "finish_reason": "stop",
+      "elapsed_s": 155.4,
+      "parsed_cps": 41,
+      "parse_ok": true
+    },
+    {
+      "case_id": "RE-NT-2022-0008",
+      "prompt_tokens": 26504,
+      "completion_tokens": 14303,
+      "total_tokens": 40807,
+      "finish_reason": "stop",
+      "elapsed_s": 168.8,
+      "parsed_cps": 41,
+      "parse_ok": true
+    }
+  ]
+}

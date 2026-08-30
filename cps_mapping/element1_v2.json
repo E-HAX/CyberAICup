@@ -1,0 +1,51 @@
+[
+  {
+    "cp": "CP1",
+    "citations": [
+      "policy/section_2-4.md"
+    ],
+    "rationale": "Section 2-4 item 2 prescribes as a prescribed export condition that operations to prepare prescribed plants or plant products for export must be carried out at an establishment registered for those operations in relation to the plants or plant products."
+  },
+  {
+    "cp": "CP2",
+    "citations": [
+      "policy/section_2-4.md"
+    ],
+    "rationale": "Section 2-4 item 2 explicitly states that at the time the operations are carried out, the registration of the establishment must not be suspended in relation to those operations."
+  },
+  {
+    "cp": "CP3",
+    "citations": [
+      "policy/section_4-2.md"
+    ],
+    "rationale": "Section 4-2 sets out construction, equipment, facilities, and design requirements for establishments (including that establishments must have areas suitable for assessments and be designed to facilitate operations), but no provided section explicitly states 'the area of the premises that is registered for export operations' as a plan/specification requirement."
+  },
+  {
+    "cp": "CP4",
+    "citations": [
+      "policy/section_4-2.md"
+    ],
+    "rationale": "Section 4-2(2) requires establishments to have buildings, equipment, facilities, and services necessary for export operations, and subsection (4) sets design and construction standards; however, no section explicitly lists 'all important features of the registered area and adjoining sites' as a plan requirement."
+  },
+  {
+    "cp": "CP5",
+    "citations": [
+      "policy/section_4-2.md"
+    ],
+    "rationale": "Section 4-2(4) requires design and construction to provide suitable areas, facilitate cleaning, minimise infestation, etc., but does not explicitly require documentation of the layout of areas where export operations occur, including all permanent fixtures and equipment layout."
+  },
+  {
+    "cp": "CP6",
+    "citations": [
+      "policy/section_4-22.md"
+    ],
+    "rationale": "Section 4-22 prescribes notification obligations for changes in relation to small horticultural products registered establishments (business structure, grower status, etc.), but there is no equivalent general provision for all registered establishments in the provided Rules sections; Section 3-15 covers accredited properties only."
+  },
+  {
+    "cp": "CP7",
+    "citations": [
+      "policy/section_4-16.md"
+    ],
+    "rationale": "Section 4-16 prescribes that alterations not affecting compliance with conditions of registration do not require approval, implying that alterations affecting compliance do require approval under subsection 122(2) of the Act; however, the Rules do not explicitly state the obligation to submit notices and obtain approval for such alterations."
+  }
+]

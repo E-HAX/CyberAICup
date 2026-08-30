@@ -1,0 +1,24 @@
+# Python
+Task2/.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large duplicate of the dataset (already unzipped in SFRE_cases/)
+Task2/SFRE_cases.zip
+
+# Local deployment metadata
+vercel-dashboard/.vercel/
+
+# Local run logs
+*.log
+
+# Local checkpoint temp files
+submission_run/*.tmp
+
+# Notebook checkpoints
+.ipynb_checkpoints/

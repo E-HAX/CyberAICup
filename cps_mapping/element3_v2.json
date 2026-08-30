@@ -1,0 +1,104 @@
+[
+  {
+    "cp": "CP17",
+    "citations": [
+      "policy/section_4-3.md",
+      "policy/section_4-7A.md",
+      "policy/section_3-1.md",
+      "policy/section_3-3A.md"
+    ],
+    "rationale": "CP17 requires a system of controls to manage hygiene. Section 4-3(3) mandates a system of controls at registered establishments to ensure compliance with conditions in sections 4-7A and 4-7B. Section 4-7A(2)(a) specifically requires the establishment to be kept in a clean and hygienic condition appropriate for the export operations and plant products. Parallel requirements for accredited properties exist in sections 3-1(3) and 3-3A(2)(a)."
+  },
+  {
+    "cp": "CP18",
+    "citations": [
+      "policy/section_4-3.md",
+      "policy/section_4-7A.md",
+      "policy/section_3-1.md",
+      "policy/section_3-3A.md"
+    ],
+    "rationale": "CP18 requires a system of controls to manage waste control and disposal. Section 4-3(3) requires a system of controls to ensure compliance with section 4-7A, which in subsection (2)(d) explicitly requires waste to be appropriately treated and disposed of. Parallel requirements for accredited properties are in sections 3-1(3) and 3-3A(2)(c)."
+  },
+  {
+    "cp": "CP19",
+    "citations": [
+      "policy/section_4-3.md",
+      "policy/section_3-1.md"
+    ],
+    "rationale": "CP19 requires the system of controls to be effective for the type of export operations and activities. Section 4-3(3) requires the system of controls to ensure that conditions in sections 4-7A and 4-7B 'will be complied with' in relation to those operations and products, which directly addresses effectiveness. Section 3-1(3) contains the identical requirement for accredited properties."
+  },
+  {
+    "cp": "CP20",
+    "citations": [
+      "policy/section_4-3.md",
+      "policy/section_4-7A.md",
+      "policy/section_3-1.md",
+      "policy/section_3-3A.md"
+    ],
+    "rationale": "CP20 requires a system of controls to manage pests and contaminants including rodent control. Section 4-3(3) mandates a system of controls for compliance with sections 4-7A and 4-7B. Section 4-7A(2)(b) specifically requires pests and contaminants to be controlled in a manner appropriate for the export operations and plant products. Parallel provisions for accredited properties are in sections 3-1(3) and 3-3A(2)(b)."
+  },
+  {
+    "cp": "CP21",
+    "citations": [
+      "policy/section_4-3.md",
+      "policy/section_3-1.md"
+    ],
+    "rationale": "CP21 is identical to CP19, requiring the system of controls to be effective for the type of export operations. The same sections apply: 4-3(3) for registered establishments and 3-1(3) for accredited properties both require the system of controls to ensure compliance with prescribed conditions for the relevant operations and products."
+  },
+  {
+    "cp": "CP22",
+    "citations": [
+      "policy/section_11-7.md",
+      "policy/section_11-6.md",
+      "policy/section_11-2.md"
+    ],
+    "rationale": "CP22 requires at least 2 years of records demonstrating compliance with hygiene, waste, and pest control systems. Section 11-7(2) requires occupiers of registered establishments to retain relevant records for at least 2 years. Section 11-6(2) imposes the same requirement on managers of accredited properties. Section 11-2(1) sets general record requirements (English, dated, accurate, legible, auditable)."
+  },
+  {
+    "cp": "CP23",
+    "citations": [
+      "policy/section_11-2.md"
+    ],
+    "rationale": "CP23 specifies record format requirements: in English, dated, accurate, legible, and auditable. Section 11-2(1) directly states these exact requirements: (a) in English; (c) dated; (d) accurate, legible and able to be audited. This is the sole governing provision for record format."
+  },
+  {
+    "cp": "CP24",
+    "citations": [
+      "policy/section_4-7A.md",
+      "policy/section_3-3A.md"
+    ],
+    "rationale": "CP24 requires all establishment areas to be clean and hygienic appropriate for the export operations and plant products. Section 4-7A(2)(a) for registered establishments states this verbatim. Section 3-3A(2)(a) contains the identical requirement for accredited properties."
+  },
+  {
+    "cp": "CP25",
+    "citations": [
+      "policy/section_4-7A.md",
+      "policy/section_3-3A.md"
+    ],
+    "rationale": "CP25 requires all areas to be maintained so prescribed goods are not or not likely to be infested by pests or contaminated. Section 4-7A(1)(b) for registered establishments states this exact requirement. Section 3-3A(1)(b) contains the identical requirement for accredited properties."
+  },
+  {
+    "cp": "CP26",
+    "citations": [
+      "policy/section_4-7A.md",
+      "policy/section_4-2.md"
+    ],
+    "rationale": "CP26 requires pest control stations/traps (e.g., rodent bait stations) to be fit for purpose and in good working order. No section explicitly mentions bait stations. The closest is section 4-7A(2)(b), which requires pests and contaminants to be controlled in an appropriate manner, implying control measures must be effective. Section 4-2(4)(c) requires design to minimise infestation possibility. This CP is not directly stated but inferred from these provisions."
+  },
+  {
+    "cp": "CP27",
+    "citations": [
+      "policy/section_4-7A.md",
+      "policy/section_4-2.md"
+    ],
+    "rationale": "CP27 appears to require chemical storage not to contaminate prescribed plants/products. Section 4-7A(2)(c) requires toxic substances (including fumigants, rodenticides, insecticides) to be managed and stored appropriately in accordance with State/Territory laws. Section 4-2(4)(c) requires design to minimise contamination. These are the governing provisions for chemical storage contamination prevention."
+  },
+  {
+    "cp": "CP28",
+    "citations": [
+      "policy/section_4-7A.md",
+      "policy/section_4-2.md"
+    ],
+    "rationale": "CP28 appears to require chemical storage not to contaminate areas where plants/products are prepared. The same provisions as CP27 apply: section 4-7A(2)(c) requires appropriate management and storage of toxic substances, and section 4-2(4)(c) requires design to minimise contamination. These govern contamination of preparation areas from chemical storage."
+  }
+]

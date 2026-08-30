@@ -1,0 +1,67 @@
+[
+  {
+    "cp": "CP29",
+    "citations": ["policy/section_4-7B.md"],
+    "rationale": "Section 4-7B(a) expressly requires that prescribed plants and plant products prepared at a registered establishment must be traced 'from the property (if any) from which they were transferred to the registered establishment', which is exactly the receival-into-the-establishment leg of traceability that CP29 checks."
+  },
+  {
+    "cp": "CP30",
+    "citations": ["policy/section_4-7B.md"],
+    "rationale": "Section 4-7B(b) requires that the plants or plant products must be traced 'while they are at the registered establishment', directly imposing the on-site traceability obligation described by CP30."
+  },
+  {
+    "cp": "CP31",
+    "citations": ["policy/section_4-7B.md"],
+    "rationale": "Section 4-7B(c) requires that the plants or plant products must be traced 'to the premises to which they are transferred from the registered establishment', which is the outbound-transfer leg of traceability that CP31 checks."
+  },
+  {
+    "cp": "CP32",
+    "citations": ["policy/section_4-3.md", "policy/section_4-7B.md", "policy/section_4-8.md"],
+    "rationale": "Section 4-3(3) requires a 'system of controls' to be in place at the establishment to ensure the traceability condition in section 4-7B (and other conditions) is complied with, while sections 4-7B and 4-8 are the substantive traceability and integrity obligations that CP32's system of controls (e.g. labelling, record keeping) must be designed to maintain."
+  },
+  {
+    "cp": "CP33",
+    "citations": ["policy/section_4-3.md", "policy/section_4-7B.md", "policy/section_4-8.md"],
+    "rationale": "There is no separate 'product flow chart' provision; the flow chart is documentary evidence of compliance with the system-of-controls requirement in section 4-3(3) and the underlying traceability (4-7B) and integrity (4-8) obligations it must demonstrate movement against and integrity maintenance for through the establishment."
+  },
+  {
+    "cp": "CP34",
+    "citations": ["policy/section_4-9.md", "policy/section_9-11.md"],
+    "rationale": "Section 4-9(3)-(4) directly governs blending, prohibiting blending of plants or plant products that failed assessment due to pest infestation or animal carcase/waste, and section 9-11 governs reassessment and required treatment of plants or plant products after a failed assessment, together forming the legal basis for controls over blending, rejections, treatments and re-presentation of failed goods that CP34 checks."
+  },
+  {
+    "cp": "CP35",
+    "citations": ["policy/section_4-7A.md", "policy/section_4-3.md"],
+    "rationale": "Section 4-7A(1)(b) and (2)(b) require the establishment to be kept in a condition, and pests/contaminants to be controlled, so that prescribed plants and plant products are not, or not likely to be, infested or contaminated, and section 4-3(3) requires a system of controls to ensure this condition is complied with, matching CP35's requirement to maintain/manage contamination and infestation risk."
+  },
+  {
+    "cp": "CP36",
+    "citations": ["policy/section_4-8.md"],
+    "rationale": "Section 4-8 requires that 'the integrity of prescribed plants or plant products prepared at a registered establishment must be ensured while the plants or plant products are at the establishment', and product integrity is the concept that covers preventing unauthorised switching/substitution of goods described in CP36."
+  },
+  {
+    "cp": "CP37",
+    "citations": ["policy/section_4-11.md"],
+    "rationale": "Section 4-11 sets out the requirements for packages used for export (cleanliness, suitability, strength, integrity-preserving use, and meeting importing country requirements), which is precisely the packaging-requirements obligation CP37 checks."
+  },
+  {
+    "cp": "CP38",
+    "citations": ["policy/section_11-7.md"],
+    "rationale": "Section 11-7 requires the occupier of a registered establishment to retain, for at least 2 years, each document relevant to showing compliance with the applicable requirements of the Act (including registration conditions such as traceability), which is the statutory basis for the 2-year retention of receival, movement, treatment, transfer, dispatch and transport-unit-approval records that CP38 checks."
+  },
+  {
+    "cp": "CP39",
+    "citations": ["policy/section_11-7.md"],
+    "rationale": "Section 11-7 imposes the same 2-year retention duty on the occupier for all documents relevant to demonstrating compliance, which extends to records of blending, treatments and re-presentation of plants or plant products that failed export inspection as covered by CP39."
+  },
+  {
+    "cp": "CP40",
+    "citations": ["policy/section_11-2.md"],
+    "rationale": "Section 11-2(1) requires that a record retained under Chapter 11 must be in English, dated, and accurate, legible and able to be audited, which is a verbatim match to the record-quality requirements CP40 checks."
+  },
+  {
+    "cp": "CP41",
+    "citations": ["policy/section_4-7.md"],
+    "rationale": "Section 4-7 states that 'all importing country requirements relating to the export operations carried out at a registered establishment in relation to prescribed plants or plant products and the plants or plant products must be met', which is a verbatim match to CP41's requirement."
+  }
+]

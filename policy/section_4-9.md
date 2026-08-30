@@ -1,0 +1,57 @@
+# Section 4-9 — Conditions relating to prescribed grain etc.
+
+4-9  Conditions relating to prescribed grain etc. 
+ 
+(1) This section applies in relation to an establishment that is registered to prepare 
+for export any of the following prescribed plants and plant products: 
+ 
+(a) prescribed grain; 
+ 
+(b) cereal grains, pulses, oil seeds or nuts: 
+ 
+(i) that are not prescribed grain; and 
+ 
+(ii) in relation to which the importing country requires a phytosanitary 
+certificate or a phytosanitary certificate for re-export. 
+Note: 
+For prescribed grain, see section 1-7. 
+Authorised Version F2023C00759 registered 25/08/2023
+
+Registered establishments  Chapter 4 
+Conditions of registration  Part 2 
+   
+ 
+Section 4-10 
+ 
+ 
+ 
+Export Control (Plants and Plant Products) Rules 2021 
+39 
+Compilation No. 3 
+Compilation date: 04/08/2023 
+ 
+ 
+Screening 
+ 
+(2) If screening of the plants or plant products is carried out at the establishment, it 
+must be carried out in a way that is appropriate: 
+ 
+(a) to manage the risk of contamination by large contaminants; and 
+ 
+(b) to ensure that any large contaminants are removed from the plants or plant 
+products. 
+Blending 
+ 
+(3) If the plants or plant products fail an assessment because of: 
+ 
+(a) infestation by pests; or 
+ 
+(b) the presence of an animal carcase; or 
+ 
+(c) in the case of mung beans referred to in paragraph 1-7(1)(h)—the presence 
+of animal waste; 
+the plants or plant products must not be blended with other plants or plant 
+products at the establishment. 
+ 
+(4) Subsection (3) does not prevent blending of prescribed plants or plant products 
+that contain contaminants other than those referred to in paragraph (3)(b) or (c).
