@@ -1,0 +1,7 @@
+# Pinned dependencies that reproduce the submission bit-identically.
+# Verified on the Modal GPU image (these exact pins); xgboost 3.x also reproduces.
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.6.1
+lightgbm==4.6.0
+xgboost==2.1.4
