@@ -1,0 +1,39 @@
+{
+  "n_flows": 1285,
+  "n_pseudo_groups": 1107,
+  "D1": {
+    "train_pairs": 1480,
+    "test_pairs": 564,
+    "auc": 0.9979712623442818,
+    "gate": "AUC >= 0.75",
+    "gate_passed": true
+  },
+  "D2": {
+    "n_clusters": 1107,
+    "adjusted_rand_vs_pseudo_groups": 0.7748396677133162,
+    "mean_application_purity": 0.9967560743983508,
+    "mean_label_purity": 0.9887288737559742,
+    "singleton_clusters": 1024,
+    "largest_cluster": 13,
+    "gate": "application purity >= 0.9",
+    "gate_passed": true
+  },
+  "D3": {
+    "baseline_accuracy": 0.8381322957198444,
+    "arms": {
+      "logsum": {
+        "accuracy": 0.8326848249027238,
+        "delta": -0.005447470817120603,
+        "rows_changed": 31
+      },
+      "confidence_vote": {
+        "accuracy": 0.8303501945525292,
+        "delta": -0.0077821011673151474,
+        "rows_changed": 33
+      }
+    },
+    "oracle_grouping_accuracy": 0.8311284046692607,
+    "oracle_delta": -0.007003891050583633
+  },
+  "verdict": "D3 best arm 'logsum' at 0.8327 (-0.0054 vs 0.8381)"
+}

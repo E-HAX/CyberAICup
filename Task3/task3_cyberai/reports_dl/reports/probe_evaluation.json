@@ -1,0 +1,287 @@
+{
+  "aux_flows_used": 90610,
+  "aux_udp_share": 0.16526873413530516,
+  "aux_apps": 20,
+  "embedding_dim": 96,
+  "p1": {
+    "n_classes": 20,
+    "n_train": 72488,
+    "n_test": 18122,
+    "majority_baseline": 0.10153404701467829,
+    "test_top1": 0.5029246220064011,
+    "test_top3": 0.731817680167752,
+    "train_top1": 0.5001379538682265,
+    "per_class": {
+      "Discord": {
+        "precision": 0.4341484341484341,
+        "recall": 0.55,
+        "f1-score": 0.48525533445216973,
+        "support": 1840.0
+      },
+      "Skype": {
+        "precision": 0.5948012232415902,
+        "recall": 0.43078626799557035,
+        "f1-score": 0.49967886962106617,
+        "support": 1806.0
+      },
+      "Zoom": {
+        "precision": 0.5506816834617665,
+        "recall": 0.5731030228254164,
+        "f1-score": 0.5616686819830713,
+        "support": 1621.0
+      },
+      "Teams": {
+        "precision": 0.35,
+        "recall": 0.5550660792951542,
+        "f1-score": 0.4293015332197615,
+        "support": 1589.0
+      },
+      "Messenger": {
+        "precision": 0.5328582739509106,
+        "recall": 0.52578125,
+        "f1-score": 0.5292961069602832,
+        "support": 1280.0
+      },
+      "Twitch": {
+        "precision": 0.41947565543071164,
+        "recall": 0.6272,
+        "f1-score": 0.5027252324462969,
+        "support": 1250.0
+      },
+      "Slack": {
+        "precision": 0.5,
+        "recall": 0.28789093825180434,
+        "f1-score": 0.3653944020356234,
+        "support": 1247.0
+      },
+      "GoogleMeet": {
+        "precision": 0.7293035479632063,
+        "recall": 0.4703389830508475,
+        "f1-score": 0.5718701700154559,
+        "support": 1180.0
+      },
+      "Webex": {
+        "precision": 0.7606837606837606,
+        "recall": 0.689328743545611,
+        "f1-score": 0.7232505643340857,
+        "support": 1162.0
+      },
+      "Crunchyroll": {
+        "precision": 0.4234734337827121,
+        "recall": 0.5460122699386503,
+        "f1-score": 0.4769986601161233,
+        "support": 978.0
+      },
+      "GotoMeeting": {
+        "precision": 0.4497354497354497,
+        "recall": 0.2661795407098121,
+        "f1-score": 0.3344262295081967,
+        "support": 958.0
+      },
+      "Telegram": {
+        "precision": 0.5542452830188679,
+        "recall": 0.6831395348837209,
+        "f1-score": 0.6119791666666666,
+        "support": 688.0
+      },
+      "Trueconf": {
+        "precision": 0.45516304347826086,
+        "recall": 0.6203703703703703,
+        "f1-score": 0.5250783699059561,
+        "support": 540.0
+      },
+      "Omlet": {
+        "precision": 0.5870967741935483,
+        "recall": 0.3446969696969697,
+        "f1-score": 0.4343675417661098,
+        "support": 528.0
+      },
+      "Signal": {
+        "precision": 0.5978494623655914,
+        "recall": 0.5815899581589958,
+        "f1-score": 0.5896076352067868,
+        "support": 478.0
+      },
+      "JitsiMeet": {
+        "precision": 0.536697247706422,
+        "recall": 0.3295774647887324,
+        "f1-score": 0.4083769633507853,
+        "support": 355.0
+      },
+      "Line": {
+        "precision": 0.7662337662337663,
+        "recall": 0.2062937062937063,
+        "f1-score": 0.325068870523416,
+        "support": 286.0
+      },
+      "WhatsApp": {
+        "precision": 0.9175257731958762,
+        "recall": 0.41013824884792627,
+        "f1-score": 0.5668789808917197,
+        "support": 217.0
+      },
+      "ClashRoyale": {
+        "precision": 0.7142857142857143,
+        "recall": 0.2247191011235955,
+        "f1-score": 0.3418803418803419,
+        "support": 89.0
+      },
+      "KakaoTalk": {
+        "precision": 0.4,
+        "recall": 0.06666666666666667,
+        "f1-score": 0.11428571428571428,
+        "support": 30.0
+      },
+      "accuracy": 0.5029246220064011,
+      "macro avg": {
+        "precision": 0.5637129263438294,
+        "recall": 0.44944395582217755,
+        "f1-score": 0.46986946845848154,
+        "support": 18122.0
+      },
+      "weighted avg": {
+        "precision": 0.5324170307833261,
+        "recall": 0.5029246220064011,
+        "f1-score": 0.5000635113186515,
+        "support": 18122.0
+      }
+    },
+    "class_names": [
+      "Discord",
+      "Skype",
+      "Zoom",
+      "Teams",
+      "Messenger",
+      "Twitch",
+      "Slack",
+      "GoogleMeet",
+      "Webex",
+      "Crunchyroll",
+      "GotoMeeting",
+      "Telegram",
+      "Trueconf",
+      "Omlet",
+      "Signal",
+      "JitsiMeet",
+      "Line",
+      "WhatsApp",
+      "ClashRoyale",
+      "KakaoTalk"
+    ]
+  },
+  "p2": {
+    "positive_rate": 0.00896148327999117,
+    "test_acc": 0.995475113122172,
+    "test_auc": 0.9977429266683164
+  },
+  "p3": {
+    "log_bitrate": {
+      "test_r2": 0.9473162952323346,
+      "train_r2": 0.9475262264925018
+    },
+    "log_mean_gap": {
+      "test_r2": 0.9529328716746489,
+      "train_r2": 0.9535599298461188
+    },
+    "frac_mtu": {
+      "test_r2": 0.9479826548221609,
+      "train_r2": 0.9504390870210894
+    }
+  },
+  "p4_original": {
+    "n_classes_present": 1,
+    "degenerate": true,
+    "note": "single-class target; probe skipped, contributed 0 features"
+  },
+  "p4_corrected": {
+    "target": "strongest power-of-two alignment obeyed by >=80% of packets",
+    "n_classes": 5,
+    "majority_baseline": 0.7221609093918994,
+    "test_acc": 0.940293565831586,
+    "class_shares": {
+      "level_0": 0.08269506676967223,
+      "level_1": 0.06925284184968547,
+      "level_2": 0.08720891733804216,
+      "level_3": 0.038693300960158925,
+      "level_4": 0.7221498730824413
+    }
+  },
+  "transfer": {
+    "shared_applications": [
+      "Discord",
+      "GoogleMeet",
+      "Messenger",
+      "WhatsApp",
+      "Zoom"
+    ],
+    "share_predicted_into_shared_apps": 0.49961089494163424,
+    "agreement_20way": 0.15252918287937745,
+    "agreement_restricted_to_shared": 0.2926070038910506,
+    "chance_restricted": 0.2,
+    "crosstab_shared": {
+      "Discord": {
+        "Discord": 133,
+        "GoogleMeet": 11,
+        "Messenger": 62,
+        "WhatsApp": 33,
+        "Zoom": 2
+      },
+      "GoogleMeet": {
+        "Discord": 15,
+        "GoogleMeet": 42,
+        "Messenger": 23,
+        "WhatsApp": 19,
+        "Zoom": 64
+      },
+      "Messenger": {
+        "Discord": 3,
+        "GoogleMeet": 1,
+        "Messenger": 6,
+        "WhatsApp": 1,
+        "Zoom": 1
+      },
+      "WhatsApp": {
+        "Discord": 5,
+        "GoogleMeet": 0,
+        "Messenger": 10,
+        "WhatsApp": 1,
+        "Zoom": 0
+      },
+      "Zoom": {
+        "Discord": 68,
+        "GoogleMeet": 41,
+        "Messenger": 26,
+        "WhatsApp": 61,
+        "Zoom": 14
+      }
+    }
+  },
+  "mutual_info_top15": {
+    "probe_emb_pc0": 0.7490598413083411,
+    "probe_emb_pc1": 0.5904510053367167,
+    "probe_pred_log_bitrate": 0.5525506129212272,
+    "probe_pred_frac_mtu": 0.5418123436998044,
+    "probe_app_Crunchyroll": 0.5172686887946392,
+    "probe_resid_frac_mtu": 0.5103743341000153,
+    "probe_video_like": 0.482001450044824,
+    "probe_emb_pc2": 0.48121682294109114,
+    "probe_app_JitsiMeet": 0.429335638709996,
+    "probe_emb_pc9": 0.4099963919084533,
+    "probe_emb_pc5": 0.40882160539007195,
+    "probe_app_KakaoTalk": 0.3957781389073185,
+    "probe_emb_pc4": 0.38913211841894446,
+    "probe_emb_pc6": 0.36427826924512674,
+    "probe_emb_pc7": 0.3570892033245716
+  },
+  "mutual_info_context": {
+    "best_probe_feature": 0.7490598413083411,
+    "best_base_feature": 1.2708790664060485,
+    "median_probe_feature": 0.3255246702114136,
+    "median_base_feature": 0.2210247370783005
+  },
+  "probes_only_model": {
+    "grouped_cv_accuracy": 0.7019455252918287,
+    "majority_baseline": 0.1992217898832685,
+    "full_feature_reference": 0.8249
+  }
+}

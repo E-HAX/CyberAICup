@@ -1,0 +1,181 @@
+{
+  "member": "lgbm_7585cc52",
+  "C1_calibration": {
+    "raw": {
+      "accuracy": 0.8210116731517509,
+      "nll": 0.7930883346769193,
+      "ece": 0.10122605487994181,
+      "mean_confidence_when_wrong": 0.7833116694636967
+    },
+    "temperature": {
+      "accuracy": 0.8210116731517509,
+      "nll": 0.5627856155858868,
+      "ece": 0.04508305538278109,
+      "mean_confidence_when_wrong": 0.6094629378023477
+    },
+    "vector": {
+      "accuracy": 0.8031128404669261,
+      "nll": 0.5897845265051476,
+      "ece": 0.035892097846628494,
+      "mean_confidence_when_wrong": 0.6252699225821076
+    },
+    "dirichlet": {
+      "accuracy": 0.8101167315175097,
+      "nll": 0.5450396471745657,
+      "ece": 0.034942595855226556,
+      "mean_confidence_when_wrong": 0.6211111309486168
+    },
+    "best_by_nll": "dirichlet",
+    "best_by_ece": "dirichlet",
+    "selected": "temperature"
+  },
+  "C1_selected": "temperature",
+  "C2_on_raw": {
+    "raw_argmax": {
+      "accuracy": 0.8210116731517509,
+      "macro_f1": 0.8028149297134126,
+      "zoom_pair_accuracy": 0.6547619047619048,
+      "n_changed_vs_raw": 0
+    },
+    "C2_logit_bias_nested": {
+      "accuracy": 0.822568093385214,
+      "macro_f1": 0.8039441794731136,
+      "zoom_pair_accuracy": 0.6507936507936508,
+      "n_changed_vs_raw": 5
+    },
+    "C2_mean_bias": [
+      0.06,
+      -0.02,
+      0.0,
+      0.0,
+      0.0,
+      -0.1,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "C2_bias_labels": [
+      "Discord_voice",
+      "Discord_video",
+      "GoogleMeet_voice",
+      "GoogleMeet_video",
+      "Messenger_voice",
+      "Messenger_video",
+      "WhatsApp_voice",
+      "WhatsApp_video",
+      "Zoom_voice",
+      "Zoom_video"
+    ],
+    "C2_bias_stability": [
+      0.049,
+      0.04,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "C3_defer_margin_0.05": {
+      "accuracy": 0.8186770428015564,
+      "macro_f1": 0.800356382721563,
+      "zoom_pair_accuracy": 0.6507936507936508,
+      "n_changed_vs_raw": 6
+    },
+    "C3_defer_margin_0.1": {
+      "accuracy": 0.8178988326848249,
+      "macro_f1": 0.7979977748851625,
+      "zoom_pair_accuracy": 0.6507936507936508,
+      "n_changed_vs_raw": 10
+    },
+    "C3_defer_margin_0.2": {
+      "accuracy": 0.8194552529182879,
+      "macro_f1": 0.7990354248763534,
+      "zoom_pair_accuracy": 0.6547619047619048,
+      "n_changed_vs_raw": 16
+    },
+    "C3_defer_margin_0.35": {
+      "accuracy": 0.8210116731517509,
+      "macro_f1": 0.7993880138132518,
+      "zoom_pair_accuracy": 0.6587301587301587,
+      "n_changed_vs_raw": 22
+    }
+  },
+  "C2_on_calibrated": {
+    "raw_argmax": {
+      "accuracy": 0.8210116731517509,
+      "macro_f1": 0.8028149297134126,
+      "zoom_pair_accuracy": 0.6547619047619048,
+      "n_changed_vs_raw": 0
+    },
+    "C2_logit_bias_nested": {
+      "accuracy": 0.8186770428015564,
+      "macro_f1": 0.799273931817077,
+      "zoom_pair_accuracy": 0.6468253968253969,
+      "n_changed_vs_raw": 18
+    },
+    "C2_mean_bias": [
+      0.0,
+      -0.02,
+      0.04,
+      0.08,
+      0.0,
+      -0.08,
+      0.0,
+      0.0,
+      0.12,
+      0.0
+    ],
+    "C2_bias_labels": [
+      "Discord_voice",
+      "Discord_video",
+      "GoogleMeet_voice",
+      "GoogleMeet_video",
+      "Messenger_voice",
+      "Messenger_video",
+      "WhatsApp_voice",
+      "WhatsApp_video",
+      "Zoom_voice",
+      "Zoom_video"
+    ],
+    "C2_bias_stability": [
+      0.0,
+      0.098,
+      0.08,
+      0.098,
+      0.0,
+      0.098,
+      0.0,
+      0.0,
+      0.098,
+      0.0
+    ],
+    "C3_defer_margin_0.05": {
+      "accuracy": 0.8194552529182879,
+      "macro_f1": 0.7987921842038209,
+      "zoom_pair_accuracy": 0.6507936507936508,
+      "n_changed_vs_raw": 12
+    },
+    "C3_defer_margin_0.1": {
+      "accuracy": 0.8202334630350194,
+      "macro_f1": 0.7990954113747069,
+      "zoom_pair_accuracy": 0.6587301587301587,
+      "n_changed_vs_raw": 19
+    },
+    "C3_defer_margin_0.2": {
+      "accuracy": 0.8194552529182879,
+      "macro_f1": 0.7963905927879221,
+      "zoom_pair_accuracy": 0.6507936507936508,
+      "n_changed_vs_raw": 34
+    },
+    "C3_defer_margin_0.35": {
+      "accuracy": 0.8116731517509728,
+      "macro_f1": 0.7819270385302122,
+      "zoom_pair_accuracy": 0.6349206349206349,
+      "n_changed_vs_raw": 50
+    }
+  }
+}

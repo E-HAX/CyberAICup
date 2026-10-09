@@ -1,0 +1,11 @@
+,Discord_voice,Discord_video,GoogleMeet_voice,GoogleMeet_video,Messenger_voice,Messenger_video,WhatsApp_voice,WhatsApp_video,Zoom_voice,Zoom_video
+Discord_voice,218,8,2,0,3,0,0,0,4,3
+Discord_video,23,220,0,3,1,4,0,3,0,2
+GoogleMeet_voice,1,0,31,3,1,0,0,0,2,2
+GoogleMeet_video,2,6,7,74,1,9,0,1,4,8
+Messenger_voice,8,0,0,0,83,1,2,0,0,0
+Messenger_video,0,6,0,6,5,111,0,3,0,0
+WhatsApp_voice,0,0,0,0,0,0,80,0,0,0
+WhatsApp_video,0,3,0,1,0,5,0,73,0,0
+Zoom_voice,6,0,3,2,0,1,0,0,37,31
+Zoom_video,5,0,1,3,0,2,0,1,32,128

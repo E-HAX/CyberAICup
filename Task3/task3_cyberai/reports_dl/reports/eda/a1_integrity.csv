@@ -1,0 +1,12 @@
+,value
+train_rows,1285
+test_rows,327
+missing_cells_train,0
+missing_cells_test,0
+t0_all_zero,True
+non_monotonic_time_rows,0
+zero_iat_rows,0
+min_length,26.0
+max_length,1242.0
+min_duration_s,4.800000000670934e-05
+max_duration_s,23.205768

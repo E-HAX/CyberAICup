@@ -1,0 +1,20 @@
+{
+  "a": {
+    "model": "lgbm",
+    "hash": "050bfe915628633e",
+    "acc": 0.8249027237354085,
+    "zoom_acc": 0.6706349206349206
+  },
+  "b": {
+    "model": "tabicl",
+    "hash": "6073bc7713d02a3a",
+    "acc": 0.8381322957198444,
+    "zoom_acc": 0.6666666666666666
+  },
+  "delta_b_minus_a": 0.013229571984435862,
+  "b_right_a_wrong": 66,
+  "a_right_b_wrong": 49,
+  "discordant_pairs": 115,
+  "mcnemar_p": 0.1353504098348154,
+  "verdict": "not established"
+}

@@ -1,0 +1,60 @@
+{
+  "n_train": 1285,
+  "n_test": 327,
+  "tolerances": {
+    "pm0": {
+      "distinct_train_tuples": 1136,
+      "pure_train_tuples": 1134,
+      "impure_train_tuples": 2,
+      "test_rows_matched": 51,
+      "test_rows_matched_share": 0.1559633027522936,
+      "test_rows_matched_pure": 25,
+      "test_rows_matched_pure_share": 0.0764525993883792,
+      "cv_lookup_coverage": 0.05525291828793774,
+      "cv_lookup_accuracy_when_available": 0.971830985915493,
+      "cv_rows_with_lookup": 71
+    },
+    "pm1": {
+      "distinct_train_tuples": 1092,
+      "pure_train_tuples": 1087,
+      "impure_train_tuples": 5,
+      "test_rows_matched": 67,
+      "test_rows_matched_share": 0.20489296636085627,
+      "test_rows_matched_pure": 40,
+      "test_rows_matched_pure_share": 0.12232415902140673,
+      "cv_lookup_coverage": 0.0980544747081712,
+      "cv_lookup_accuracy_when_available": 0.9761904761904762,
+      "cv_rows_with_lookup": 126
+    },
+    "pm2": {
+      "distinct_train_tuples": 1032,
+      "pure_train_tuples": 1015,
+      "impure_train_tuples": 17,
+      "test_rows_matched": 88,
+      "test_rows_matched_share": 0.2691131498470948,
+      "test_rows_matched_pure": 52,
+      "test_rows_matched_pure_share": 0.15902140672782875,
+      "cv_lookup_coverage": 0.14708171206225681,
+      "cv_lookup_accuracy_when_available": 0.9047619047619048,
+      "cv_rows_with_lookup": 189
+    },
+    "pm4": {
+      "distinct_train_tuples": 920,
+      "pure_train_tuples": 895,
+      "impure_train_tuples": 25,
+      "test_rows_matched": 128,
+      "test_rows_matched_share": 0.39143730886850153,
+      "test_rows_matched_pure": 73,
+      "test_rows_matched_pure_share": 0.22324159021406728,
+      "cv_lookup_coverage": 0.18054474708171206,
+      "cv_lookup_accuracy_when_available": 0.8922413793103449,
+      "cv_rows_with_lookup": 232
+    }
+  },
+  "verdict": {
+    "gate": "exact matches > 5% of test AND lookup accuracy > 0.95",
+    "exact_match_share": 0.0764525993883792,
+    "lookup_accuracy": 0.971830985915493,
+    "passes": true
+  }
+}

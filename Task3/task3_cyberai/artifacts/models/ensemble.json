@@ -1,0 +1,422 @@
+{
+  "single_best": {
+    "name": "tabicl_6073bc77",
+    "acc": 0.8381322957198444,
+    "macro_f1": 0.8252155277651048
+  },
+  "hill_climb": {
+    "acc_fitted": 0.845136186770428,
+    "acc_nested": 0.8357976653696498,
+    "macro_f1": 0.8313072342629372,
+    "weights": {
+      "tabicl_6073bc77": 0.5,
+      "tabicl_e4ec91e3": 0.25,
+      "lgbm_7585cc52": 0.25
+    }
+  },
+  "rank_average": {
+    "acc": 0.7844357976653696,
+    "macro_f1": 0.7706655937706437
+  },
+  "stacking": {
+    "acc_nested": 0.8287937743190662
+  },
+  "winner": "single_best",
+  "winner_acc": 0.8381322957198444,
+  "members": [
+    {
+      "name": "tabicl_6073bc77",
+      "path": "/work/oof/tabicl_6073bc7713d02a3a.npz",
+      "group_acc": 0.8389105058365759,
+      "model": "tabicl",
+      "params": {},
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "tabpfn_a881724a",
+      "path": "/work/oof/tabpfn_a881724a7a220f99.npz",
+      "group_acc": 0.8311284046692606,
+      "model": "tabpfn",
+      "params": {
+        "model_path": "/cache/tabpfn/tabpfn-v2-classifier.ckpt"
+      },
+      "features": "top120",
+      "target_feats": false
+    },
+    {
+      "name": "tabicl_d916cca0",
+      "path": "/work/oof/tabicl_d916cca0160930a6.npz",
+      "group_acc": 0.8280155642023346,
+      "model": "tabicl",
+      "params": {},
+      "features": "top120",
+      "target_feats": false
+    },
+    {
+      "name": "tabicl_e4ec91e3",
+      "path": "/work/oof/tabicl_e4ec91e30a5f9622.npz",
+      "group_acc": 0.8272373540856031,
+      "model": "tabicl",
+      "params": {},
+      "features": "top60",
+      "target_feats": false
+    },
+    {
+      "name": "tabpfn_114dad61",
+      "path": "/work/oof/tabpfn_114dad615eebca2e.npz",
+      "group_acc": 0.8229571984435797,
+      "model": "tabpfn",
+      "params": {
+        "model_path": "/cache/tabpfn/tabpfn-v2-classifier.ckpt"
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "lgbm_7585cc52",
+      "path": "/work/oof/lgbm_7585cc524d187b4c.npz",
+      "group_acc": 0.8210116731517509,
+      "model": "lgbm",
+      "params": {
+        "class_weight_mode": "none",
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.12,
+        "min_child_samples": 10,
+        "n_estimators": 800,
+        "num_leaves": 31,
+        "reg_lambda": 0.0,
+        "subsample": 0.8,
+        "subsample_freq": 1
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "tabpfn_3cad1fb4",
+      "path": "/work/oof/tabpfn_3cad1fb4fe0a7a0f.npz",
+      "group_acc": 0.8190661478599222,
+      "model": "tabpfn",
+      "params": {
+        "model_path": "/cache/tabpfn/tabpfn-v2-classifier.ckpt"
+      },
+      "features": "top60",
+      "target_feats": false
+    },
+    {
+      "name": "lgbm_8e745458",
+      "path": "/work/oof/lgbm_8e745458ae8108b8.npz",
+      "group_acc": 0.8171206225680934,
+      "model": "lgbm",
+      "params": {
+        "class_weight_mode": "balanced",
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.06,
+        "min_child_samples": 20,
+        "n_estimators": 800,
+        "num_leaves": 15,
+        "reg_lambda": 0.0,
+        "subsample": 0.8,
+        "subsample_freq": 1
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "xgb_1bb01f4e",
+      "path": "/work/oof/xgb_1bb01f4ea0d0e1b3.npz",
+      "group_acc": 0.8155642023346303,
+      "model": "xgb",
+      "params": {
+        "class_weight_mode": "none",
+        "colsample_bytree": 0.5,
+        "learning_rate": 0.12,
+        "max_depth": 3,
+        "min_child_weight": 1,
+        "n_estimators": 800,
+        "reg_lambda": 1.0,
+        "subsample": 0.9
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "xgb_8cd01741",
+      "path": "/work/oof/xgb_8cd017416500f4f7.npz",
+      "group_acc": 0.8155642023346303,
+      "model": "xgb",
+      "params": {
+        "class_weight_mode": "balanced",
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.12,
+        "max_depth": 8,
+        "min_child_weight": 3,
+        "n_estimators": 800,
+        "reg_lambda": 1.0,
+        "subsample": 0.9
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "xgb_888b55b5",
+      "path": "/work/oof/xgb_888b55b5e7435042.npz",
+      "group_acc": 0.8140077821011673,
+      "model": "xgb",
+      "params": {
+        "class_weight_mode": "none",
+        "colsample_bytree": 0.5,
+        "learning_rate": 0.12,
+        "max_depth": 3,
+        "min_child_weight": 1,
+        "n_estimators": 400,
+        "reg_lambda": 1.0,
+        "subsample": 0.9
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "hgb_b27ab344",
+      "path": "/work/oof/hgb_b27ab3449ccec7f3.npz",
+      "group_acc": 0.8124513618677043,
+      "model": "hgb",
+      "params": {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.1,
+        "max_iter": 400,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 20
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "lgbm_95a81bf9",
+      "path": "/work/oof/lgbm_95a81bf9fcfe7fa7.npz",
+      "group_acc": 0.8124513618677043,
+      "model": "lgbm",
+      "params": {
+        "class_weight_mode": "balanced",
+        "colsample_bytree": 0.5222750703363713,
+        "learning_rate": 0.01102081558944577,
+        "min_child_samples": 36,
+        "n_estimators": 1500,
+        "num_leaves": 28,
+        "reg_alpha": 0.12327903012511254,
+        "reg_lambda": 0.0020353846066288378,
+        "subsample": 0.6437489188813378,
+        "subsample_freq": 1
+      },
+      "features": "top120",
+      "target_feats": false
+    },
+    {
+      "name": "xgb_c334da03",
+      "path": "/work/oof/xgb_c334da033b07d839.npz",
+      "group_acc": 0.8116731517509728,
+      "model": "xgb",
+      "params": {
+        "class_weight_mode": "balanced",
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.12,
+        "max_depth": 6,
+        "min_child_weight": 1,
+        "n_estimators": 800,
+        "reg_lambda": 1.0,
+        "subsample": 0.9
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "lgbm_f7cc8e12",
+      "path": "/work/oof/lgbm_f7cc8e128a092e31.npz",
+      "group_acc": 0.8108949416342413,
+      "model": "lgbm",
+      "params": {
+        "class_weight_mode": "none",
+        "colsample_bytree": 0.5004061783719452,
+        "learning_rate": 0.012837586876659665,
+        "min_child_samples": 23,
+        "n_estimators": 1300,
+        "num_leaves": 92,
+        "reg_alpha": 0.015212598948106377,
+        "reg_lambda": 0.014891133349330536,
+        "subsample": 0.6440943575862677,
+        "subsample_freq": 1
+      },
+      "features": "top120",
+      "target_feats": false
+    },
+    {
+      "name": "hgb_c03c58e3",
+      "path": "/work/oof/hgb_c03c58e3682cdd9f.npz",
+      "group_acc": 0.8093385214007782,
+      "model": "hgb",
+      "params": {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.1,
+        "max_iter": 400,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 20
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "hgb_9c92f13c",
+      "path": "/work/oof/hgb_9c92f13c63c6ebf9.npz",
+      "group_acc": 0.8070038910505837,
+      "model": "hgb",
+      "params": {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.1,
+        "max_iter": 400,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 5
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "et_7f11db21",
+      "path": "/work/oof/et_7f11db2174c064c8.npz",
+      "group_acc": 0.8062256809338522,
+      "model": "et",
+      "params": {
+        "class_weight_mode": "none",
+        "max_depth": null,
+        "max_features": 0.3,
+        "min_samples_leaf": 1,
+        "n_estimators": 1200
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "hgb_0357cdd7",
+      "path": "/work/oof/hgb_0357cdd710602e85.npz",
+      "group_acc": 0.8058365758754864,
+      "model": "hgb",
+      "params": {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.05,
+        "max_iter": 400,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 20
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "et_2dc59cab",
+      "path": "/work/oof/et_2dc59cab18b40736.npz",
+      "group_acc": 0.8050583657587549,
+      "model": "et",
+      "params": {
+        "class_weight_mode": "none",
+        "max_depth": 16,
+        "max_features": 0.3,
+        "min_samples_leaf": 1,
+        "n_estimators": 600
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "et_76742efe",
+      "path": "/work/oof/et_76742efe1ed5171b.npz",
+      "group_acc": 0.8050583657587549,
+      "model": "et",
+      "params": {
+        "class_weight_mode": "none",
+        "max_depth": 16,
+        "max_features": 0.3,
+        "min_samples_leaf": 2,
+        "n_estimators": 1200
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "et_c11e8d4d",
+      "path": "/work/oof/et_c11e8d4dd9dbf4ed.npz",
+      "group_acc": 0.8050583657587549,
+      "model": "et",
+      "params": {
+        "class_weight_mode": "none",
+        "max_depth": null,
+        "max_features": 0.3,
+        "min_samples_leaf": 1,
+        "n_estimators": 600
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "cat_048e3ba1",
+      "path": "/work/oof/cat_048e3ba1e04922b3.npz",
+      "group_acc": 0.7988326848249028,
+      "model": "cat",
+      "params": {
+        "class_weight_mode": "balanced",
+        "depth": 4,
+        "iterations": 1000,
+        "l2_leaf_reg": 1.0,
+        "learning_rate": 0.08
+      },
+      "features": "full",
+      "target_feats": false
+    },
+    {
+      "name": "rf_aea113c5",
+      "path": "/work/oof/rf_aea113c52d5fa812.npz",
+      "group_acc": 0.7972762645914397,
+      "model": "rf",
+      "params": {
+        "class_weight_mode": "balanced_subsample",
+        "max_depth": null,
+        "max_features": 0.12423908744028755,
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_estimators": 1600
+      },
+      "features": "full",
+      "target_feats": true
+    },
+    {
+      "name": "rf_a2df5281",
+      "path": "/work/oof/rf_a2df52817791279d.npz",
+      "group_acc": 0.7964980544747082,
+      "model": "rf",
+      "params": {
+        "class_weight_mode": "balanced_subsample",
+        "max_depth": 32,
+        "max_features": 0.13964877567667833,
+        "min_samples_leaf": 2,
+        "min_samples_split": 6,
+        "n_estimators": 800
+      },
+      "features": "full",
+      "target_feats": true
+    },
+    {
+      "name": "rf_c8f9b036",
+      "path": "/work/oof/rf_c8f9b036b78b1da2.npz",
+      "group_acc": 0.7949416342412452,
+      "model": "rf",
+      "params": {
+        "class_weight_mode": "balanced",
+        "max_depth": null,
+        "max_features": 0.0962030989616165,
+        "min_samples_leaf": 2,
+        "min_samples_split": 7,
+        "n_estimators": 400
+      },
+      "features": "full",
+      "target_feats": true
+    }
+  ],
+  "has_test_probs": true
+}

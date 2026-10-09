@@ -1,0 +1,49 @@
+flowchart TD
+    RAW["Raw flow: first 5 packets\n(packet_length_0..4, relative_time_0..4)"]
+
+    RAW --> FEAT["Feature Engineering (31 feats)\nraw lens/times, deltas, sorted lens,\nargmax/argmin, range/mean/std/median,\ngp_log_pl3, jump_pos"]
+
+    FEAT --> MINE_SUB["MY ENSEMBLE"]
+    FEAT --> TAB_SUB["TABICL (via Modal GPU)"]
+
+    subgraph MINE ["Mine: RF + LightGBM + XGBoost"]
+        RF["Random Forest\n600 trees"]
+        LGB["LightGBM\n400 est, depth 4"]
+        XGB["XGBoost\n400 est, depth 4"]
+        RF --> AVG1["Simple average"]
+        LGB --> AVG1
+        XGB --> AVG1
+        AVG1 --> TEMP["Temperature scaling\nT = 2.0"]
+        TEMP --> PRIOR["Prior correction\n÷ pi_hat"]
+        PRIOR --> MINE_PROB["my_test_prob\n(raw, no bias/override)"]
+    end
+    MINE_SUB -.-> RF
+
+    subgraph TABICL ["TabICL"]
+        FLAT["Flat 10-class view"]
+        HIER["Hierarchical\napp x mode view"]
+        FLAT --> AVG2["Average"]
+        HIER --> AVG2
+        AVG2 --> TAB_PROB["tabicl_test_prob"]
+    end
+    TAB_SUB -.-> FLAT
+
+    MINE_PROB --> BLEND["Weighted Blend\n0.40 x mine + 0.60 x TabICL"]
+    TAB_PROB --> BLEND
+
+    BLEND --> ARGMAX["argmax -> pred"]
+
+    ARGMAX --> ZCHECK{"pred is Zoom_video\nor Zoom_voice?"}
+    ZCHECK -- No --> FINAL["final_pred = pred"]
+    ZCHECK -- Yes --> ACHECK{"all 5 packets\n< 300 bytes?\n(audio-only)"}
+    ACHECK -- No --> FINAL
+    ACHECK -- Yes --> FORCE["force label ->\nZoom_voice"]
+    FORCE --> FINAL
+
+    FINAL --> OUT["submission.csv\n(macro-F1 ~0.8318, nested-CV)"]
+
+    style MINE_PROB fill:#dbeafe,stroke:#2563eb
+    style TAB_PROB fill:#fef3c7,stroke:#d97706
+    style BLEND fill:#dcfce7,stroke:#16a34a
+    style FORCE fill:#fee2e2,stroke:#dc2626
+    style OUT fill:#ede9fe,stroke:#7c3aed

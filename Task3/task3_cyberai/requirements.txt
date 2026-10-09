@@ -1,0 +1,31 @@
+# Pinned environment that produced the shipped result.
+#
+# These are the *resolved* versions from the IMG_TABPFN image (the one that ran
+# the shipped TabICL model), dumped 2026-08-24 via `dump_versions`. Two things
+# differ from the BASE_PKGS/ML_PKGS lists in src/modal_app.py and are deliberate:
+#   * numpy resolves to 1.26.4 (not 2.2.6) because tabpfn requires numpy<2;
+#   * tabicl / tabpfn had no version pin originally, so these exact pins were
+#     captured from the deployed environment and are now fixed here and in
+#     src/modal_app.py.
+#
+# torch is the CUDA build (2.6.0+cu124) inside the image; a CPU wheel of the
+# same version reproduces the tree models and runs TabICL, just slower.
+
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.15.2
+scikit-learn==1.6.1
+matplotlib==3.10.1
+seaborn==0.13.2
+pyarrow==19.0.1
+tabulate==0.9.0
+xgboost==2.1.4
+lightgbm==4.6.0
+catboost==1.2.7
+optuna==4.2.1
+shap==0.46.0
+umap-learn==0.5.7
+imbalanced-learn==0.13.0
+torch==2.6.0
+tabicl==2.1.1
+tabpfn==8.3.0

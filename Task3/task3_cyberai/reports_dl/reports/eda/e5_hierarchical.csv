@@ -1,0 +1,5 @@
+target,cv_accuracy
+flat 10-class,0.8101
+application (5),0.9121
+call mode (2),0.8879
+product bound,0.8099
