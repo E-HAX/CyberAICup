@@ -672,10 +672,9 @@ def oof_ens_all(backbone: str = "convnext_tiny", tags: str = "_aug,_augsyn",
                 folds: str = "0,1,2,3,4"):
     tag_list = tuple(t for t in tags.split(",") if t.strip() != "")
     off = tuple(int(o) for o in offsets.split(",") if o.strip() != "")
-    fold_list = [int(f) for f in folds.split(",") if f.strip() != ""]
-    args = [(f, backbone, tag_list, score_thr, flips, off, max_boxes, raw, suffix)
-            for f in fold_list]
-    for r in predict_oof_ensemble.starmap(args):
+    fold_list = tuple(int(f) for f in folds.split(",") if f.strip() != "")
+    for r in oof_ens_all_fn.remote(backbone, tag_list, score_thr, flips, off,
+                                   max_boxes, raw, suffix, fold_list):
         print(r)
 
 
