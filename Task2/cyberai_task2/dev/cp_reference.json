@@ -1,0 +1,248 @@
+[
+ {
+  "cp": "CP1",
+  "element": "Element-1",
+  "subelement": "1.1 Export operations",
+  "text": "The establishment is operating within its registered operations and, where applicable, its registered functions to prepare plants or plant products for export."
+ },
+ {
+  "cp": "CP2",
+  "element": "Element-1",
+  "subelement": "1.1 Export operations",
+  "text": "At the time the export operations are carried out, the registration of the establishment must not be suspended in relation to those operations or functions."
+ },
+ {
+  "cp": "CP3",
+  "element": "Element-1",
+  "subelement": "1.2 Plans and specifications",
+  "text": "the area of the premises that is registered for export operations"
+ },
+ {
+  "cp": "CP4",
+  "element": "Element-1",
+  "subelement": "1.2 Plans and specifications",
+  "text": "all important features of the registered area and adjoining sites, including the buildings, facilities and services to conduct the export operations"
+ },
+ {
+  "cp": "CP5",
+  "element": "Element-1",
+  "subelement": "1.2 Plans and specifications",
+  "text": "the layout of the areas where export operations occur, including all permanent fixtures, and layout of equipment used to prepare plants and plant products"
+ },
+ {
+  "cp": "CP6",
+  "element": "Element-1",
+  "subelement": "1.3 Establishment changes and alterations",
+  "text": "Where required, notification has been provided to the department of relevant changes to the registration, including the business structure, persons in management and control, trading name, address and contact details."
+ },
+ {
+  "cp": "CP7",
+  "element": "Element-1",
+  "subelement": "1.3 Establishment changes and alterations",
+  "text": "Where required, notices of alterations, extensions and rearrangements to the registered establishment that may affect compliance with the conditions of registration have been submitted to and approved by the department."
+ },
+ {
+  "cp": "CP8",
+  "element": "Element-2",
+  "subelement": "2.1 Buildings, equipment, facilities and service",
+  "text": "The establishment has the buildings, equipment, facilities and services required for the type of export operations being conducted."
+ },
+ {
+  "cp": "CP9",
+  "element": "Element-2",
+  "subelement": "2.1 Buildings, equipment, facilities and service",
+  "text": "There is adequate lighting for the export operations being conducted."
+ },
+ {
+  "cp": "CP10",
+  "element": "Element-2",
+  "subelement": "2.1 Buildings, equipment, facilities and service",
+  "text": "There is hand washing and toilet facilities at the establishment."
+ },
+ {
+  "cp": "CP11",
+  "element": "Element-2",
+  "subelement": "2.2 Design and construction of the establishment",
+  "text": "The establishment is designed, constructed and maintained to allow for the effective cleaning of buildings, equipment and facilities used to conduct export operations."
+ },
+ {
+  "cp": "CP12",
+  "element": "Element-2",
+  "subelement": "2.2 Design and construction of the establishment",
+  "text": "The establishment is designed, constructed and maintained to minimise the contamination, infestation and pest harbourage during export operations."
+ },
+ {
+  "cp": "CP13",
+  "element": "Element-2",
+  "subelement": "2.2 Design and construction of the establishment",
+  "text": "The establishment is designed, constructed and maintained to provide the disposal of all waste material, including solids and liquids, in an efficient and hygienic manner."
+ },
+ {
+  "cp": "CP14",
+  "element": "Element-2",
+  "subelement": "2.3 Inspection areas (including sampling points)",
+  "text": "The inspection areas, equipment and facilities are designed, constructed and maintained to allow for the collection, inspection and analysis of samples by an Authorised Officer for the type of prescribed plant or plant products. This includes, but is not limited to: inspection bench, where applicable."
+ },
+ {
+  "cp": "CP15",
+  "element": "Element-2",
+  "subelement": "2.4 Screening",
+  "text": "manage the risk of contamination by large contaminants"
+ },
+ {
+  "cp": "CP16",
+  "element": "Element-2",
+  "subelement": "2.4 Screening",
+  "text": "ensure that any large contaminants are removed from the plants or plant products"
+ },
+ {
+  "cp": "CP17",
+  "element": "Element-3",
+  "subelement": "3.1 Systems of controls \u2013 hygiene and waste control",
+  "text": "the system of controls to manage hygiene"
+ },
+ {
+  "cp": "CP18",
+  "element": "Element-3",
+  "subelement": "3.1 Systems of controls \u2013 hygiene and waste control",
+  "text": "the system of controls to manage waste control and disposal"
+ },
+ {
+  "cp": "CP19",
+  "element": "Element-3",
+  "subelement": "3.1 Systems of controls \u2013 hygiene and waste control",
+  "text": "The system of controls is effective for the type of export operations and activities conducted at the establishment."
+ },
+ {
+  "cp": "CP20",
+  "element": "Element-3",
+  "subelement": "3.2 Systems of controls \u2013 pest control",
+  "text": "the system of controls to manage pests and contaminants including but not limited to rodent control (for example, bait stations)"
+ },
+ {
+  "cp": "CP21",
+  "element": "Element-3",
+  "subelement": "3.2 Systems of controls \u2013 pest control",
+  "text": "The system of controls is effective for the type of export operations and activities conducted at the establishment."
+ },
+ {
+  "cp": "CP22",
+  "element": "Element-3",
+  "subelement": "3.3 Record keeping \u2013 hygiene, waste and pest control",
+  "text": "At least 2 years of records are retained to demonstrate compliance with the system of controls in place to manage hygiene, waste control and pest control."
+ },
+ {
+  "cp": "CP23",
+  "element": "Element-3",
+  "subelement": "3.3 Record keeping \u2013 hygiene, waste and pest control",
+  "text": "Records must: be in English; include the date of action; be accurate, legible and able to be audited."
+ },
+ {
+  "cp": "CP24",
+  "element": "Element-3",
+  "subelement": "3.4 Establishment condition \u2013 hygiene and waste control",
+  "text": "All areas of the establishment are operating and/or maintained in a clean and hygienic condition appropriate for the type of export operations and type of plant or plant products."
+ },
+ {
+  "cp": "CP25",
+  "element": "Element-3",
+  "subelement": "3.5 Establishment condition \u2013 pest control",
+  "text": "All areas of the establishment are operating and/or maintained in a condition that ensures prescribed goods are not, or not likely to be infested by pests or be contaminated."
+ },
+ {
+  "cp": "CP26",
+  "element": "Element-3",
+  "subelement": "3.5 Establishment condition \u2013 pest control",
+  "text": "Where applicable, pest control stations and traps (for example, rodent bait stations) are fit for purpose and in good working order."
+ },
+ {
+  "cp": "CP27",
+  "element": "Element-3",
+  "subelement": "3.6 Chemical storage",
+  "text": "contaminate prescribed plant or plant products"
+ },
+ {
+  "cp": "CP28",
+  "element": "Element-3",
+  "subelement": "3.6 Chemical storage",
+  "text": "contaminate areas where prescribed plant or plant products are prepared"
+ },
+ {
+  "cp": "CP29",
+  "element": "Element-4",
+  "subelement": "4.1 System of controls \u2013 product traceability and integrity",
+  "text": "from the property (if any) from which they were transferred to receival into the establishment"
+ },
+ {
+  "cp": "CP30",
+  "element": "Element-4",
+  "subelement": "4.1 System of controls \u2013 product traceability and integrity",
+  "text": "while they are at the registered establishment"
+ },
+ {
+  "cp": "CP31",
+  "element": "Element-4",
+  "subelement": "4.1 System of controls \u2013 product traceability and integrity",
+  "text": "to the next premises which they are transferred to"
+ },
+ {
+  "cp": "CP32",
+  "element": "Element-4",
+  "subelement": "4.1 System of controls \u2013 product traceability and integrity",
+  "text": "the systems of controls to maintain traceability and integrity of prescribed plant and plant products (e.g., labelling, record keeping)"
+ },
+ {
+  "cp": "CP33",
+  "element": "Element-4",
+  "subelement": "4.1 System of controls \u2013 product traceability and integrity",
+  "text": "a product flow chart that demonstrates the movement and maintenance of product integrity through the registered establishment"
+ },
+ {
+  "cp": "CP34",
+  "element": "Element-4",
+  "subelement": "4.1 System of controls \u2013 product traceability and integrity",
+  "text": "the system of controls to manage goods that fail inspection \u2013 including blending, rejections, treatments and representations of failed products, where applicable"
+ },
+ {
+  "cp": "CP35",
+  "element": "Element-4",
+  "subelement": "4.2 System of controls \u2013 phytosanitary security",
+  "text": "maintaining risk for contamination or infestation"
+ },
+ {
+  "cp": "CP36",
+  "element": "Element-4",
+  "subelement": "4.2 System of controls \u2013 phytosanitary security",
+  "text": "minimising the risk of substitution (switching of goods)"
+ },
+ {
+  "cp": "CP37",
+  "element": "Element-4",
+  "subelement": "4.2 System of controls \u2013 phytosanitary security",
+  "text": "packaging requirements (where applicable)"
+ },
+ {
+  "cp": "CP38",
+  "element": "Element-4",
+  "subelement": "4.3 Record Keeping - traceability",
+  "text": "At least 2 years of traceability records are retained; including but not limited to receival, product movement, treatment, transfer records, dispatch, and transport unit approval records, where applicable."
+ },
+ {
+  "cp": "CP39",
+  "element": "Element-4",
+  "subelement": "4.3 Record Keeping - traceability",
+  "text": "At least 2 years of records for prescribed goods that have been rejected and/or failed export inspection are retained; including but not limited to records of blending, treatments and re-presentation of goods."
+ },
+ {
+  "cp": "CP40",
+  "element": "Element-4",
+  "subelement": "4.3 Record Keeping - traceability",
+  "text": "Records must: be in English; include the date of action; be accurate, legible and able to be audited."
+ },
+ {
+  "cp": "CP41",
+  "element": "Element-4",
+  "subelement": "4.4 Importing country requirements",
+  "text": "Where applicable, all importing country requirements relating to the export operations carried out at a registered establishment in relation to prescribed plants or plant products and the plants or plant products must be met."
+ }
+]

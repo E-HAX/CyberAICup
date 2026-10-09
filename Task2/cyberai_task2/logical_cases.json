@@ -1,0 +1,1911 @@
+[
+  {
+    "case_id": "RE-NSW-2020-0033",
+    "folder_id": "RE-NSW-2020-0033",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0033",
+    "subset_filter": null,
+    "farm_number": "92",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0033/1_Farm_92_Gwydir_Valley_Grain_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0033/2_HACCPPlan_92_Gwydir_Valley_Grain_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0033/3_PestControlRecord_92_Gwydir_Valley_Grain_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0033/4_Farm-Management-Plan_Gwydir_Valley_Grain_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0033/5_Farm-Site-Plan_Gwydir_Valley_Grain_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0033/6_Farms_Hygiene_Sanitation_Plan_Gwydir_Valley_Grain_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0033/7_Bait_Station_Map_Gwydir_Valley_Grain_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0033/8_Phytosanitary_Security_Procedure_Gwydir_Valley_Grain_Trust_092.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0033/9_Traceability_Records_Gwydir_Valley_Grain_Trust_092.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2020-0088",
+    "folder_id": "RE-NSW-2020-0088",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0088",
+    "subset_filter": null,
+    "farm_number": "74",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0088/1_Farm_74_Gunnedah_Grain_Exports_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0088/2_HACCPPlan_74_Gunnedah_Grain_Exports_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0088/3_PestControlRecord_74_Gunnedah_Grain_Exports_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0088/4_Farm-Management-Plan_Gunnedah_Grain_Exports_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0088/5_Farm-Site-Plan_Gunnedah_Grain_Exports_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0088/6_Farms_Hygiene_Sanitation_Plan_Gunnedah_Grain_Exports_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0088/7_Bait_Station_Map_Gunnedah_Grain_Exports_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0088/8_Phytosanitary_Security_Procedure_Gunnedah_Grain_Exports_Pty_Ltd_074.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0088/9_Traceability_Records_Gunnedah_Grain_Exports_Pty_Ltd_074.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2020-0144",
+    "folder_id": "RE-NSW-2020-0144",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0144",
+    "subset_filter": null,
+    "farm_number": "23",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0144/1_Farm_23_Namoi_Grain_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0144/2_HACCPPlan_23_Namoi_Grain_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0144/3_PestControlRecord_23_Namoi_Grain_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0144/4_Farm-Management-Plan_Namoi_Grain_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0144/5_Farm-Site-Plan_Namoi_Grain_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0144/6_Farms_Hygiene_Sanitation_Plan_Namoi_Grain_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0144/7_Bait_Station_Map_Namoi_Grain_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0144/8_Phytosanitary_Security_Procedure_Namoi_Grain_Trust_023.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0144/9_Traceability_Records_Namoi_Grain_Trust_023.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2020-0177",
+    "folder_id": "RE-NSW-2020-0177",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0177",
+    "subset_filter": null,
+    "farm_number": "48",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0177/1_Farm_48_Moree_Cotton_and_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0177/2_HACCPPlan_48_Moree_Cotton_and_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0177/3_PestControlRecord_48_Moree_Cotton_and_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0177/4_Farm-Management-Plan_Moree_Cotton_and_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0177/5_Farm-Site-Plan_Moree_Cotton_and_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0177/6_Farms_Hygiene_Sanitation_Plan_Moree_Cotton_and_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0177/7_Bait_Station_Map_Moree_Cotton_and_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0177/8_Phytosanitary_Security_Procedure_Moree_Cotton_and_Grain_Pty_Ltd_048.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0177/9_Traceability_Records_Moree_Cotton_and_Grain_Pty_Ltd_048.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2020-0211",
+    "folder_id": "RE-NSW-2020-0211",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0211",
+    "subset_filter": null,
+    "farm_number": "69",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0211/1_Farm_69_Hay_Plains_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0211/2_HACCPPlan_69_Hay_Plains_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0211/3_PestControlRecord_69_Hay_Plains_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0211/4_Farm-Management-Plan_Hay_Plains_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0211/5_Farm-Site-Plan_Hay_Plains_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0211/6_Farms_Hygiene_Sanitation_Plan_Hay_Plains_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0211/7_Bait_Station_Map_Hay_Plains_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0211/8_Phytosanitary_Security_Procedure_Hay_Plains_Grain_Pty_Ltd_069.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2020-0211/9_Traceability_Records_Hay_Plains_Grain_Pty_Ltd_069.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2021-0044",
+    "folder_id": "RE-NSW-2021-0044",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0044",
+    "subset_filter": null,
+    "farm_number": "59",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0044/1_Farm_59_Albury_Grain_and_Storage_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0044/2_HACCPPlan_59_Albury_Grain_and_Storage_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0044/3_PestControlRecord_59_Albury_Grain_and_Storage_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0044/4_Farm-Management-Plan_Albury_Grain_and_Storage_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0044/5_Farm-Site-Plan_Albury_Grain_and_Storage_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0044/6_Farms_Hygiene_Sanitation_Plan_Albury_Grain_and_Storage_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0044/7_Bait_Station_Map_Albury_Grain_and_Storage_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0044/8_Phytosanitary_Security_Procedure_Albury_Grain_and_Storage_Pty_Ltd_059.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0044/9_Traceability_Records_Albury_Grain_and_Storage_Pty_Ltd_059.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2021-0066",
+    "folder_id": "RE-NSW-2021-0066",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0066",
+    "subset_filter": null,
+    "farm_number": "44",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0066/1_Farm_44_Walgett_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0066/2_HACCPPlan_44_Walgett_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0066/3_PestControlRecord_44_Walgett_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0066/4_Farm-Management-Plan_Walgett_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0066/5_Farm-Site-Plan_Walgett_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0066/6_Farms_Hygiene_Sanitation_Plan_Walgett_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0066/7_Bait_Station_Map_Walgett_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0066/8_Phytosanitary_Security_Procedure_Walgett_Grain_Pty_Ltd_044.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0066/9_Traceability_Records_Walgett_Grain_Pty_Ltd_044.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2021-0099",
+    "folder_id": "RE-NSW-2021-0099",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0099",
+    "subset_filter": null,
+    "farm_number": "29",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0099/1_Farm_29_New_England_Chickpea_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0099/2_HACCPPlan_29_New_England_Chickpea_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0099/3_PestControlRecord_29_New_England_Chickpea_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0099/4_Farm-Management-Plan_New_England_Chickpea_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0099/5_Farm-Site-Plan_New_England_Chickpea_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0099/6_Farms_Hygiene_Sanitation_Plan_New_England_Chickpea_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0099/7_Bait_Station_Map_New_England_Chickpea_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0099/8_Phytosanitary_Security_Procedure_New_England_Chickpea_Trust_029.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0099/9_Traceability_Records_New_England_Chickpea_Trust_029.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2021-0133",
+    "folder_id": "RE-NSW-2021-0133",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0133",
+    "subset_filter": null,
+    "farm_number": "50",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0133/1_Farm_50_Nambucca_Valley_Macadamias_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0133/2_HACCPPlan_50_Nambucca_Valley_Macadamias_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0133/3_PestControlRecord_50_Nambucca_Valley_Macadamias_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0133/4_Farm-Management-Plan_Nambucca_Valley_Macadamias_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0133/5_Farm-Site-Plan_Nambucca_Valley_Macadamias_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0133/6_Farms_Hygiene_Sanitation_Plan_Nambucca_Valley_Macadamias_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0133/7_Bait_Station_Map_Nambucca_Valley_Macadamias_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0133/8_Phytosanitary_Security_Procedure_Nambucca_Valley_Macadamias_Pty_Ltd_050.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0133/9_Traceability_Records_Nambucca_Valley_Macadamias_Pty_Ltd_050.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2021-0177",
+    "folder_id": "RE-NSW-2021-0177",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0177",
+    "subset_filter": null,
+    "farm_number": "38",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0177/1_Farm_38_MacIntyre_Grain_Services_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0177/2_HACCPPlan_38_MacIntyre_Grain_Services_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0177/3_PestControlRecord_38_MacIntyre_Grain_Services_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0177/4_Farm-Management-Plan_MacIntyre_Grain_Services_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0177/5_Farm-Site-Plan_MacIntyre_Grain_Services_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0177/6_Farms_Hygiene_Sanitation_Plan_MacIntyre_Grain_Services_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0177/7_Bait_Station_Map_MacIntyre_Grain_Services_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0177/8_Phytosanitary_Security_Procedure_MacIntyre_Grain_Services_Pty_Ltd_038.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0177/9_Traceability_Records_MacIntyre_Grain_Services_Pty_Ltd_038.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2021-0200",
+    "folder_id": "RE-NSW-2021-0200",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0200",
+    "subset_filter": null,
+    "farm_number": "14",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0200/1_Farm_14_Southern_Tablelands_Lupins_Co.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0200/2_HACCPPlan_14_Southern_Tablelands_Lupins_Co.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0200/3_PestControlRecord_14_Southern_Tablelands_Lupins_Co.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0200/4_Farm-Management-Plan_Southern_Tablelands_Lupins_Co.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0200/5_Farm-Site-Plan_Southern_Tablelands_Lupins_Co.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0200/6_Farms_Hygiene_Sanitation_Plan_Southern_Tablelands_Lupins_Co.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0200/7_Bait_Station_Map_Southern_Tablelands_Lupins_Co.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0200/8_Phytosanitary_Security_Procedure_Southern_Tablelands_Lupins_Co_014.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0200/9_Traceability_Records_Southern_Tablelands_Lupins_Co_014.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2021-0222",
+    "folder_id": "RE-NSW-2021-0222",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0222",
+    "subset_filter": null,
+    "farm_number": "65",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0222/1_Farm_65_Peak_Hill_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0222/2_HACCPPlan_65_Peak_Hill_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0222/3_PestControlRecord_65_Peak_Hill_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0222/4_Farm-Management-Plan_Peak_Hill_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0222/5_Farm-Site-Plan_Peak_Hill_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0222/6_Farms_Hygiene_Sanitation_Plan_Peak_Hill_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0222/7_Bait_Station_Map_Peak_Hill_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0222/8_Phytosanitary_Security_Procedure_Peak_Hill_Grain_Pty_Ltd_065.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2021-0222/9_Traceability_Records_Peak_Hill_Grain_Pty_Ltd_065.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2022-0022",
+    "folder_id": "RE-NSW-2022-0022",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0022",
+    "subset_filter": null,
+    "farm_number": "62",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0022/1_Farm_62_Gilgandra_Pulse_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0022/2_HACCPPlan_62_Gilgandra_Pulse_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0022/3_PestControlRecord_62_Gilgandra_Pulse_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0022/4_Farm-Management-Plan_Gilgandra_Pulse_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0022/5_Farm-Site-Plan_Gilgandra_Pulse_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0022/6_Farms_Hygiene_Sanitation_Plan_Gilgandra_Pulse_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0022/7_Bait_Station_Map_Gilgandra_Pulse_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0022/8_Phytosanitary_Security_Procedure_Gilgandra_Pulse_Pty_Ltd_062.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0022/9_Traceability_Records_Gilgandra_Pulse_Pty_Ltd_062.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2022-0044",
+    "folder_id": "RE-NSW-2022-0044",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0044",
+    "subset_filter": null,
+    "farm_number": "42",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0044/1_Farm_42_Riverina_Almond_Exports_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0044/2_HACCPPlan_42_Riverina_Almond_Exports_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0044/3_PestControlRecord_42_Riverina_Almond_Exports_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0044/4_Farm-Management-Plan_Riverina_Almond_Exports_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0044/5_Farm-Site-Plan_Riverina_Almond_Exports_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0044/6_Farms_Hygiene_Sanitation_Plan_Riverina_Almond_Exports_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0044/7_Bait_Station_Map_Riverina_Almond_Exports_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0044/8_Phytosanitary_Security_Procedure_Riverina_Almond_Exports_Pty_Ltd_042.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0044/9_Traceability_Records_Riverina_Almond_Exports_Pty_Ltd_042.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2022-0055",
+    "folder_id": "RE-NSW-2022-0055",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0055",
+    "subset_filter": null,
+    "farm_number": "34",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0055/1_Farm_34_Tablelands_Pulse_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0055/2_HACCPPlan_34_Tablelands_Pulse_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0055/3_PestControlRecord_34_Tablelands_Pulse_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0055/4_Farm-Management-Plan_Tablelands_Pulse_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0055/5_Farm-Site-Plan_Tablelands_Pulse_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0055/6_Farms_Hygiene_Sanitation_Plan_Tablelands_Pulse_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0055/7_Bait_Station_Map_Tablelands_Pulse_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0055/8_Phytosanitary_Security_Procedure_Tablelands_Pulse_Pty_Ltd_034.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0055/9_Traceability_Records_Tablelands_Pulse_Pty_Ltd_034.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2022-0088",
+    "folder_id": "RE-NSW-2022-0088",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0088",
+    "subset_filter": null,
+    "farm_number": "17",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0088/1_Farm_17_Blue_Mountains_Hazelnuts_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0088/2_HACCPPlan_17_Blue_Mountains_Hazelnuts_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0088/3_PestControlRecord_17_Blue_Mountains_Hazelnuts_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0088/4_Farm-Management-Plan_Blue_Mountains_Hazelnuts_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0088/5_Farm-Site-Plan_Blue_Mountains_Hazelnuts_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0088/6_Farms_Hygiene_Sanitation_Plan_Blue_Mountains_Hazelnuts_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0088/7_Bait_Station_Map_Blue_Mountains_Hazelnuts_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0088/8_Phytosanitary_Security_Procedure_Blue_Mountains_Hazelnuts_Trust_017.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0088/9_Traceability_Records_Blue_Mountains_Hazelnuts_Trust_017.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2022-0111",
+    "folder_id": "RE-NSW-2022-0111",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0111",
+    "subset_filter": null,
+    "farm_number": "82",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0111/1_Farm_82_Riverina_Pulse_and_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0111/2_HACCPPlan_82_Riverina_Pulse_and_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0111/3_PestControlRecord_82_Riverina_Pulse_and_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0111/4_Farm-Management-Plan_Riverina_Pulse_and_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0111/5_Farm-Site-Plan_Riverina_Pulse_and_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0111/6_Farms_Hygiene_Sanitation_Plan_Riverina_Pulse_and_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0111/7_Bait_Station_Map_Riverina_Pulse_and_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0111/8_Phytosanitary_Security_Procedure_Riverina_Pulse_and_Grain_Pty_Ltd_082.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0111/9_Traceability_Records_Riverina_Pulse_and_Grain_Pty_Ltd_082.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2022-0130",
+    "folder_id": "RE-NSW-2022-0130",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0130",
+    "subset_filter": null,
+    "farm_number": "26",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0130/1_Farm_26_Narromine_Grain_Storage_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0130/2_HACCPPlan_26_Narromine_Grain_Storage_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0130/3_PestControlRecord_26_Narromine_Grain_Storage_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0130/4_Farm-Management-Plan_Narromine_Grain_Storage_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0130/5_Farm-Site-Plan_Narromine_Grain_Storage_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0130/6_Farms_Hygiene_Sanitation_Plan_Narromine_Grain_Storage_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0130/7_Bait_Station_Map_Narromine_Grain_Storage_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0130/8_Phytosanitary_Security_Procedure_Narromine_Grain_Storage_Pty_Ltd_026.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0130/9_Traceability_Records_Narromine_Grain_Storage_Pty_Ltd_026.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2022-0155",
+    "folder_id": "RE-NSW-2022-0155",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0155",
+    "subset_filter": null,
+    "farm_number": "85",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0155/1_Farm_85_Namoi_Cotton_Seed_Exports_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0155/2_HACCPPlan_85_Namoi_Cotton_Seed_Exports_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0155/3_PestControlRecord_85_Namoi_Cotton_Seed_Exports_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0155/4_Farm-Management-Plan_Namoi_Cotton_Seed_Exports_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0155/5_Farm-Site-Plan_Namoi_Cotton_Seed_Exports_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0155/6_Farms_Hygiene_Sanitation_Plan_Namoi_Cotton_Seed_Exports_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0155/7_Bait_Station_Map_Namoi_Cotton_Seed_Exports_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0155/8_Phytosanitary_Security_Procedure_Namoi_Cotton_Seed_Exports_Pty_Ltd_085.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0155/9_Traceability_Records_Namoi_Cotton_Seed_Exports_Pty_Ltd_085.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2022-0166",
+    "folder_id": "RE-NSW-2022-0166",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0166",
+    "subset_filter": null,
+    "farm_number": "67",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0166/1_Farm_67_Quirindi_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0166/2_HACCPPlan_67_Quirindi_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0166/3_PestControlRecord_67_Quirindi_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0166/4_Farm-Management-Plan_Quirindi_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0166/5_Farm-Site-Plan_Quirindi_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0166/6_Farms_Hygiene_Sanitation_Plan_Quirindi_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0166/7_Bait_Station_Map_Quirindi_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0166/8_Phytosanitary_Security_Procedure_Quirindi_Grain_Pty_Ltd_067.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0166/9_Traceability_Records_Quirindi_Grain_Pty_Ltd_067.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2022-0187",
+    "folder_id": "RE-NSW-2022-0187",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0187",
+    "subset_filter": null,
+    "farm_number": "2",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0187/1_Farm_02_Murray_River_Pulse_Co.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0187/2_HACCPPlan_02_Murray_River_Pulse_Co.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0187/3_PestControlRecord_02_Murray_River_Pulse_Co.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0187/4_Farm-Management-Plan_Murray_River_Pulse_Co.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0187/5_Farm-Site-Plan_Murray_River_Pulse_Co.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0187/6_Farms_Hygiene_Sanitation_Plan_Murray_River_Pulse_Co.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0187/7_Bait_Station_Map_Murray_River_Pulse_Co.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0187/8_Phytosanitary_Security_Procedure_Murray_River_Pulse_Co_002.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0187/9_Traceability_Records_Murray_River_Pulse_Co_002.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2022-0199",
+    "folder_id": "RE-NSW-2022-0199",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0199",
+    "subset_filter": null,
+    "farm_number": "73",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0199/1_Farm_73_Boggabri_Pulse_and_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0199/2_HACCPPlan_73_Boggabri_Pulse_and_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0199/3_PestControlRecord_73_Boggabri_Pulse_and_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0199/4_Farm-Management-Plan_Boggabri_Pulse_and_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0199/5_Farm-Site-Plan_Boggabri_Pulse_and_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0199/6_Farms_Hygiene_Sanitation_Plan_Boggabri_Pulse_and_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0199/7_Bait_Station_Map_Boggabri_Pulse_and_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0199/8_Phytosanitary_Security_Procedure_Boggabri_Pulse_and_Grain_Pty_Ltd_073.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2022-0199/9_Traceability_Records_Boggabri_Pulse_and_Grain_Pty_Ltd_073.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2023-0031",
+    "folder_id": "RE-NSW-2023-0031",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0031",
+    "subset_filter": null,
+    "farm_number": "9",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0031/1_Farm_09_Riverina_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0031/2_HACCPPlan_09_Riverina_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0031/3_PestControlRecord_09_Riverina_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0031/4_Farm-Management-Plan_Riverina_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0031/5_Farm-Site-Plan_Riverina_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0031/6_Farms_Hygiene_Sanitation_Plan_Riverina_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0031/7_Bait_Station_Map_Riverina_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0031/8_Phytosanitary_Security_Procedure_Riverina_Grain_Pty_Ltd_009.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0031/9_Traceability_Records_Riverina_Grain_Pty_Ltd_009.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2023-0044",
+    "folder_id": "RE-NSW-2023-0044",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0044",
+    "subset_filter": null,
+    "farm_number": "90",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0044/1_Farm_90_Namoi_Valley_Chickpea_Partnership.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0044/2_HACCPPlan_90_Namoi_Valley_Chickpea_Partnership.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0044/3_PestControlRecord_90_Namoi_Valley_Chickpea_Partnership.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0044/4_Farm-Management-Plan_Namoi_Valley_Chickpea_Partnership.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0044/5_Farm-Site-Plan_Namoi_Valley_Chickpea_Partnership.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0044/6_Farms_Hygiene_Sanitation_Plan_Namoi_Valley_Chickpea_Partnership.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0044/7_Bait_Station_Map_Namoi_Valley_Chickpea_Partnership.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0044/8_Phytosanitary_Security_Procedure_Namoi_Valley_Chickpea_Partnership_090.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0044/9_Traceability_Records_Namoi_Valley_Chickpea_Partnership_090.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2023-0055",
+    "folder_id": "RE-NSW-2023-0055",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0055",
+    "subset_filter": null,
+    "farm_number": "95",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0055/1_Farm_95_Tablelands_Almond_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0055/2_HACCPPlan_95_Tablelands_Almond_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0055/3_PestControlRecord_95_Tablelands_Almond_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0055/4_Farm-Management-Plan_Tablelands_Almond_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0055/5_Farm-Site-Plan_Tablelands_Almond_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0055/6_Farms_Hygiene_Sanitation_Plan_Tablelands_Almond_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0055/7_Bait_Station_Map_Tablelands_Almond_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0055/8_Phytosanitary_Security_Procedure_Tablelands_Almond_Trust_095.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0055/9_Traceability_Records_Tablelands_Almond_Trust_095.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2023-0066",
+    "folder_id": "RE-NSW-2023-0066",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0066",
+    "subset_filter": null,
+    "farm_number": "19",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0066/1_Farm_19_Northern_Rivers_Macadamias_Co.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0066/2_HACCPPlan_19_Northern_Rivers_Macadamias_Co.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0066/3_PestControlRecord_19_Northern_Rivers_Macadamias_Co.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0066/4_Farm-Management-Plan_Northern_Rivers_Macadamias_Co.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0066/5_Farm-Site-Plan_Northern_Rivers_Macadamias_Co.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0066/6_Farms_Hygiene_Sanitation_Plan_Northern_Rivers_Macadamias_Co.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0066/7_Bait_Station_Map_Northern_Rivers_Macadamias_Co.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0066/8_Phytosanitary_Security_Procedure_Northern_Rivers_Macadamias_Co_019.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0066/9_Traceability_Records_Northern_Rivers_Macadamias_Co_019.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NSW-2023-0088",
+    "folder_id": "RE-NSW-2023-0088",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0088",
+    "subset_filter": null,
+    "farm_number": "40",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0088/1_Farm_40_Lockhart_Grain_and_Pulse_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0088/2_HACCPPlan_40_Lockhart_Grain_and_Pulse_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0088/3_PestControlRecord_40_Lockhart_Grain_and_Pulse_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0088/4_Farm-Management-Plan_Lockhart_Grain_and_Pulse_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0088/5_Farm-Site-Plan_Lockhart_Grain_and_Pulse_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0088/6_Farms_Hygiene_Sanitation_Plan_Lockhart_Grain_and_Pulse_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0088/7_Bait_Station_Map_Lockhart_Grain_and_Pulse_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0088/8_Phytosanitary_Security_Procedure_Lockhart_Grain_and_Pulse_Pty_Ltd_040.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NSW-2023-0088/9_Traceability_Records_Lockhart_Grain_and_Pulse_Pty_Ltd_040.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-NT-2022-0008",
+    "folder_id": "RE-NT-2022-0008",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NT-2022-0008",
+    "subset_filter": null,
+    "farm_number": "77",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NT-2022-0008/1_Farm_77_Katherine_Specialty_Crops_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NT-2022-0008/2_HACCPPlan_77_Katherine_Specialty_Crops_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NT-2022-0008/3_PestControlRecord_77_Katherine_Specialty_Crops_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NT-2022-0008/4_Farm-Management-Plan_Katherine_Specialty_Crops_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NT-2022-0008/5_Farm-Site-Plan_Katherine_Specialty_Crops_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NT-2022-0008/6_Farms_Hygiene_Sanitation_Plan_Katherine_Specialty_Crops_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NT-2022-0008/7_Bait_Station_Map_Katherine_Specialty_Crops_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NT-2022-0008/8_Phytosanitary_Security_Procedure_Katherine_Specialty_Crops_Pty_Ltd_077.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-NT-2022-0008/9_Traceability_Records_Katherine_Specialty_Crops_Pty_Ltd_077.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2020-0067",
+    "folder_id": "RE-QLD-2020-0067",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0067",
+    "subset_filter": null,
+    "farm_number": "7",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0067/1_Farm_07_Northern_Grain_Solutions_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0067/2_HACCPPlan_07_Northern_Grain_Solutions_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0067/3_PestControlRecord_07_Northern_Grain_Solutions_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0067/4_Farm-Management-Plan_Northern_Grain_Solutions_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0067/5_Farm-Site-Plan_Northern_Grain_Solutions_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0067/6_Farms_Hygiene_Sanitation_Plan_Northern_Grain_Solutions_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0067/7_Bait_Station_Map_Northern_Grain_Solutions_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0067/8_Phytosanitary_Security_Procedure_Northern_Grain_Solutions_Pty_Ltd_007.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0067/9_Traceability_Records_Northern_Grain_Solutions_Pty_Ltd_007.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2020-0133",
+    "folder_id": "RE-QLD-2020-0133",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0133",
+    "subset_filter": null,
+    "farm_number": "51",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0133/1_Farm_51_Toowoomba_Grain_Handlers_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0133/2_HACCPPlan_51_Toowoomba_Grain_Handlers_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0133/3_PestControlRecord_51_Toowoomba_Grain_Handlers_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0133/4_Farm-Management-Plan_Toowoomba_Grain_Handlers_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0133/5_Farm-Site-Plan_Toowoomba_Grain_Handlers_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0133/6_Farms_Hygiene_Sanitation_Plan_Toowoomba_Grain_Handlers_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0133/7_Bait_Station_Map_Toowoomba_Grain_Handlers_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0133/8_Phytosanitary_Security_Procedure_Toowoomba_Grain_Handlers_Pty_Ltd_051.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0133/9_Traceability_Records_Toowoomba_Grain_Handlers_Pty_Ltd_051.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2020-0199",
+    "folder_id": "RE-QLD-2020-0199",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0199",
+    "subset_filter": null,
+    "farm_number": "33",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0199/1_Farm_33_Western_Downs_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0199/2_HACCPPlan_33_Western_Downs_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0199/3_PestControlRecord_33_Western_Downs_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0199/4_Farm-Management-Plan_Western_Downs_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0199/5_Farm-Site-Plan_Western_Downs_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0199/6_Farms_Hygiene_Sanitation_Plan_Western_Downs_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0199/7_Bait_Station_Map_Western_Downs_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0199/8_Phytosanitary_Security_Procedure_Western_Downs_Grain_Pty_Ltd_033.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2020-0199/9_Traceability_Records_Western_Downs_Grain_Pty_Ltd_033.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2021-0055",
+    "folder_id": "RE-QLD-2021-0055",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0055",
+    "subset_filter": null,
+    "farm_number": "56",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0055/1_Farm_56_Goondiwindi_Grain_Exports_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0055/2_HACCPPlan_56_Goondiwindi_Grain_Exports_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0055/3_PestControlRecord_56_Goondiwindi_Grain_Exports_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0055/4_Farm-Management-Plan_Goondiwindi_Grain_Exports_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0055/5_Farm-Site-Plan_Goondiwindi_Grain_Exports_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0055/6_Farms_Hygiene_Sanitation_Plan_Goondiwindi_Grain_Exports_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0055/7_Bait_Station_Map_Goondiwindi_Grain_Exports_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0055/8_Phytosanitary_Security_Procedure_Goondiwindi_Grain_Exports_Pty_Ltd_056.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0055/9_Traceability_Records_Goondiwindi_Grain_Exports_Pty_Ltd_056.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2021-0112",
+    "folder_id": "RE-QLD-2021-0112",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0112",
+    "subset_filter": null,
+    "farm_number": "5",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0112/1_Farm_05_Darling_Downs_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0112/2_HACCPPlan_05_Darling_Downs_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0112/3_PestControlRecord_05_Darling_Downs_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0112/4_Farm-Management-Plan_Darling_Downs_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0112/5_Farm-Site-Plan_Darling_Downs_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0112/6_Farms_Hygiene_Sanitation_Plan_Darling_Downs_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0112/7_Bait_Station_Map_Darling_Downs_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0112/8_Phytosanitary_Security_Procedure_Darling_Downs_Grain_Pty_Ltd_005.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0112/9_Traceability_Records_Darling_Downs_Grain_Pty_Ltd_005.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2021-0144",
+    "folder_id": "RE-QLD-2021-0144",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0144",
+    "subset_filter": null,
+    "farm_number": "46",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0144/1_Farm_46_Darby_Plains_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0144/2_HACCPPlan_46_Darby_Plains_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0144/3_PestControlRecord_46_Darby_Plains_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0144/4_Farm-Management-Plan_Darby_Plains_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0144/5_Farm-Site-Plan_Darby_Plains_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0144/6_Farms_Hygiene_Sanitation_Plan_Darby_Plains_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0144/7_Bait_Station_Map_Darby_Plains_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0144/8_Phytosanitary_Security_Procedure_Darby_Plains_Grain_Pty_Ltd_046.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0144/9_Traceability_Records_Darby_Plains_Grain_Pty_Ltd_046.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2021-0178",
+    "folder_id": "RE-QLD-2021-0178",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0178",
+    "subset_filter": null,
+    "farm_number": "21",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0178/1_Farm_21_Lockyer_Valley_Grains_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0178/2_HACCPPlan_21_Lockyer_Valley_Grains_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0178/3_PestControlRecord_21_Lockyer_Valley_Grains_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0178/4_Farm-Management-Plan_Lockyer_Valley_Grains_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0178/5_Farm-Site-Plan_Lockyer_Valley_Grains_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0178/6_Farms_Hygiene_Sanitation_Plan_Lockyer_Valley_Grains_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0178/7_Bait_Station_Map_Lockyer_Valley_Grains_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0178/8_Phytosanitary_Security_Procedure_Lockyer_Valley_Grains_Pty_Ltd_021.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0178/9_Traceability_Records_Lockyer_Valley_Grains_Pty_Ltd_021.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2021-0200",
+    "folder_id": "RE-QLD-2021-0200",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0200",
+    "subset_filter": null,
+    "farm_number": "91",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0200/1_Farm_91_Dawson_Valley_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0200/2_HACCPPlan_91_Dawson_Valley_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0200/3_PestControlRecord_91_Dawson_Valley_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0200/4_Farm-Management-Plan_Dawson_Valley_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0200/5_Farm-Site-Plan_Dawson_Valley_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0200/6_Farms_Hygiene_Sanitation_Plan_Dawson_Valley_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0200/7_Bait_Station_Map_Dawson_Valley_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0200/8_Phytosanitary_Security_Procedure_Dawson_Valley_Grain_Pty_Ltd_091.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2021-0200/9_Traceability_Records_Dawson_Valley_Grain_Pty_Ltd_091.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2022-0077",
+    "folder_id": "RE-QLD-2022-0077",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0077",
+    "subset_filter": null,
+    "farm_number": "-",
+    "tracks": {
+      "1": null,
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0077/2_HACCPPlan_80_Condamine_Valley_Grain_Co_operative.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0077/3_PestControlRecord_80_Condamine_Valley_Grain_Co_operative.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0077/4_Farm-Management-Plan_Condamine_Valley_Grain_Co_operative.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0077/5_Farm-Site-Plan_Condamine_Valley_Grain_Co_operative.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0077/6_Farms_Hygiene_Sanitation_Plan_Condamine_Valley_Grain_Co_operative.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0077/7_Bait_Station_Map_Condamine_Valley_Grain_Co_operative.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0077/8_Phytosanitary_Security_Procedure_Condamine_Valley_Grain_Co_operative_080.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0077/9_Traceability_Records_Condamine_Valley_Grain_Co_operative_080.xlsx"
+    },
+    "flags": [
+      "MISSING_TRACK_1"
+    ]
+  },
+  {
+    "case_id": "RE-QLD-2022-0091",
+    "folder_id": "RE-QLD-2022-0091",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0091",
+    "subset_filter": null,
+    "farm_number": "22",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0091/1_Farm_22_Condamine_Grain_Co_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0091/2_HACCPPlan_22_Condamine_Grain_Co_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0091/3_PestControlRecord_22_Condamine_Grain_Co_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0091/4_Farm-Management-Plan_Condamine_Grain_Co_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0091/5_Farm-Site-Plan_Condamine_Grain_Co_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0091/6_Farms_Hygiene_Sanitation_Plan_Condamine_Grain_Co_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0091/7_Bait_Station_Map_Condamine_Grain_Co_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0091/8_Phytosanitary_Security_Procedure_Condamine_Grain_Co_Pty_Ltd_022.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0091/9_Traceability_Records_Condamine_Grain_Co_Pty_Ltd_022.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2022-0144",
+    "folder_id": "RE-QLD-2022-0144",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0144",
+    "subset_filter": null,
+    "farm_number": "98",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0144/1_Farm_98_Capricorn_Coast_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0144/2_HACCPPlan_98_Capricorn_Coast_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0144/3_PestControlRecord_98_Capricorn_Coast_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0144/4_Farm-Management-Plan_Capricorn_Coast_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0144/5_Farm-Site-Plan_Capricorn_Coast_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0144/6_Farms_Hygiene_Sanitation_Plan_Capricorn_Coast_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0144/7_Bait_Station_Map_Capricorn_Coast_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0144/8_Phytosanitary_Security_Procedure_Capricorn_Coast_Grain_Pty_Ltd_098.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0144/9_Traceability_Records_Capricorn_Coast_Grain_Pty_Ltd_098.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2022-0177",
+    "folder_id": "RE-QLD-2022-0177",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0177",
+    "subset_filter": null,
+    "farm_number": "53",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0177/1_Farm_53_Condamine_Pulse_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0177/2_HACCPPlan_53_Condamine_Pulse_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0177/3_PestControlRecord_53_Condamine_Pulse_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0177/4_Farm-Management-Plan_Condamine_Pulse_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0177/5_Farm-Site-Plan_Condamine_Pulse_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0177/6_Farms_Hygiene_Sanitation_Plan_Condamine_Pulse_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0177/7_Bait_Station_Map_Condamine_Pulse_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0177/8_Phytosanitary_Security_Procedure_Condamine_Pulse_Pty_Ltd_053.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2022-0177/9_Traceability_Records_Condamine_Pulse_Pty_Ltd_053.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2023-0011",
+    "folder_id": "RE-QLD-2023-0011",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0011",
+    "subset_filter": null,
+    "farm_number": "93",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0011/1_Farm_93_Moura_Grain_Services_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0011/2_HACCPPlan_93_Moura_Grain_Services_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0011/3_PestControlRecord_93_Moura_Grain_Services_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0011/4_Farm-Management-Plan_Moura_Grain_Services_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0011/5_Farm-Site-Plan_Moura_Grain_Services_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0011/6_Farms_Hygiene_Sanitation_Plan_Moura_Grain_Services_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0011/7_Bait_Station_Map_Moura_Grain_Services_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0011/8_Phytosanitary_Security_Procedure_Moura_Grain_Services_Pty_Ltd_093.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0011/9_Traceability_Records_Moura_Grain_Services_Pty_Ltd_093.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2023-0022",
+    "folder_id": "RE-QLD-2023-0022",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0022",
+    "subset_filter": null,
+    "farm_number": "58",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0022/1_Farm_58_Burnett_River_Chickpea_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0022/2_HACCPPlan_58_Burnett_River_Chickpea_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0022/3_PestControlRecord_58_Burnett_River_Chickpea_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0022/4_Farm-Management-Plan_Burnett_River_Chickpea_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0022/5_Farm-Site-Plan_Burnett_River_Chickpea_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0022/6_Farms_Hygiene_Sanitation_Plan_Burnett_River_Chickpea_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0022/7_Bait_Station_Map_Burnett_River_Chickpea_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0022/8_Phytosanitary_Security_Procedure_Burnett_River_Chickpea_Trust_058.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0022/9_Traceability_Records_Burnett_River_Chickpea_Trust_058.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2023-0033",
+    "folder_id": "RE-QLD-2023-0033",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0033",
+    "subset_filter": null,
+    "farm_number": "84",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0033/1_Farm_84_Darling_Downs_Hay_and_Straw_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0033/2_HACCPPlan_84_Darling_Downs_Hay_and_Straw_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0033/3_PestControlRecord_84_Darling_Downs_Hay_and_Straw_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0033/4_Farm-Management-Plan_Darling_Downs_Hay_and_Straw_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0033/5_Farm-Site-Plan_Darling_Downs_Hay_and_Straw_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0033/6_Farms_Hygiene_Sanitation_Plan_Darling_Downs_Hay_and_Straw_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0033/7_Bait_Station_Map_Darling_Downs_Hay_and_Straw_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0033/8_Phytosanitary_Security_Procedure_Darling_Downs_Hay_and_Straw_Pty_Ltd_084.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0033/9_Traceability_Records_Darling_Downs_Hay_and_Straw_Pty_Ltd_084.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-QLD-2023-0044",
+    "folder_id": "RE-QLD-2023-0044",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0044",
+    "subset_filter": null,
+    "farm_number": "13",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0044/1_Farm_13_Central_Queensland_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0044/2_HACCPPlan_13_Central_Queensland_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0044/3_PestControlRecord_13_Central_Queensland_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0044/4_Farm-Management-Plan_Central_Queensland_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0044/5_Farm-Site-Plan_Central_Queensland_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0044/6_Farms_Hygiene_Sanitation_Plan_Central_Queensland_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0044/7_Bait_Station_Map_Central_Queensland_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0044/8_Phytosanitary_Security_Procedure_Central_Queensland_Grain_Pty_Ltd_013.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-QLD-2023-0044/9_Traceability_Records_Central_Queensland_Grain_Pty_Ltd_013.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-SA-2020-0090",
+    "folder_id": "RE-SA-2020-0090",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0090",
+    "subset_filter": null,
+    "farm_number": "43",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0090/1_Farm_43_Eyre_Peninsula_Lentils_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0090/2_HACCPPlan_43_Eyre_Peninsula_Lentils_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0090/3_PestControlRecord_43_Eyre_Peninsula_Lentils_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0090/4_Farm-Management-Plan_Eyre_Peninsula_Lentils_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0090/5_Farm-Site-Plan_Eyre_Peninsula_Lentils_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0090/6_Farms_Hygiene_Sanitation_Plan_Eyre_Peninsula_Lentils_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0090/7_Bait_Station_Map_Eyre_Peninsula_Lentils_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0090/8_Phytosanitary_Security_Procedure_Eyre_Peninsula_Lentils_Pty_Ltd_043.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0090/9_Traceability_Records_Eyre_Peninsula_Lentils_Pty_Ltd_043.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-SA-2020-0120",
+    "folder_id": "RE-SA-2020-0120",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0120",
+    "subset_filter": null,
+    "farm_number": "12",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0120/1_Farm_12_Adelaide_Plains_Grain_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0120/2_HACCPPlan_12_Adelaide_Plains_Grain_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0120/3_PestControlRecord_12_Adelaide_Plains_Grain_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0120/4_Farm-Management-Plan_Adelaide_Plains_Grain_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0120/5_Farm-Site-Plan_Adelaide_Plains_Grain_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0120/6_Farms_Hygiene_Sanitation_Plan_Adelaide_Plains_Grain_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0120/7_Bait_Station_Map_Adelaide_Plains_Grain_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0120/8_Phytosanitary_Security_Procedure_Adelaide_Plains_Grain_Trust_012.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0120/9_Traceability_Records_Adelaide_Plains_Grain_Trust_012.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-SA-2020-0155",
+    "folder_id": "RE-SA-2020-0155",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0155",
+    "subset_filter": null,
+    "farm_number": "63",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0155/1_Farm_63_Gawler_River_Almonds_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0155/2_HACCPPlan_63_Gawler_River_Almonds_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0155/3_PestControlRecord_63_Gawler_River_Almonds_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0155/4_Farm-Management-Plan_Gawler_River_Almonds_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0155/5_Farm-Site-Plan_Gawler_River_Almonds_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0155/6_Farms_Hygiene_Sanitation_Plan_Gawler_River_Almonds_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0155/7_Bait_Station_Map_Gawler_River_Almonds_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0155/8_Phytosanitary_Security_Procedure_Gawler_River_Almonds_Pty_Ltd_063.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2020-0155/9_Traceability_Records_Gawler_River_Almonds_Pty_Ltd_063.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-SA-2021-0066",
+    "folder_id": "RE-SA-2021-0066",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0066",
+    "subset_filter": null,
+    "farm_number": "-",
+    "tracks": {
+      "1": null,
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0066/2_HACCPPlan_24_Mid_North_Lentil_Growers_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0066/3_PestControlRecord_24_Mid_North_Lentil_Growers_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0066/4_Farm-Management-Plan_Mid_North_Lentil_Growers_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0066/5_Farm-Site-Plan_Mid_North_Lentil_Growers_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0066/6_Farms_Hygiene_Sanitation_Plan_Mid_North_Lentil_Growers_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0066/7_Bait_Station_Map_Mid_North_Lentil_Growers_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0066/8_Phytosanitary_Security_Procedure_Mid_North_Lentil_Growers_Pty_Ltd_024.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0066/9_Traceability_Records_Mid_North_Lentil_Growers_Pty_Ltd_024.xlsx"
+    },
+    "flags": [
+      "MISSING_TRACK_1"
+    ]
+  },
+  {
+    "case_id": "RE-SA-2021-0148",
+    "folder_id": "RE-SA-2021-0148",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0148",
+    "subset_filter": null,
+    "farm_number": "8",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0148/1_Farm_08_Eyre_Peninsula_Exports_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0148/2_HACCPPlan_08_Eyre_Peninsula_Exports_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0148/3_PestControlRecord_08_Eyre_Peninsula_Exports_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0148/4_Farm-Management-Plan_Eyre_Peninsula_Exports_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0148/5_Farm-Site-Plan_Eyre_Peninsula_Exports_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0148/6_Farms_Hygiene_Sanitation_Plan_Eyre_Peninsula_Exports_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0148/7_Bait_Station_Map_Eyre_Peninsula_Exports_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0148/8_Phytosanitary_Security_Procedure_Eyre_Peninsula_Exports_Trust_008.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0148/9_Traceability_Records_Eyre_Peninsula_Exports_Trust_008.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-SA-2021-0177",
+    "folder_id": "RE-SA-2021-0177",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0177",
+    "subset_filter": null,
+    "farm_number": "54",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0177/1_Farm_54_Riverland_Almond_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0177/2_HACCPPlan_54_Riverland_Almond_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0177/3_PestControlRecord_54_Riverland_Almond_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0177/4_Farm-Management-Plan_Riverland_Almond_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0177/5_Farm-Site-Plan_Riverland_Almond_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0177/6_Farms_Hygiene_Sanitation_Plan_Riverland_Almond_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0177/7_Bait_Station_Map_Riverland_Almond_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0177/8_Phytosanitary_Security_Procedure_Riverland_Almond_Trust_054.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0177/9_Traceability_Records_Riverland_Almond_Trust_054.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-SA-2021-0200",
+    "folder_id": "RE-SA-2021-0200",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0200",
+    "subset_filter": null,
+    "farm_number": "32",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0200/1_Farm_32_Flinders_Ranges_Grain_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0200/2_HACCPPlan_32_Flinders_Ranges_Grain_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0200/3_PestControlRecord_32_Flinders_Ranges_Grain_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0200/4_Farm-Management-Plan_Flinders_Ranges_Grain_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0200/5_Farm-Site-Plan_Flinders_Ranges_Grain_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0200/6_Farms_Hygiene_Sanitation_Plan_Flinders_Ranges_Grain_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0200/7_Bait_Station_Map_Flinders_Ranges_Grain_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0200/8_Phytosanitary_Security_Procedure_Flinders_Ranges_Grain_Trust_032.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0200/9_Traceability_Records_Flinders_Ranges_Grain_Trust_032.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-SA-2021-0222",
+    "folder_id": "RE-SA-2021-0222",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0222",
+    "subset_filter": null,
+    "farm_number": "89",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0222/1_Farm_89_Port_Pirie_Grain_Terminals_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0222/2_HACCPPlan_89_Port_Pirie_Grain_Terminals_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0222/3_PestControlRecord_89_Port_Pirie_Grain_Terminals_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0222/4_Farm-Management-Plan_Port_Pirie_Grain_Terminals_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0222/5_Farm-Site-Plan_Port_Pirie_Grain_Terminals_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0222/6_Farms_Hygiene_Sanitation_Plan_Port_Pirie_Grain_Terminals_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0222/7_Bait_Station_Map_Port_Pirie_Grain_Terminals_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0222/8_Phytosanitary_Security_Procedure_Port_Pirie_Grain_Terminals_Pty_Ltd_089.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2021-0222/9_Traceability_Records_Port_Pirie_Grain_Terminals_Pty_Ltd_089.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-SA-2022-0033",
+    "folder_id": "RE-SA-2022-0033",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0033",
+    "subset_filter": null,
+    "farm_number": "64",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0033/1_Farm_64_Yorke_Grain_and_Pulse_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0033/2_HACCPPlan_64_Yorke_Grain_and_Pulse_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0033/3_PestControlRecord_64_Yorke_Grain_and_Pulse_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0033/4_Farm-Management-Plan_Yorke_Grain_and_Pulse_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0033/5_Farm-Site-Plan_Yorke_Grain_and_Pulse_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0033/6_Farms_Hygiene_Sanitation_Plan_Yorke_Grain_and_Pulse_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0033/7_Bait_Station_Map_Yorke_Grain_and_Pulse_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0033/8_Phytosanitary_Security_Procedure_Yorke_Grain_and_Pulse_Pty_Ltd_064.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0033/9_Traceability_Records_Yorke_Grain_and_Pulse_Pty_Ltd_064.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-SA-2022-0066",
+    "folder_id": "RE-SA-2022-0066",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0066",
+    "subset_filter": null,
+    "farm_number": "70",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0066/1_Farm_70_Mt_Gambier_Pulse_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0066/2_HACCPPlan_70_Mt_Gambier_Pulse_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0066/3_PestControlRecord_70_Mt_Gambier_Pulse_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0066/4_Farm-Management-Plan_Mt_Gambier_Pulse_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0066/5_Farm-Site-Plan_Mt_Gambier_Pulse_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0066/6_Farms_Hygiene_Sanitation_Plan_Mt_Gambier_Pulse_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0066/7_Bait_Station_Map_Mt_Gambier_Pulse_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0066/8_Phytosanitary_Security_Procedure_Mt_Gambier_Pulse_Pty_Ltd_070.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0066/9_Traceability_Records_Mt_Gambier_Pulse_Pty_Ltd_070.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-SA-2022-0177",
+    "folder_id": "RE-SA-2022-0177",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0177",
+    "subset_filter": null,
+    "farm_number": "18",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0177/1_Farm_18_Riverland_Grain_Services_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0177/2_HACCPPlan_18_Riverland_Grain_Services_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0177/3_PestControlRecord_18_Riverland_Grain_Services_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0177/4_Farm-Management-Plan_Riverland_Grain_Services_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0177/5_Farm-Site-Plan_Riverland_Grain_Services_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0177/6_Farms_Hygiene_Sanitation_Plan_Riverland_Grain_Services_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0177/7_Bait_Station_Map_Riverland_Grain_Services_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0177/8_Phytosanitary_Security_Procedure_Riverland_Grain_Services_Pty_Ltd_018.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2022-0177/9_Traceability_Records_Riverland_Grain_Services_Pty_Ltd_018.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-SA-2023-0055",
+    "folder_id": "RE-SA-2023-0055",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0055",
+    "subset_filter": null,
+    "farm_number": "4",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0055/1_Farm_04_Yorke_Peninsula_Agri_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0055/2_HACCPPlan_04_Yorke_Peninsula_Agri_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0055/3_PestControlRecord_04_Yorke_Peninsula_Agri_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0055/4_Farm-Management-Plan_Yorke_Peninsula_Agri_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0055/5_Farm-Site-Plan_Yorke_Peninsula_Agri_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0055/6_Farms_Hygiene_Sanitation_Plan_Yorke_Peninsula_Agri_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0055/7_Bait_Station_Map_Yorke_Peninsula_Agri_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0055/8_Phytosanitary_Security_Procedure_Yorke_Peninsula_Agri_Pty_Ltd_004.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0055/9_Traceability_Records_Yorke_Peninsula_Agri_Pty_Ltd_004.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-SA-2023-0081",
+    "folder_id": "RE-SA-2023-0081",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0081",
+    "subset_filter": null,
+    "farm_number": "28",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0081/1_Farm_28_Kangaroo_Island_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0081/2_HACCPPlan_28_Kangaroo_Island_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0081/3_PestControlRecord_28_Kangaroo_Island_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0081/4_Farm-Management-Plan_Kangaroo_Island_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0081/5_Farm-Site-Plan_Kangaroo_Island_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0081/6_Farms_Hygiene_Sanitation_Plan_Kangaroo_Island_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0081/7_Bait_Station_Map_Kangaroo_Island_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0081/8_Phytosanitary_Security_Procedure_Kangaroo_Island_Grain_Pty_Ltd_028.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2023-0081/9_Traceability_Records_Kangaroo_Island_Grain_Pty_Ltd_028.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-SA-2024-0003",
+    "folder_id": "RE-SA-2024-0003",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2024-0003",
+    "subset_filter": null,
+    "farm_number": "81",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2024-0003/1_Farm_81_Eyre_Lentil_Exports_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2024-0003/2_HACCPPlan_81_Eyre_Lentil_Exports_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2024-0003/3_PestControlRecord_81_Eyre_Lentil_Exports_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2024-0003/4_Farm-Management-Plan_Eyre_Lentil_Exports_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2024-0003/5_Farm-Site-Plan_Eyre_Lentil_Exports_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2024-0003/6_Farms_Hygiene_Sanitation_Plan_Eyre_Lentil_Exports_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2024-0003/7_Bait_Station_Map_Eyre_Lentil_Exports_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2024-0003/8_Phytosanitary_Security_Procedure_Eyre_Lentil_Exports_Pty_Ltd_081.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-SA-2024-0003/9_Traceability_Records_Eyre_Lentil_Exports_Pty_Ltd_081.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-TAS-2021-0006",
+    "folder_id": "RE-TAS-2021-0006",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2021-0006",
+    "subset_filter": null,
+    "farm_number": "86",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2021-0006/1_Farm_86_Huon_Valley_Malt_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2021-0006/2_HACCPPlan_86_Huon_Valley_Malt_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2021-0006/3_PestControlRecord_86_Huon_Valley_Malt_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2021-0006/4_Farm-Management-Plan_Huon_Valley_Malt_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2021-0006/5_Farm-Site-Plan_Huon_Valley_Malt_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2021-0006/6_Farms_Hygiene_Sanitation_Plan_Huon_Valley_Malt_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2021-0006/7_Bait_Station_Map_Huon_Valley_Malt_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2021-0006/8_Phytosanitary_Security_Procedure_Huon_Valley_Malt_Trust_086.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2021-0006/9_Traceability_Records_Huon_Valley_Malt_Trust_086.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-TAS-2023-0014",
+    "folder_id": "RE-TAS-2023-0014",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2023-0014",
+    "subset_filter": null,
+    "farm_number": "76",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2023-0014/1_Farm_76_Derwent_Valley_Oat_Farm.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2023-0014/2_HACCPPlan_76_Derwent_Valley_Oat_Farm.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2023-0014/3_PestControlRecord_76_Derwent_Valley_Oat_Farm.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2023-0014/4_Farm-Management-Plan_Derwent_Valley_Oat_Farm.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2023-0014/5_Farm-Site-Plan_Derwent_Valley_Oat_Farm.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2023-0014/6_Farms_Hygiene_Sanitation_Plan_Derwent_Valley_Oat_Farm.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2023-0014/7_Bait_Station_Map_Derwent_Valley_Oat_Farm.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2023-0014/8_Phytosanitary_Security_Procedure_Derwent_Valley_Oat_Farm_076.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-TAS-2023-0014/9_Traceability_Records_Derwent_Valley_Oat_Farm_076.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2020-0093",
+    "folder_id": "RE-VIC-2020-0093",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0093",
+    "subset_filter": null,
+    "farm_number": "3",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0093/1_Farm_03_Grampians_Grain_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0093/2_HACCPPlan_03_Grampians_Grain_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0093/3_PestControlRecord_03_Grampians_Grain_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0093/4_Farm-Management-Plan_Grampians_Grain_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0093/5_Farm-Site-Plan_Grampians_Grain_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0093/6_Farms_Hygiene_Sanitation_Plan_Grampians_Grain_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0093/7_Bait_Station_Map_Grampians_Grain_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0093/8_Phytosanitary_Security_Procedure_Grampians_Grain_Trust_003.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0093/9_Traceability_Records_Grampians_Grain_Trust_003.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2020-0181",
+    "folder_id": "RE-VIC-2020-0181",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0181",
+    "subset_filter": null,
+    "farm_number": "39",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0181/1_Farm_39_Mallee_Chickpea_Growers_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0181/2_HACCPPlan_39_Mallee_Chickpea_Growers_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0181/3_PestControlRecord_39_Mallee_Chickpea_Growers_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0181/4_Farm-Management-Plan_Mallee_Chickpea_Growers_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0181/5_Farm-Site-Plan_Mallee_Chickpea_Growers_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0181/6_Farms_Hygiene_Sanitation_Plan_Mallee_Chickpea_Growers_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0181/7_Bait_Station_Map_Mallee_Chickpea_Growers_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0181/8_Phytosanitary_Security_Procedure_Mallee_Chickpea_Growers_Pty_Ltd_039.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2020-0181/9_Traceability_Records_Mallee_Chickpea_Growers_Pty_Ltd_039.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2021-0055",
+    "folder_id": "RE-VIC-2021-0055",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0055",
+    "subset_filter": null,
+    "farm_number": "41",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0055/1_Farm_41_Nhill_Grain_Services_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0055/2_HACCPPlan_41_Nhill_Grain_Services_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0055/3_PestControlRecord_41_Nhill_Grain_Services_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0055/4_Farm-Management-Plan_Nhill_Grain_Services_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0055/5_Farm-Site-Plan_Nhill_Grain_Services_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0055/6_Farms_Hygiene_Sanitation_Plan_Nhill_Grain_Services_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0055/7_Bait_Station_Map_Nhill_Grain_Services_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0055/8_Phytosanitary_Security_Procedure_Nhill_Grain_Services_Trust_041.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0055/9_Traceability_Records_Nhill_Grain_Services_Trust_041.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2021-0099",
+    "folder_id": "RE-VIC-2021-0099",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0099",
+    "subset_filter": null,
+    "farm_number": "97",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0099/1_Farm_97_Mildura_Pulse_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0099/2_HACCPPlan_97_Mildura_Pulse_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0099/3_PestControlRecord_97_Mildura_Pulse_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0099/4_Farm-Management-Plan_Mildura_Pulse_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0099/5_Farm-Site-Plan_Mildura_Pulse_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0099/6_Farms_Hygiene_Sanitation_Plan_Mildura_Pulse_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0099/7_Bait_Station_Map_Mildura_Pulse_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0099/8_Phytosanitary_Security_Procedure_Mildura_Pulse_Pty_Ltd_097.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0099/9_Traceability_Records_Mildura_Pulse_Pty_Ltd_097.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2021-0144",
+    "folder_id": "RE-VIC-2021-0144",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0144",
+    "subset_filter": null,
+    "farm_number": "20",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0144/1_Farm_20_Sunraysia_Grain_and_Pulse_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0144/2_HACCPPlan_20_Sunraysia_Grain_and_Pulse_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0144/3_PestControlRecord_20_Sunraysia_Grain_and_Pulse_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0144/4_Farm-Management-Plan_Sunraysia_Grain_and_Pulse_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0144/5_Farm-Site-Plan_Sunraysia_Grain_and_Pulse_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0144/6_Farms_Hygiene_Sanitation_Plan_Sunraysia_Grain_and_Pulse_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0144/7_Bait_Station_Map_Sunraysia_Grain_and_Pulse_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0144/8_Phytosanitary_Security_Procedure_Sunraysia_Grain_and_Pulse_Trust_020.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0144/9_Traceability_Records_Sunraysia_Grain_and_Pulse_Trust_020.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2021-0188",
+    "folder_id": "RE-VIC-2021-0188",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0188",
+    "subset_filter": null,
+    "farm_number": "68",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0188/1_Farm_68_Minyip_Grain_Co_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0188/2_HACCPPlan_68_Minyip_Grain_Co_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0188/3_PestControlRecord_68_Minyip_Grain_Co_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0188/4_Farm-Management-Plan_Minyip_Grain_Co_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0188/5_Farm-Site-Plan_Minyip_Grain_Co_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0188/6_Farms_Hygiene_Sanitation_Plan_Minyip_Grain_Co_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0188/7_Bait_Station_Map_Minyip_Grain_Co_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0188/8_Phytosanitary_Security_Procedure_Minyip_Grain_Co_Pty_Ltd_068.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2021-0188/9_Traceability_Records_Minyip_Grain_Co_Pty_Ltd_068.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2022-0044",
+    "folder_id": "RE-VIC-2022-0044",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0044",
+    "subset_filter": null,
+    "farm_number": "94",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0044/1_Farm_94_Mallee_Canola_Growers_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0044/2_HACCPPlan_94_Mallee_Canola_Growers_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0044/3_PestControlRecord_94_Mallee_Canola_Growers_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0044/4_Farm-Management-Plan_Mallee_Canola_Growers_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0044/5_Farm-Site-Plan_Mallee_Canola_Growers_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0044/6_Farms_Hygiene_Sanitation_Plan_Mallee_Canola_Growers_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0044/7_Bait_Station_Map_Mallee_Canola_Growers_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0044/8_Phytosanitary_Security_Procedure_Mallee_Canola_Growers_Pty_Ltd_094.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0044/9_Traceability_Records_Mallee_Canola_Growers_Pty_Ltd_094.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2022-0076",
+    "folder_id": "RE-VIC-2022-0076",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0076",
+    "subset_filter": null,
+    "farm_number": "10",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0076/1_Farm_10_Mallee_Premium_Grains_Co.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0076/2_HACCPPlan_10_Mallee_Premium_Grains_Co.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0076/3_PestControlRecord_10_Mallee_Premium_Grains_Co.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0076/4_Farm-Management-Plan_Mallee_Premium_Grains_Co.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0076/5_Farm-Site-Plan_Mallee_Premium_Grains_Co.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0076/6_Farms_Hygiene_Sanitation_Plan_Mallee_Premium_Grains_Co.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0076/7_Bait_Station_Map_Mallee_Premium_Grains_Co.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0076/8_Phytosanitary_Security_Procedure_Mallee_Premium_Grains_Co_010.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0076/9_Traceability_Records_Mallee_Premium_Grains_Co_010.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2022-0100",
+    "folder_id": "RE-VIC-2022-0100",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0100",
+    "subset_filter": null,
+    "farm_number": "47",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0100/1_Farm_47_Kerang_Grain_and_Pulse_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0100/2_HACCPPlan_47_Kerang_Grain_and_Pulse_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0100/3_PestControlRecord_47_Kerang_Grain_and_Pulse_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0100/4_Farm-Management-Plan_Kerang_Grain_and_Pulse_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0100/5_Farm-Site-Plan_Kerang_Grain_and_Pulse_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0100/6_Farms_Hygiene_Sanitation_Plan_Kerang_Grain_and_Pulse_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0100/7_Bait_Station_Map_Kerang_Grain_and_Pulse_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0100/8_Phytosanitary_Security_Procedure_Kerang_Grain_and_Pulse_Trust_047.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0100/9_Traceability_Records_Kerang_Grain_and_Pulse_Trust_047.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2022-0122",
+    "folder_id": "RE-VIC-2022-0122",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0122",
+    "subset_filter": null,
+    "farm_number": "88",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0122/1_Farm_88_Murray_Almond_Packers_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0122/2_HACCPPlan_88_Murray_Almond_Packers_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0122/3_PestControlRecord_88_Murray_Almond_Packers_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0122/4_Farm-Management-Plan_Murray_Almond_Packers_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0122/5_Farm-Site-Plan_Murray_Almond_Packers_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0122/6_Farms_Hygiene_Sanitation_Plan_Murray_Almond_Packers_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0122/7_Bait_Station_Map_Murray_Almond_Packers_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0122/8_Phytosanitary_Security_Procedure_Murray_Almond_Packers_Pty_Ltd_088.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0122/9_Traceability_Records_Murray_Almond_Packers_Pty_Ltd_088.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2022-0157",
+    "folder_id": "RE-VIC-2022-0157",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0157",
+    "subset_filter": null,
+    "farm_number": "30",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0157/1_Farm_30_Sundown_Grain_Services_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0157/2_HACCPPlan_30_Sundown_Grain_Services_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0157/3_PestControlRecord_30_Sundown_Grain_Services_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0157/4_Farm-Management-Plan_Sundown_Grain_Services_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0157/5_Farm-Site-Plan_Sundown_Grain_Services_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0157/6_Farms_Hygiene_Sanitation_Plan_Sundown_Grain_Services_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0157/7_Bait_Station_Map_Sundown_Grain_Services_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0157/8_Phytosanitary_Security_Procedure_Sundown_Grain_Services_Pty_Ltd_030.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0157/9_Traceability_Records_Sundown_Grain_Services_Pty_Ltd_030.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2022-0188",
+    "folder_id": "RE-VIC-2022-0188",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0188",
+    "subset_filter": null,
+    "farm_number": "60",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0188/1_Farm_60_Buloke_Malting_Barley_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0188/2_HACCPPlan_60_Buloke_Malting_Barley_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0188/3_PestControlRecord_60_Buloke_Malting_Barley_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0188/4_Farm-Management-Plan_Buloke_Malting_Barley_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0188/5_Farm-Site-Plan_Buloke_Malting_Barley_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0188/6_Farms_Hygiene_Sanitation_Plan_Buloke_Malting_Barley_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0188/7_Bait_Station_Map_Buloke_Malting_Barley_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0188/8_Phytosanitary_Security_Procedure_Buloke_Malting_Barley_Pty_Ltd_060.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2022-0188/9_Traceability_Records_Buloke_Malting_Barley_Pty_Ltd_060.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2023-0011",
+    "folder_id": "RE-VIC-2023-0011",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0011",
+    "subset_filter": null,
+    "farm_number": "15",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0011/1_Farm_15_Wimmera_Pulse_Partners.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0011/2_HACCPPlan_15_Wimmera_Pulse_Partners.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0011/3_PestControlRecord_15_Wimmera_Pulse_Partners.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0011/4_Farm-Management-Plan_Wimmera_Pulse_Partners.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0011/5_Farm-Site-Plan_Wimmera_Pulse_Partners.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0011/6_Farms_Hygiene_Sanitation_Plan_Wimmera_Pulse_Partners.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0011/7_Bait_Station_Map_Wimmera_Pulse_Partners.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0011/8_Phytosanitary_Security_Procedure_Wimmera_Pulse_Partners_015.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0011/9_Traceability_Records_Wimmera_Pulse_Partners_015.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-VIC-2023-0055",
+    "folder_id": "RE-VIC-2023-0055",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0055",
+    "subset_filter": null,
+    "farm_number": "79",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0055/1_Farm_79_Grampians_Organic_Wheat_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0055/2_HACCPPlan_79_Grampians_Organic_Wheat_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0055/3_PestControlRecord_79_Grampians_Organic_Wheat_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0055/4_Farm-Management-Plan_Grampians_Organic_Wheat_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0055/5_Farm-Site-Plan_Grampians_Organic_Wheat_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0055/6_Farms_Hygiene_Sanitation_Plan_Grampians_Organic_Wheat_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0055/7_Bait_Station_Map_Grampians_Organic_Wheat_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0055/8_Phytosanitary_Security_Procedure_Grampians_Organic_Wheat_Pty_Ltd_079.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-VIC-2023-0055/9_Traceability_Records_Grampians_Organic_Wheat_Pty_Ltd_079.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2020-0099",
+    "folder_id": "RE-WA-2020-0099",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0099",
+    "subset_filter": null,
+    "farm_number": "66",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0099/1_Farm_66_Wubin_Grain_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0099/2_HACCPPlan_66_Wubin_Grain_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0099/3_PestControlRecord_66_Wubin_Grain_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0099/4_Farm-Management-Plan_Wubin_Grain_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0099/5_Farm-Site-Plan_Wubin_Grain_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0099/6_Farms_Hygiene_Sanitation_Plan_Wubin_Grain_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0099/7_Bait_Station_Map_Wubin_Grain_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0099/8_Phytosanitary_Security_Procedure_Wubin_Grain_Trust_066.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0099/9_Traceability_Records_Wubin_Grain_Trust_066.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2020-0155",
+    "folder_id": "RE-WA-2020-0155",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0155",
+    "subset_filter": null,
+    "farm_number": "16",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0155/1_Farm_16_Kimberley_Premium_Exports_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0155/2_HACCPPlan_16_Kimberley_Premium_Exports_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0155/3_PestControlRecord_16_Kimberley_Premium_Exports_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0155/4_Farm-Management-Plan_Kimberley_Premium_Exports_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0155/5_Farm-Site-Plan_Kimberley_Premium_Exports_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0155/6_Farms_Hygiene_Sanitation_Plan_Kimberley_Premium_Exports_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0155/7_Bait_Station_Map_Kimberley_Premium_Exports_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0155/8_Phytosanitary_Security_Procedure_Kimberley_Premium_Exports_Pty_Ltd_016.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0155/9_Traceability_Records_Kimberley_Premium_Exports_Pty_Ltd_016.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2020-0177",
+    "folder_id": "RE-WA-2020-0177",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0177",
+    "subset_filter": null,
+    "farm_number": "55",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0177/1_Farm_55_Corrigin_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0177/2_HACCPPlan_55_Corrigin_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0177/3_PestControlRecord_55_Corrigin_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0177/4_Farm-Management-Plan_Corrigin_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0177/5_Farm-Site-Plan_Corrigin_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0177/6_Farms_Hygiene_Sanitation_Plan_Corrigin_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0177/7_Bait_Station_Map_Corrigin_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0177/8_Phytosanitary_Security_Procedure_Corrigin_Grain_Pty_Ltd_055.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0177/9_Traceability_Records_Corrigin_Grain_Pty_Ltd_055.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2020-0188",
+    "folder_id": "RE-WA-2020-0188",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0188",
+    "subset_filter": null,
+    "farm_number": "99",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0188/1_Farm_99_Wheatbelt_Storage_Co_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0188/2_HACCPPlan_99_Wheatbelt_Storage_Co_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0188/3_PestControlRecord_99_Wheatbelt_Storage_Co_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0188/4_Farm-Management-Plan_Wheatbelt_Storage_Co_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0188/5_Farm-Site-Plan_Wheatbelt_Storage_Co_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0188/6_Farms_Hygiene_Sanitation_Plan_Wheatbelt_Storage_Co_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0188/7_Bait_Station_Map_Wheatbelt_Storage_Co_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0188/8_Phytosanitary_Security_Procedure_Wheatbelt_Storage_Co_Pty_Ltd_099.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0188/9_Traceability_Records_Wheatbelt_Storage_Co_Pty_Ltd_099.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2020-0212",
+    "folder_id": "RE-WA-2020-0212",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0212",
+    "subset_filter": null,
+    "farm_number": "36",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0212/1_Farm_36_Cunderdin_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0212/2_HACCPPlan_36_Cunderdin_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0212/3_PestControlRecord_36_Cunderdin_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0212/4_Farm-Management-Plan_Cunderdin_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0212/5_Farm-Site-Plan_Cunderdin_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0212/6_Farms_Hygiene_Sanitation_Plan_Cunderdin_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0212/7_Bait_Station_Map_Cunderdin_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0212/8_Phytosanitary_Security_Procedure_Cunderdin_Grain_Pty_Ltd_036.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2020-0212/9_Traceability_Records_Cunderdin_Grain_Pty_Ltd_036.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2021-0041",
+    "folder_id": "RE-WA-2021-0041",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0041",
+    "subset_filter": null,
+    "farm_number": "1",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0041/1_Farm_01_Wheatfield_Exports_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0041/2_HACCPPlan_01_Wheatfield_Exports_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0041/3_PestControlRecord_01_Wheatfield_Exports_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0041/4_Farm-Management-Plan_Wheatfield_Exports_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0041/5_Farm-Site-Plan_Wheatfield_Exports_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0041/6_Farms_Hygiene_Sanitation_Plan_Wheatfield_Exports_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0041/7_Bait_Station_Map_Wheatfield_Exports_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0041/8_Phytosanitary_Security_Procedure_Wheatfield_Exports_Pty_Ltd_001.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0041/9_Traceability_Records_Wheatfield_Exports_Pty_Ltd_001.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2021-0077",
+    "folder_id": "RE-WA-2021-0077",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077",
+    "subset_filter": "Goldfields",
+    "farm_number": null,
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/1_Farm_35_Goldfields_Grain_Storage_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/2_HACCPPlan_35_Goldfields_Grain_Storage_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/3_PestControlRecord_35_Goldfields_Grain_Storage_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/4_Farm-Management-Plan_Goldfields_Grain_Storage_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/5_Farm-Site-Plan_Goldfields_Grain_Storage_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/6_Farms_Hygiene_Sanitation_Plan_Goldfields_Grain_Storage_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/7_Bait_Station_Map_Goldfields_Grain_Storage_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/8_Phytosanitary_Security_Procedure_Goldfields_Grain_Storage_Pty_Ltd_035.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/9_Traceability_Records_Goldfields_Grain_Storage_Pty_Ltd_035.xlsx"
+    },
+    "flags": [
+      "DOUBLED_A"
+    ]
+  },
+  {
+    "case_id": "RE-WA-2021-0077-B",
+    "folder_id": "RE-WA-2021-0077",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077",
+    "subset_filter": "Midwest",
+    "farm_number": null,
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/1_Farm_100_Midwest_Grain_Holdings_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/2_HACCPPlan_100_Midwest_Grain_Holdings_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/3_PestControlRecord_100_Midwest_Grain_Holdings_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/4_Farm-Management-Plan_Midwest_Grain_Holdings_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/5_Farm-Site-Plan_Midwest_Grain_Holdings_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/6_Farms_Hygiene_Sanitation_Plan_Midwest_Grain_Holdings_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/7_Bait_Station_Map_Midwest_Grain_Holdings_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/8_Phytosanitary_Security_Procedure_Midwest_Grain_Holdings_Pty_Ltd_100.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0077/9_Traceability_Records_Midwest_Grain_Holdings_Pty_Ltd_100.xlsx"
+    },
+    "flags": [
+      "DOUBLED_B",
+      "PROVISIONAL_ID"
+    ]
+  },
+  {
+    "case_id": "RE-WA-2021-0099",
+    "folder_id": "RE-WA-2021-0099",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0099",
+    "subset_filter": null,
+    "farm_number": "11",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0099/1_Farm_11_Swan_Valley_Almonds_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0099/2_HACCPPlan_11_Swan_Valley_Almonds_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0099/3_PestControlRecord_11_Swan_Valley_Almonds_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0099/4_Farm-Management-Plan_Swan_Valley_Almonds_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0099/5_Farm-Site-Plan_Swan_Valley_Almonds_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0099/6_Farms_Hygiene_Sanitation_Plan_Swan_Valley_Almonds_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0099/7_Bait_Station_Map_Swan_Valley_Almonds_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0099/8_Phytosanitary_Security_Procedure_Swan_Valley_Almonds_Pty_Ltd_011.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0099/9_Traceability_Records_Swan_Valley_Almonds_Pty_Ltd_011.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2021-0133",
+    "folder_id": "RE-WA-2021-0133",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0133",
+    "subset_filter": null,
+    "farm_number": "27",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0133/1_Farm_27_Avon_Valley_Exports_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0133/2_HACCPPlan_27_Avon_Valley_Exports_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0133/3_PestControlRecord_27_Avon_Valley_Exports_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0133/4_Farm-Management-Plan_Avon_Valley_Exports_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0133/5_Farm-Site-Plan_Avon_Valley_Exports_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0133/6_Farms_Hygiene_Sanitation_Plan_Avon_Valley_Exports_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0133/7_Bait_Station_Map_Avon_Valley_Exports_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0133/8_Phytosanitary_Security_Procedure_Avon_Valley_Exports_Trust_027.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0133/9_Traceability_Records_Avon_Valley_Exports_Trust_027.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2021-0166",
+    "folder_id": "RE-WA-2021-0166",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0166",
+    "subset_filter": null,
+    "farm_number": "72",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0166/1_Farm_72_Meckering_Grain_Services_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0166/2_HACCPPlan_72_Meckering_Grain_Services_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0166/3_PestControlRecord_72_Meckering_Grain_Services_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0166/4_Farm-Management-Plan_Meckering_Grain_Services_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0166/5_Farm-Site-Plan_Meckering_Grain_Services_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0166/6_Farms_Hygiene_Sanitation_Plan_Meckering_Grain_Services_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0166/7_Bait_Station_Map_Meckering_Grain_Services_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0166/8_Phytosanitary_Security_Procedure_Meckering_Grain_Services_Trust_072.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0166/9_Traceability_Records_Meckering_Grain_Services_Trust_072.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2021-0188",
+    "folder_id": "RE-WA-2021-0188",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0188",
+    "subset_filter": null,
+    "farm_number": "83",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0188/1_Farm_83_Kwinana_Malt_Barley_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0188/2_HACCPPlan_83_Kwinana_Malt_Barley_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0188/3_PestControlRecord_83_Kwinana_Malt_Barley_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0188/4_Farm-Management-Plan_Kwinana_Malt_Barley_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0188/5_Farm-Site-Plan_Kwinana_Malt_Barley_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0188/6_Farms_Hygiene_Sanitation_Plan_Kwinana_Malt_Barley_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0188/7_Bait_Station_Map_Kwinana_Malt_Barley_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0188/8_Phytosanitary_Security_Procedure_Kwinana_Malt_Barley_Pty_Ltd_083.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0188/9_Traceability_Records_Kwinana_Malt_Barley_Pty_Ltd_083.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2021-0199",
+    "folder_id": "RE-WA-2021-0199",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0199",
+    "subset_filter": null,
+    "farm_number": "52",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0199/1_Farm_52_Manjimup_Horticulture_Exports_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0199/2_HACCPPlan_52_Manjimup_Horticulture_Exports_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0199/3_PestControlRecord_52_Manjimup_Horticulture_Exports_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0199/4_Farm-Management-Plan_Manjimup_Horticulture_Exports_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0199/5_Farm-Site-Plan_Manjimup_Horticulture_Exports_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0199/6_Farms_Hygiene_Sanitation_Plan_Manjimup_Horticulture_Exports_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0199/7_Bait_Station_Map_Manjimup_Horticulture_Exports_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0199/8_Phytosanitary_Security_Procedure_Manjimup_Horticulture_Exports_Pty_Ltd_052.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0199/9_Traceability_Records_Manjimup_Horticulture_Exports_Pty_Ltd_052.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2021-0244",
+    "folder_id": "RE-WA-2021-0244",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0244",
+    "subset_filter": null,
+    "farm_number": "61",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0244/1_Farm_61_Merredin_Grain_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0244/2_HACCPPlan_61_Merredin_Grain_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0244/3_PestControlRecord_61_Merredin_Grain_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0244/4_Farm-Management-Plan_Merredin_Grain_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0244/5_Farm-Site-Plan_Merredin_Grain_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0244/6_Farms_Hygiene_Sanitation_Plan_Merredin_Grain_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0244/7_Bait_Station_Map_Merredin_Grain_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0244/8_Phytosanitary_Security_Procedure_Merredin_Grain_Trust_061.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0244/9_Traceability_Records_Merredin_Grain_Trust_061.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2021-0300",
+    "folder_id": "RE-WA-2021-0300",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0300",
+    "subset_filter": null,
+    "farm_number": "78",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0300/1_Farm_78_Geraldton_Bulk_Grain_Terminal_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0300/2_HACCPPlan_78_Geraldton_Bulk_Grain_Terminal_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0300/3_PestControlRecord_78_Geraldton_Bulk_Grain_Terminal_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0300/4_Farm-Management-Plan_Geraldton_Bulk_Grain_Terminal_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0300/5_Farm-Site-Plan_Geraldton_Bulk_Grain_Terminal_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0300/6_Farms_Hygiene_Sanitation_Plan_Geraldton_Bulk_Grain_Terminal_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0300/7_Bait_Station_Map_Geraldton_Bulk_Grain_Terminal_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0300/8_Phytosanitary_Security_Procedure_Geraldton_Bulk_Grain_Terminal_Pty_Ltd_078.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2021-0300/9_Traceability_Records_Geraldton_Bulk_Grain_Terminal_Pty_Ltd_078.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2022-0055",
+    "folder_id": "RE-WA-2022-0055",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0055",
+    "subset_filter": null,
+    "farm_number": "57",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0055/1_Farm_57_Karratha_Specialty_Crops_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0055/2_HACCPPlan_57_Karratha_Specialty_Crops_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0055/3_PestControlRecord_57_Karratha_Specialty_Crops_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0055/4_Farm-Management-Plan_Karratha_Specialty_Crops_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0055/5_Farm-Site-Plan_Karratha_Specialty_Crops_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0055/6_Farms_Hygiene_Sanitation_Plan_Karratha_Specialty_Crops_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0055/7_Bait_Station_Map_Karratha_Specialty_Crops_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0055/8_Phytosanitary_Security_Procedure_Karratha_Specialty_Crops_Pty_Ltd_057.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0055/9_Traceability_Records_Karratha_Specialty_Crops_Pty_Ltd_057.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2022-0088",
+    "folder_id": "RE-WA-2022-0088",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0088",
+    "subset_filter": null,
+    "farm_number": "31",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0088/1_Farm_31_Stirling_Range_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0088/2_HACCPPlan_31_Stirling_Range_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0088/3_PestControlRecord_31_Stirling_Range_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0088/4_Farm-Management-Plan_Stirling_Range_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0088/5_Farm-Site-Plan_Stirling_Range_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0088/6_Farms_Hygiene_Sanitation_Plan_Stirling_Range_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0088/7_Bait_Station_Map_Stirling_Range_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0088/8_Phytosanitary_Security_Procedure_Stirling_Range_Grain_Pty_Ltd_031.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0088/9_Traceability_Records_Stirling_Range_Grain_Pty_Ltd_031.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2022-0144",
+    "folder_id": "RE-WA-2022-0144",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0144",
+    "subset_filter": null,
+    "farm_number": "49",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0144/1_Farm_49_Fitzgerald_River_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0144/2_HACCPPlan_49_Fitzgerald_River_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0144/3_PestControlRecord_49_Fitzgerald_River_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0144/4_Farm-Management-Plan_Fitzgerald_River_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0144/5_Farm-Site-Plan_Fitzgerald_River_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0144/6_Farms_Hygiene_Sanitation_Plan_Fitzgerald_River_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0144/7_Bait_Station_Map_Fitzgerald_River_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0144/8_Phytosanitary_Security_Procedure_Fitzgerald_River_Grain_Pty_Ltd_049.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0144/9_Traceability_Records_Fitzgerald_River_Grain_Pty_Ltd_049.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2022-0166",
+    "folder_id": "RE-WA-2022-0166",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0166",
+    "subset_filter": null,
+    "farm_number": "37",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0166/1_Farm_37_Kojonup_Livestock_and_Grain_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0166/2_HACCPPlan_37_Kojonup_Livestock_and_Grain_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0166/3_PestControlRecord_37_Kojonup_Livestock_and_Grain_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0166/4_Farm-Management-Plan_Kojonup_Livestock_and_Grain_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0166/5_Farm-Site-Plan_Kojonup_Livestock_and_Grain_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0166/6_Farms_Hygiene_Sanitation_Plan_Kojonup_Livestock_and_Grain_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0166/7_Bait_Station_Map_Kojonup_Livestock_and_Grain_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0166/8_Phytosanitary_Security_Procedure_Kojonup_Livestock_and_Grain_Trust_037.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0166/9_Traceability_Records_Kojonup_Livestock_and_Grain_Trust_037.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2022-0177",
+    "folder_id": "RE-WA-2022-0177",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0177",
+    "subset_filter": null,
+    "farm_number": "96",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0177/1_Farm_96_Murchison_River_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0177/2_HACCPPlan_96_Murchison_River_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0177/3_PestControlRecord_96_Murchison_River_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0177/4_Farm-Management-Plan_Murchison_River_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0177/5_Farm-Site-Plan_Murchison_River_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0177/6_Farms_Hygiene_Sanitation_Plan_Murchison_River_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0177/7_Bait_Station_Map_Murchison_River_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0177/8_Phytosanitary_Security_Procedure_Murchison_River_Grain_Pty_Ltd_096.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0177/9_Traceability_Records_Murchison_River_Grain_Pty_Ltd_096.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2022-0204",
+    "folder_id": "RE-WA-2022-0204",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0204",
+    "subset_filter": null,
+    "farm_number": "6",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0204/1_Farm_06_Esperance_Grain_Handlers_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0204/2_HACCPPlan_06_Esperance_Grain_Handlers_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0204/3_PestControlRecord_06_Esperance_Grain_Handlers_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0204/4_Farm-Management-Plan_Esperance_Grain_Handlers_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0204/5_Farm-Site-Plan_Esperance_Grain_Handlers_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0204/6_Farms_Hygiene_Sanitation_Plan_Esperance_Grain_Handlers_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0204/7_Bait_Station_Map_Esperance_Grain_Handlers_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0204/8_Phytosanitary_Security_Procedure_Esperance_Grain_Handlers_Ltd_006.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0204/9_Traceability_Records_Esperance_Grain_Handlers_Ltd_006.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2022-0211",
+    "folder_id": "RE-WA-2022-0211",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0211",
+    "subset_filter": null,
+    "farm_number": "71",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0211/1_Farm_71_Bunbury_Port_Grain_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0211/2_HACCPPlan_71_Bunbury_Port_Grain_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0211/3_PestControlRecord_71_Bunbury_Port_Grain_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0211/4_Farm-Management-Plan_Bunbury_Port_Grain_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0211/5_Farm-Site-Plan_Bunbury_Port_Grain_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0211/6_Farms_Hygiene_Sanitation_Plan_Bunbury_Port_Grain_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0211/7_Bait_Station_Map_Bunbury_Port_Grain_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0211/8_Phytosanitary_Security_Procedure_Bunbury_Port_Grain_Pty_Ltd_071.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2022-0211/9_Traceability_Records_Bunbury_Port_Grain_Pty_Ltd_071.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2023-0018",
+    "folder_id": "RE-WA-2023-0018",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0018",
+    "subset_filter": null,
+    "farm_number": "25",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0018/1_Farm_25_Great_Southern_Canola_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0018/2_HACCPPlan_25_Great_Southern_Canola_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0018/3_PestControlRecord_25_Great_Southern_Canola_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0018/4_Farm-Management-Plan_Great_Southern_Canola_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0018/5_Farm-Site-Plan_Great_Southern_Canola_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0018/6_Farms_Hygiene_Sanitation_Plan_Great_Southern_Canola_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0018/7_Bait_Station_Map_Great_Southern_Canola_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0018/8_Phytosanitary_Security_Procedure_Great_Southern_Canola_Pty_Ltd_025.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0018/9_Traceability_Records_Great_Southern_Canola_Pty_Ltd_025.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2023-0033",
+    "folder_id": "RE-WA-2023-0033",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0033",
+    "subset_filter": null,
+    "farm_number": "45",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0033/1_Farm_45_Wongan_Hills_Grain_Trust.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0033/2_HACCPPlan_45_Wongan_Hills_Grain_Trust.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0033/3_PestControlRecord_45_Wongan_Hills_Grain_Trust.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0033/4_Farm-Management-Plan_Wongan_Hills_Grain_Trust.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0033/5_Farm-Site-Plan_Wongan_Hills_Grain_Trust.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0033/6_Farms_Hygiene_Sanitation_Plan_Wongan_Hills_Grain_Trust.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0033/7_Bait_Station_Map_Wongan_Hills_Grain_Trust.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0033/8_Phytosanitary_Security_Procedure_Wongan_Hills_Grain_Trust_045.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0033/9_Traceability_Records_Wongan_Hills_Grain_Trust_045.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2023-0044",
+    "folder_id": "RE-WA-2023-0044",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0044",
+    "subset_filter": null,
+    "farm_number": "87",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0044/1_Farm_87_Ord_River_Sunflower_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0044/2_HACCPPlan_87_Ord_River_Sunflower_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0044/3_PestControlRecord_87_Ord_River_Sunflower_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0044/4_Farm-Management-Plan_Ord_River_Sunflower_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0044/5_Farm-Site-Plan_Ord_River_Sunflower_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0044/6_Farms_Hygiene_Sanitation_Plan_Ord_River_Sunflower_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0044/7_Bait_Station_Map_Ord_River_Sunflower_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0044/8_Phytosanitary_Security_Procedure_Ord_River_Sunflower_Pty_Ltd_087.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0044/9_Traceability_Records_Ord_River_Sunflower_Pty_Ltd_087.xlsx"
+    },
+    "flags": []
+  },
+  {
+    "case_id": "RE-WA-2023-0055",
+    "folder_id": "RE-WA-2023-0055",
+    "folder_path": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0055",
+    "subset_filter": null,
+    "farm_number": "75",
+    "tracks": {
+      "1": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0055/1_Farm_75_Moora_Grain_and_Pulse_Pty_Ltd.docx",
+      "2": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0055/2_HACCPPlan_75_Moora_Grain_and_Pulse_Pty_Ltd.docx",
+      "3": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0055/3_PestControlRecord_75_Moora_Grain_and_Pulse_Pty_Ltd.xlsx",
+      "4": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0055/4_Farm-Management-Plan_Moora_Grain_and_Pulse_Pty_Ltd.docx",
+      "5": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0055/5_Farm-Site-Plan_Moora_Grain_and_Pulse_Pty_Ltd.docx",
+      "6": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0055/6_Farms_Hygiene_Sanitation_Plan_Moora_Grain_and_Pulse_Pty_Ltd.docx",
+      "7": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0055/7_Bait_Station_Map_Moora_Grain_and_Pulse_Pty_Ltd.docx",
+      "8": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0055/8_Phytosanitary_Security_Procedure_Moora_Grain_and_Pulse_Pty_Ltd_075.docx",
+      "9": "/Users/siddhantparashar/projects/cyberai_task2/Task2/SFRE_cases/RE-WA-2023-0055/9_Traceability_Records_Moora_Grain_and_Pulse_Pty_Ltd_075.xlsx"
+    },
+    "flags": []
+  }
+]

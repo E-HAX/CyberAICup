@@ -1,0 +1,62 @@
+[
+  {
+    "cp": "CP17",
+    "citations": ["policy/section_4-3.md", "policy/section_4-7A.md"],
+    "rationale": "Section 4-3(3) requires a system of controls to be in place at the establishment to ensure the conditions in section 4-7A are complied with, and section 4-7A(2)(a) is the specific condition requiring the establishment to be kept in a clean and hygienic condition, so together they are the basis for requiring a system of controls that manages hygiene."
+  },
+  {
+    "cp": "CP18",
+    "citations": ["policy/section_4-3.md", "policy/section_4-7A.md"],
+    "rationale": "Section 4-3(3) requires a system of controls to ensure compliance with section 4-7A, and section 4-7A(2)(d) is the specific condition requiring waste at the establishment to be appropriately treated and disposed of, so together they establish the obligation to have a system of controls for waste control and disposal."
+  },
+  {
+    "cp": "CP19",
+    "citations": ["policy/section_4-3.md"],
+    "rationale": "Section 4-3(3) requires that there be a system of controls in place at the establishment in relation to the export operations and plants or plant products for which it is registered, which is the source of the general requirement that the system of controls be effective for the type of export operations and activities conducted."
+  },
+  {
+    "cp": "CP20",
+    "citations": ["policy/section_4-3.md", "policy/section_4-7A.md"],
+    "rationale": "Section 4-3(3) requires a system of controls to ensure compliance with section 4-7A, and section 4-7A(1)(b) and 4-7A(2)(b) are the specific conditions requiring that prescribed plants or plant products not be infested by pests or contaminated and that pests and contaminants be controlled appropriately (which encompasses measures such as rodent bait stations), so together they impose the obligation for a system of controls managing pests and contaminants."
+  },
+  {
+    "cp": "CP21",
+    "citations": ["policy/section_4-3.md"],
+    "rationale": "Section 4-3(3) is the same general requirement for an effective system of controls in relation to the export operations and activities conducted at the establishment that underlies CP19, applied here to the pest-control system of controls addressed by CP20."
+  },
+  {
+    "cp": "CP22",
+    "citations": ["policy/section_11-7.md", "policy/section_4-7A.md"],
+    "rationale": "Section 11-7(1)(b) and (2) require the occupier of a registered establishment to retain, for at least 2 years, each record relevant to showing compliance with the conditions of registration, and section 4-7A is the substantive condition of registration (hygiene, waste and pest control) that those records must demonstrate compliance with."
+  },
+  {
+    "cp": "CP23",
+    "citations": ["policy/section_11-2.md"],
+    "rationale": "Section 11-2(1) directly prescribes that a record required to be retained under Chapter 11 must be in English, dated, and accurate, legible and able to be audited, matching the format requirements stated in CP23."
+  },
+  {
+    "cp": "CP24",
+    "citations": ["policy/section_4-7A.md"],
+    "rationale": "Section 4-7A(2)(a) directly requires a registered establishment to be kept in a clean and hygienic condition appropriate for the export operations carried out and the kind of plants or plant products, which is the exact obligation described by CP24."
+  },
+  {
+    "cp": "CP25",
+    "citations": ["policy/section_4-7A.md"],
+    "rationale": "Section 4-7A(1)(b) requires the establishment to be kept in a condition that ensures prescribed plants and plant products are not, or not likely to be, infested by pests or contaminated, and 4-7A(2)(b) requires pests and contaminants to be controlled appropriately, directly matching CP25's condition-of-establishment obligation."
+  },
+  {
+    "cp": "CP26",
+    "citations": ["policy/section_4-7A.md", "policy/section_4-6.md"],
+    "rationale": "Section 4-7A(2)(b) requires pests and contaminants at the establishment to be controlled in a manner appropriate for the export operations (which includes devices such as bait stations and traps being fit for purpose), and section 4-6 makes the equipment and facilities requirements of section 4-2 (including that equipment be adequate to ensure the requirements of the Act are met) continue to apply to a registered establishment, together supporting the obligation that pest-control equipment be fit for purpose and in good working order."
+  },
+  {
+    "cp": "CP27",
+    "citations": ["policy/section_4-7A.md"],
+    "rationale": "Section 4-7A(2)(c) requires toxic substances (including fumigants, rodenticides and insecticides) at the establishment to be managed and stored appropriately, and 4-7A(1)(b) requires that prescribed plants or plant products not be, or not likely to be, contaminated, together imposing the chemical-storage obligation aimed at preventing contamination of the plants or plant products described by CP27."
+  },
+  {
+    "cp": "CP28",
+    "citations": ["policy/section_4-7A.md"],
+    "rationale": "Section 4-7A(2)(c) requires toxic substances to be managed and stored appropriately, and 4-7A(1)(a) requires the establishment to be kept in a condition appropriate for the export operations carried out there, together imposing the chemical-storage obligation aimed at preventing contamination of the areas where prescribed plants or plant products are prepared, as described by CP28."
+  }
+]

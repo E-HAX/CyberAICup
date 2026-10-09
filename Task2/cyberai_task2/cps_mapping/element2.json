@@ -1,0 +1,47 @@
+[
+  {
+    "cp": "CP8",
+    "citations": ["policy/section_4-2.md", "policy/section_4-6.md"],
+    "rationale": "Section 4-2(2) requires an establishment to have the buildings, equipment, facilities and services necessary to carry out the export operations concerned, and section 4-6 requires that this section 4-2 requirement continue to be met after the establishment is registered, so together they are the basis for CP8's ongoing check of whether the establishment has what is required for the type of export operations conducted."
+  },
+  {
+    "cp": "CP9",
+    "citations": ["policy/section_4-2.md", "policy/section_4-6.md"],
+    "rationale": "Section 4-2(4)(a)(ii) requires the establishment and its equipment/facilities to be designed and constructed to provide adequate lighting (and ventilation), and section 4-6 carries this requirement forward as an ongoing obligation on the registered establishment, which is what CP9 checks."
+  },
+  {
+    "cp": "CP10",
+    "citations": ["policy/section_4-2.md", "policy/section_4-6.md"],
+    "rationale": "Section 4-2(3) expressly requires an establishment to have handwashing and toilet facilities, and section 4-6 requires this section 4-2 requirement to continue to be met once the establishment is registered, matching CP10's check that such facilities exist at the establishment."
+  },
+  {
+    "cp": "CP11",
+    "citations": ["policy/section_4-2.md", "policy/section_4-6.md"],
+    "rationale": "Section 4-2(4)(b) requires the establishment and its equipment/facilities to be designed and constructed to facilitate effective cleaning, and section 4-6 requires that this design/construction requirement continue to be met (i.e. be maintained) after registration, which is exactly the 'designed, constructed and maintained... effective cleaning' language of CP11."
+  },
+  {
+    "cp": "CP12",
+    "citations": ["policy/section_4-2.md", "policy/section_4-6.md"],
+    "rationale": "Section 4-2(4)(c) requires the establishment and its equipment/facilities to be designed and constructed to minimise the possibility of infestation or contamination of prescribed plants or plant products, and section 4-6 requires this to continue to be met after registration (i.e. be maintained), directly underpinning CP12's 'designed, constructed and maintained... minimise contamination, infestation and pest harbourage' wording."
+  },
+  {
+    "cp": "CP13",
+    "citations": ["policy/section_4-2.md", "policy/section_4-6.md"],
+    "rationale": "Section 4-2(4)(d) requires the establishment and its equipment/facilities to be designed and constructed to provide for disposal of all waste material (including liquids and solids) in an appropriate and hygienic manner, and section 4-6 requires that requirement to continue to be met (maintained) once registered, matching CP13's waste-disposal design/construction/maintenance check."
+  },
+  {
+    "cp": "CP14",
+    "citations": ["policy/section_4-2.md", "policy/section_4-6.md"],
+    "rationale": "Section 4-2(4)(a)(i) and (f) require the establishment to be designed and constructed to provide areas suitable for assessments of prescribed plants or plant products and to allow samples to be taken (with subsection (5) extending this to testing/analysis facilities), and section 4-6 requires these design/construction requirements to continue to be met (maintained) after registration, together forming the basis for CP14's check of inspection areas, equipment and facilities including inspection benches."
+  },
+  {
+    "cp": "CP15",
+    "citations": ["policy/section_4-9.md"],
+    "rationale": "Section 4-9(2)(a) provides that, if screening of the plants or plant products is carried out at the establishment, it must be carried out in a way that is appropriate to manage the risk of contamination by large contaminants, which is the verbatim source of CP15's obligation."
+  },
+  {
+    "cp": "CP16",
+    "citations": ["policy/section_4-9.md"],
+    "rationale": "Section 4-9(2)(b) provides that screening carried out at the establishment must be carried out in a way that is appropriate to ensure that any large contaminants are removed from the plants or plant products, which is the verbatim source of CP16's obligation."
+  }
+]
