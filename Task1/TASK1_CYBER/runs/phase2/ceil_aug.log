@@ -1,0 +1,24 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/bigbalak/main/ap-pTKFVV36AiMtoY6RXaNPJ7
+✓ Created objects.
+├── 🔨 Created mount /Users/siddhantparashar/projects/TASK1_CYBER/modal_app.py
+├── 🔨 Created mount /Users/siddhantparashar/projects/TASK1_CYBER/src
+├── 🔨 Created function preprocess_one.
+├── 🔨 Created function preprocess_all.
+├── 🔨 Created function synth_shard.
+├── 🔨 Created function synth_merge.
+├── 🔨 Created function synth_all.
+├── 🔨 Created function train_stage1.
+├── 🔨 Created function smoke_test.
+├── 🔨 Created function predict_oof.
+├── 🔨 Created function train_verifier_fn.
+├── 🔨 Created function verifier_ab.
+├── 🔨 Created function verifier_cv_fold.
+├── 🔨 Created function score_pooled.
+└── 🔨 Created function predict_test.
+/root/src/pmdm/infer.py:165: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(ckpt_path, map_location="cpu")
+{'tp': 243, 'fp': 14, 'fn': 25, 'precision': 0.9455252918287937, 'recall': 0.9067164179104478, 'f1': 0.9257142857142858, 'threshold': 0.26000000000000006}
+✓ App completed. View run at 
+https://modal.com/apps/bigbalak/main/ap-pTKFVV36AiMtoY6RXaNPJ7

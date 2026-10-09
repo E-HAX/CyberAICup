@@ -1,0 +1,10 @@
+pairs: 40, ground-truth boxes: 268, candidates per image: 10.5
+matched at IoU >= 0.5:        252
+proposed but IoU < 0.5:       5
+never proposed (IoU == 0):    11
+recall ceiling with perfect boxes: 0.9590
+
+by box size (longest side):
+  <12px     n=  64  matched=0.828  never_proposed=10
+  12-24px   n=  47  matched=0.979  never_proposed=1
+  >24px     n= 157  matched=0.975  never_proposed=0

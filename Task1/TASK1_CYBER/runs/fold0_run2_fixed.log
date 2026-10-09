@@ -1,0 +1,215 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/bigbalak/main/ap-ZBOBVq3nf0ovbtbyQg9V3c
+✓ Created objects.
+├── 🔨 Created mount /Users/siddhantparashar/projects/TASK1_CYBER/modal_app.py
+├── 🔨 Created mount /Users/siddhantparashar/projects/TASK1_CYBER/src
+├── 🔨 Created function preprocess_one.
+├── 🔨 Created function preprocess_all.
+├── 🔨 Created function synth_shard.
+├── 🔨 Created function synth_all.
+├── 🔨 Created function train_stage1.
+├── 🔨 Created function smoke_test.
+├── 🔨 Created function predict_oof.
+├── 🔨 Created function train_verifier_fn.
+└── 🔨 Created function predict_test.
+gpu: NVIDIA A100-SXM4-40GB
+[fold 0] epoch 0 step 0/160 hm=5.854 off=0.563 seg=0.509 total=10.616 wh=3.690
+[fold 0] epoch 0 step 50/160 hm=3.466 off=0.581 seg=0.510 total=9.293 wh=4.735
+[fold 0] epoch 0 step 100/160 hm=3.164 off=0.584 seg=0.485 total=7.846 wh=3.614
+[fold 0] epoch 0 step 150/160 hm=2.792 off=0.527 seg=0.472 total=6.690 wh=2.899
+[fold 0] epoch 1 step 0/160 hm=1.958 off=0.209 seg=0.442 total=3.858 wh=1.250
+[fold 0] epoch 1 step 50/160 hm=1.726 off=0.342 seg=0.428 total=4.107 wh=1.611
+[fold 0] epoch 1 step 100/160 hm=1.780 off=0.346 seg=0.419 total=4.001 wh=1.456
+[fold 0] epoch 1 step 150/160 hm=1.685 off=0.332 seg=0.408 total=3.999 wh=1.575
+[fold 0] epoch 2 step 0/160 hm=1.403 off=0.249 seg=0.282 total=2.761 wh=0.825
+[fold 0] epoch 2 step 50/160 hm=1.861 off=0.269 seg=0.370 total=4.268 wh=1.769
+[fold 0] epoch 2 step 100/160 hm=1.678 off=0.260 seg=0.360 total=4.112 wh=1.813
+[fold 0] epoch 2 step 150/160 hm=1.848 off=0.266 seg=0.338 total=4.122 wh=1.671
+[fold 0] epoch 3 step 0/160 hm=1.549 off=0.245 seg=0.218 total=5.430 wh=3.418
+[fold 0] epoch 3 step 50/160 hm=1.594 off=0.238 seg=0.274 total=3.906 wh=1.800
+[fold 0] epoch 3 step 100/160 hm=1.380 off=0.237 seg=0.244 total=3.371 wh=1.511
+[fold 0] epoch 3 step 150/160 hm=1.374 off=0.240 seg=0.222 total=3.300 wh=1.465
+[fold 0] epoch 4 step 0/160 hm=1.596 off=0.210 seg=0.134 total=3.259 wh=1.318
+[fold 0] epoch 4 step 50/160 hm=0.967 off=0.216 seg=0.153 total=2.356 wh=1.020
+[fold 0] epoch 4 step 100/160 hm=1.022 off=0.216 seg=0.152 total=2.501 wh=1.111
+[fold 0] epoch 4 step 150/160 hm=0.952 off=0.211 seg=0.145 total=2.507 wh=1.200
+[fold 0] epoch 4 val {'epoch': 4, 'seconds': 51.9, 'hm': 0.9659953825175762, 'wh': 1.1685462838038803, 'off': 0.2112523281481117, 'seg': 0.14454037670511752, 'total': 2.490334367007017, 'tp': 198, 'fp': 36, 'fn': 70, 'precision': 0.8461538461538461, 'recall': 0.7388059701492538, 'f1': 0.7888446215139443, 'threshold': 0.27}
+[fold 0] epoch 5 step 0/160 hm=0.849 off=0.291 seg=0.117 total=1.669 wh=0.412
+[fold 0] epoch 5 step 50/160 hm=0.859 off=0.220 seg=0.127 total=2.268 wh=1.062
+[fold 0] epoch 5 step 100/160 hm=0.867 off=0.214 seg=0.124 total=2.232 wh=1.027
+[fold 0] epoch 5 step 150/160 hm=0.821 off=0.205 seg=0.119 total=2.089 wh=0.943
+[fold 0] epoch 6 step 0/160 hm=0.312 off=0.174 seg=0.110 total=1.460 wh=0.865
+[fold 0] epoch 6 step 50/160 hm=0.793 off=0.193 seg=0.097 total=1.813 wh=0.729
+[fold 0] epoch 6 step 100/160 hm=0.766 off=0.195 seg=0.097 total=2.050 wh=0.991
+[fold 0] epoch 6 step 150/160 hm=0.690 off=0.189 seg=0.096 total=1.865 wh=0.890
+[fold 0] epoch 7 step 0/160 hm=0.403 off=0.216 seg=0.077 total=1.348 wh=0.651
+[fold 0] epoch 7 step 50/160 hm=0.564 off=0.190 seg=0.092 total=1.694 wh=0.849
+[fold 0] epoch 7 step 100/160 hm=0.586 off=0.189 seg=0.092 total=1.630 wh=0.763
+[fold 0] epoch 7 step 150/160 hm=0.602 off=0.190 seg=0.089 total=1.662 wh=0.782
+[fold 0] epoch 8 step 0/160 hm=1.555 off=0.107 seg=0.086 total=3.623 wh=1.876
+[fold 0] epoch 8 step 50/160 hm=0.462 off=0.187 seg=0.081 total=1.399 wh=0.669
+[fold 0] epoch 8 step 100/160 hm=0.468 off=0.187 seg=0.081 total=1.455 wh=0.719
+[fold 0] epoch 8 step 150/160 hm=0.566 off=0.184 seg=0.081 total=1.622 wh=0.791
+[fold 0] epoch 9 step 0/160 hm=0.477 off=0.136 seg=0.073 total=1.194 wh=0.507
+[fold 0] epoch 9 step 50/160 hm=0.489 off=0.170 seg=0.076 total=1.274 wh=0.539
+[fold 0] epoch 9 step 100/160 hm=0.478 off=0.178 seg=0.077 total=1.412 wh=0.678
+[fold 0] epoch 9 step 150/160 hm=0.470 off=0.173 seg=0.076 total=1.366 wh=0.647
+[fold 0] epoch 9 val {'epoch': 9, 'seconds': 52.1, 'hm': 0.4611017261864617, 'wh': 0.6320579320657999, 'off': 0.1731757574249059, 'seg': 0.07503816401585936, 'total': 1.341373585909605, 'tp': 223, 'fp': 40, 'fn': 45, 'precision': 0.8479087452471483, 'recall': 0.832089552238806, 'f1': 0.8399246704331449, 'threshold': 0.34}
+[fold 0] epoch 10 step 0/160 hm=0.157 off=0.200 seg=0.039 total=0.761 wh=0.365
+[fold 0] epoch 10 step 50/160 hm=0.508 off=0.188 seg=0.071 total=1.680 wh=0.913
+[fold 0] epoch 10 step 100/160 hm=0.429 off=0.172 seg=0.070 total=1.327 wh=0.657
+[fold 0] epoch 10 step 150/160 hm=0.410 off=0.172 seg=0.069 total=1.246 wh=0.595
+[fold 0] epoch 11 step 0/160 hm=0.318 off=0.147 seg=0.052 total=0.839 wh=0.322
+[fold 0] epoch 11 step 50/160 hm=0.421 off=0.170 seg=0.073 total=1.225 wh=0.562
+[fold 0] epoch 11 step 100/160 hm=0.375 off=0.163 seg=0.070 total=1.269 wh=0.660
+[fold 0] epoch 11 step 150/160 hm=0.379 off=0.159 seg=0.067 total=1.213 wh=0.608
+[fold 0] epoch 12 step 0/160 hm=1.698 off=0.236 seg=0.285 total=13.015 wh=10.796
+[fold 0] epoch 12 step 50/160 hm=0.403 off=0.176 seg=0.073 total=1.538 wh=0.886
+[fold 0] epoch 12 step 100/160 hm=0.333 off=0.160 seg=0.067 total=1.205 wh=0.646
+[fold 0] epoch 12 step 150/160 hm=0.309 off=0.162 seg=0.065 total=1.098 wh=0.562
+[fold 0] epoch 13 step 0/160 hm=0.285 off=0.147 seg=0.056 total=0.929 wh=0.441
+[fold 0] epoch 13 step 50/160 hm=0.291 off=0.154 seg=0.064 total=1.067 wh=0.557
+[fold 0] epoch 13 step 100/160 hm=0.241 off=0.154 seg=0.059 total=0.923 wh=0.469
+[fold 0] epoch 13 step 150/160 hm=0.240 off=0.153 seg=0.058 total=0.901 wh=0.449
+[fold 0] epoch 14 step 0/160 hm=0.213 off=0.162 seg=0.064 total=0.939 wh=0.500
+[fold 0] epoch 14 step 50/160 hm=0.263 off=0.150 seg=0.061 total=0.989 wh=0.515
+[fold 0] epoch 14 step 100/160 hm=0.263 off=0.152 seg=0.059 total=1.012 wh=0.539
+[fold 0] epoch 14 step 150/160 hm=0.239 off=0.151 seg=0.055 total=0.906 wh=0.460
+[fold 0] epoch 14 val {'epoch': 14, 'seconds': 51.8, 'hm': 0.2364484384772368, 'wh': 0.4609789331909269, 'off': 0.1511461976915598, 'seg': 0.05428905748995021, 'total': 0.9028626272454858, 'tp': 229, 'fp': 42, 'fn': 39, 'precision': 0.8450184501845018, 'recall': 0.8544776119402985, 'f1': 0.8497217068645639, 'threshold': 0.4000000000000001}
+[fold 0] epoch 15 step 0/160 hm=0.265 off=0.169 seg=0.069 total=0.953 wh=0.450
+[fold 0] epoch 15 step 50/160 hm=0.176 off=0.147 seg=0.053 total=0.774 wh=0.397
+[fold 0] epoch 15 step 100/160 hm=0.207 off=0.148 seg=0.055 total=0.954 wh=0.543
+[fold 0] epoch 15 step 150/160 hm=0.195 off=0.145 seg=0.054 total=0.851 wh=0.457
+[fold 0] epoch 16 step 0/160 hm=0.125 off=0.117 seg=0.036 total=0.574 wh=0.296
+[fold 0] epoch 16 step 50/160 hm=0.156 off=0.150 seg=0.046 total=0.703 wh=0.352
+[fold 0] epoch 16 step 100/160 hm=0.181 off=0.146 seg=0.053 total=0.807 wh=0.427
+[fold 0] epoch 16 step 150/160 hm=0.186 off=0.144 seg=0.050 total=0.780 wh=0.400
+[fold 0] epoch 17 step 0/160 hm=0.256 off=0.130 seg=0.038 total=0.566 wh=0.143
+[fold 0] epoch 17 step 50/160 hm=0.141 off=0.135 seg=0.048 total=0.620 wh=0.296
+[fold 0] epoch 17 step 100/160 hm=0.150 off=0.139 seg=0.047 total=0.720 wh=0.383
+[fold 0] epoch 17 step 150/160 hm=0.144 off=0.139 seg=0.047 total=0.718 wh=0.388
+[fold 0] epoch 18 step 0/160 hm=0.113 off=0.079 seg=0.038 total=0.319 wh=0.090
+[fold 0] epoch 18 step 50/160 hm=0.121 off=0.138 seg=0.047 total=0.638 wh=0.331
+[fold 0] epoch 18 step 100/160 hm=0.130 off=0.140 seg=0.047 total=0.658 wh=0.342
+[fold 0] epoch 18 step 150/160 hm=0.137 off=0.138 seg=0.048 total=0.725 wh=0.402
+[fold 0] epoch 19 step 0/160 hm=0.074 off=0.118 seg=0.051 total=0.486 wh=0.243
+[fold 0] epoch 19 step 50/160 hm=0.122 off=0.138 seg=0.045 total=0.610 wh=0.304
+[fold 0] epoch 19 step 100/160 hm=0.095 off=0.128 seg=0.042 total=0.518 wh=0.253
+[fold 0] epoch 19 step 150/160 hm=0.096 off=0.126 seg=0.043 total=0.561 wh=0.297
+[fold 0] epoch 19 val {'epoch': 19, 'seconds': 56.6, 'hm': 0.09640794589940924, 'wh': 0.32411520564928653, 'off': 0.12538041984662412, 'seg': 0.04329651841544546, 'total': 0.5892000922001899, 'tp': 238, 'fp': 20, 'fn': 30, 'precision': 0.9224806201550387, 'recall': 0.8880597014925373, 'f1': 0.9049429657794676, 'threshold': 0.31000000000000005}
+[fold 0] epoch 20 step 0/160 hm=0.041 off=0.097 seg=0.026 total=0.329 wh=0.164
+[fold 0] epoch 20 step 50/160 hm=0.065 off=0.120 seg=0.044 total=0.605 wh=0.377
+[fold 0] epoch 20 step 100/160 hm=0.075 off=0.125 seg=0.043 total=0.555 wh=0.312
+[fold 0] epoch 20 step 150/160 hm=0.075 off=0.124 seg=0.042 total=0.514 wh=0.272
+[fold 0] epoch 21 step 0/160 hm=0.016 off=0.126 seg=0.044 total=0.513 wh=0.327
+[fold 0] epoch 21 step 50/160 hm=0.049 off=0.111 seg=0.039 total=0.546 wh=0.347
+[fold 0] epoch 21 step 100/160 hm=0.050 off=0.115 seg=0.040 total=0.502 wh=0.296
+[fold 0] epoch 21 step 150/160 hm=0.047 off=0.111 seg=0.038 total=0.481 wh=0.284
+[fold 0] epoch 22 step 0/160 hm=0.024 off=0.091 seg=0.031 total=0.379 wh=0.233
+[fold 0] epoch 22 step 50/160 hm=0.060 off=0.121 seg=0.041 total=0.751 wh=0.528
+[fold 0] epoch 22 step 100/160 hm=0.082 off=0.116 seg=0.040 total=0.655 wh=0.418
+[fold 0] epoch 22 step 150/160 hm=0.066 off=0.108 seg=0.039 total=0.555 wh=0.343
+[fold 0] epoch 23 step 0/160 hm=0.035 off=0.117 seg=0.044 total=0.308 wh=0.112
+[fold 0] epoch 23 step 50/160 hm=0.056 off=0.105 seg=0.038 total=0.464 wh=0.265
+[fold 0] epoch 23 step 100/160 hm=0.046 off=0.100 seg=0.035 total=0.426 wh=0.244
+[fold 0] epoch 23 step 150/160 hm=0.045 off=0.101 seg=0.037 total=0.474 wh=0.291
+[fold 0] epoch 24 step 0/160 hm=0.062 off=0.083 seg=0.037 total=0.325 wh=0.143
+[fold 0] epoch 24 step 50/160 hm=0.031 off=0.099 seg=0.040 total=0.473 wh=0.303
+[fold 0] epoch 24 step 100/160 hm=0.031 off=0.100 seg=0.036 total=0.422 wh=0.255
+[fold 0] epoch 24 step 150/160 hm=0.029 off=0.097 seg=0.035 total=0.404 wh=0.242
+[fold 0] epoch 24 val {'epoch': 24, 'seconds': 168.5, 'hm': 0.02899519657876226, 'wh': 0.23648295318707824, 'off': 0.0973702484741807, 'seg': 0.03537957562948577, 'total': 0.3982279765885323, 'tp': 240, 'fp': 28, 'fn': 28, 'precision': 0.8955223880597015, 'recall': 0.8955223880597015, 'f1': 0.8955223880597015, 'threshold': 0.29000000000000004}
+[fold 0] epoch 25 step 0/160 hm=0.002 off=0.099 seg=0.025 total=0.315 wh=0.188
+[fold 0] epoch 25 step 50/160 hm=0.031 off=0.105 seg=0.036 total=0.415 wh=0.243
+[fold 0] epoch 25 step 100/160 hm=0.025 off=0.096 seg=0.034 total=0.355 wh=0.200
+[fold 0] epoch 25 step 150/160 hm=0.023 off=0.092 seg=0.034 total=0.373 wh=0.223
+[fold 0] epoch 26 step 0/160 hm=0.015 off=0.070 seg=0.027 total=0.255 wh=0.143
+[fold 0] epoch 26 step 50/160 hm=0.032 off=0.081 seg=0.036 total=0.362 wh=0.213
+[fold 0] epoch 26 step 100/160 hm=0.024 off=0.080 seg=0.033 total=0.319 wh=0.183
+[fold 0] epoch 26 step 150/160 hm=0.020 off=0.080 seg=0.032 total=0.318 wh=0.186
+[fold 0] epoch 27 step 0/160 hm=0.025 off=0.083 seg=0.051 total=0.342 wh=0.183
+[fold 0] epoch 27 step 50/160 hm=0.006 off=0.068 seg=0.027 total=0.260 wh=0.159
+[fold 0] epoch 27 step 100/160 hm=0.011 off=0.068 seg=0.027 total=0.251 wh=0.146
+[fold 0] epoch 27 step 150/160 hm=0.016 off=0.076 seg=0.032 total=0.324 wh=0.200
+[fold 0] epoch 28 step 0/160 hm=0.003 off=0.067 seg=0.027 total=0.250 wh=0.154
+[fold 0] epoch 28 step 50/160 hm=0.007 off=0.077 seg=0.034 total=0.338 wh=0.220
+[fold 0] epoch 28 step 100/160 hm=0.012 off=0.070 seg=0.031 total=0.294 wh=0.181
+[fold 0] epoch 28 step 150/160 hm=0.011 off=0.070 seg=0.031 total=0.299 wh=0.187
+[fold 0] epoch 29 step 0/160 hm=0.008 off=0.088 seg=0.027 total=0.298 wh=0.175
+[fold 0] epoch 29 step 50/160 hm=0.012 off=0.062 seg=0.028 total=0.244 wh=0.142
+[fold 0] epoch 29 step 100/160 hm=0.009 off=0.061 seg=0.030 total=0.267 wh=0.167
+[fold 0] epoch 29 step 150/160 hm=0.008 off=0.060 seg=0.029 total=0.244 wh=0.147
+[fold 0] epoch 29 val {'epoch': 29, 'seconds': 51.5, 'hm': 0.007748707819155242, 'wh': 0.15144659313373268, 'off': 0.06070073081646114, 'seg': 0.029569985443959012, 'total': 0.24946601828560233, 'tp': 232, 'fp': 22, 'fn': 36, 'precision': 0.9133858267716536, 'recall': 0.8656716417910447, 'f1': 0.8888888888888888, 'threshold': 0.39000000000000007}
+[fold 0] epoch 30 step 0/160 hm=0.026 off=0.056 seg=0.046 total=0.279 wh=0.151
+[fold 0] epoch 30 step 50/160 hm=0.010 off=0.062 seg=0.026 total=0.221 wh=0.122
+[fold 0] epoch 30 step 100/160 hm=0.007 off=0.061 seg=0.029 total=0.255 wh=0.158
+[fold 0] epoch 30 step 150/160 hm=0.006 off=0.058 seg=0.029 total=0.237 wh=0.143
+[fold 0] epoch 31 step 0/160 hm=0.011 off=0.134 seg=0.026 total=0.861 wh=0.690
+[fold 0] epoch 31 step 50/160 hm=0.003 off=0.050 seg=0.025 total=0.190 wh=0.112
+[fold 0] epoch 31 step 100/160 hm=0.003 off=0.052 seg=0.027 total=0.193 wh=0.110
+[fold 0] epoch 31 step 150/160 hm=0.011 off=0.051 seg=0.028 total=0.206 wh=0.116
+[fold 0] epoch 32 step 0/160 hm=0.007 off=0.136 seg=0.027 total=0.350 wh=0.180
+[fold 0] epoch 32 step 50/160 hm=0.008 off=0.042 seg=0.024 total=0.147 wh=0.073
+[fold 0] epoch 32 step 100/160 hm=0.006 off=0.048 seg=0.027 total=0.173 wh=0.091
+[fold 0] epoch 32 step 150/160 hm=0.005 off=0.047 seg=0.027 total=0.187 wh=0.108
+[fold 0] epoch 33 step 0/160 hm=0.018 off=0.122 seg=0.033 total=0.404 wh=0.231
+[fold 0] epoch 33 step 50/160 hm=0.004 off=0.042 seg=0.031 total=0.218 wh=0.142
+[fold 0] epoch 33 step 100/160 hm=0.004 off=0.042 seg=0.028 total=0.187 wh=0.114
+[fold 0] epoch 33 step 150/160 hm=0.005 off=0.041 seg=0.027 total=0.178 wh=0.106
+[fold 0] epoch 34 step 0/160 hm=0.001 off=0.022 seg=0.025 total=0.094 wh=0.046
+[fold 0] epoch 34 step 50/160 hm=0.002 off=0.035 seg=0.026 total=0.136 wh=0.073
+[fold 0] epoch 34 step 100/160 hm=0.002 off=0.036 seg=0.026 total=0.163 wh=0.099
+[fold 0] epoch 34 step 150/160 hm=0.004 off=0.038 seg=0.027 total=0.163 wh=0.094
+[fold 0] epoch 34 val {'epoch': 34, 'seconds': 51.7, 'hm': 0.004006238553483854, 'wh': 0.09249937654240056, 'off': 0.037480109318858014, 'seg': 0.026637694869714325, 'total': 0.16062341788783668, 'tp': 235, 'fp': 26, 'fn': 33, 'precision': 0.9003831417624522, 'recall': 0.8768656716417911, 'f1': 0.888468809073724, 'threshold': 0.37000000000000005}
+[fold 0] epoch 35 step 0/160 hm=0.002 off=0.029 seg=0.020 total=0.106 wh=0.055
+[fold 0] epoch 35 step 50/160 hm=0.002 off=0.035 seg=0.024 total=0.128 wh=0.068
+[fold 0] epoch 35 step 100/160 hm=0.002 off=0.037 seg=0.027 total=0.162 wh=0.096
+[fold 0] epoch 35 step 150/160 hm=0.004 off=0.035 seg=0.026 total=0.149 wh=0.084
+[fold 0] epoch 36 step 0/160 hm=0.001 off=0.038 seg=0.024 total=0.099 wh=0.037
+[fold 0] epoch 36 step 50/160 hm=0.002 off=0.029 seg=0.027 total=0.120 wh=0.062
+[fold 0] epoch 36 step 100/160 hm=0.005 off=0.032 seg=0.026 total=0.132 wh=0.069
+[modal-client] 2026-08-15T16:54:21+0000 Received a cancellation signal while processing input ('in-01M032NZS72PYHF9T682PK25MJ:1786809876264-0',)
+[modal-client] 2026-08-15T16:54:21+0000 Successfully canceled input ('in-01M032NZS72PYHF9T682PK25MJ:1786809876264-0',)
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /Users/siddhantparashar/projects/TASK1_CYBER/modal_app.py:311 in train       │
+│                                                                              │
+│   310 │   │     n_synth: int = 0, samples_per_pair: int = 8, batch: int = 8) │
+│ ❱ 311 │   print(train_stage1.remote(fold, epochs, backbone, n_synth, samples │
+│   312                                                                        │
+│                                                                              │
+│ /Users/siddhantparashar/projects/TASK1_CYBER/.venv/lib/python3.12/site-packa │
+│ ges/modal/_object.py:46 in wrapped                                           │
+│                                                                              │
+│    45 │   │   await self.hydrate()                                           │
+│ ❱  46 │   │   return await method(self, *args, **kwargs)                     │
+│    47                                                                        │
+│                                                                              │
+│ /Users/siddhantparashar/projects/TASK1_CYBER/.venv/lib/python3.12/site-packa │
+│ ges/modal/_functions.py:1841 in remote                                       │
+│                                                                              │
+│   1840 │   │                                                                 │
+│ ❱ 1841 │   │   return await self._call_function(args, kwargs)                │
+│   1842                                                                       │
+│                                                                              │
+│ /Users/siddhantparashar/projects/TASK1_CYBER/.venv/lib/python3.12/site-packa │
+│ ges/modal/_functions.py:1778 in _call_function                               │
+│                                                                              │
+│   1777 │   │                                                                 │
+│ ❱ 1778 │   │   return await invocation.run_function()                        │
+│   1779                                                                       │
+│                                                                              │
+│ /Users/siddhantparashar/projects/TASK1_CYBER/.venv/lib/python3.12/site-packa │
+│ ges/modal/_functions.py:483 in run_function                                  │
+│                                                                              │
+│    482 │   │   │   if await_response.output.result.status in TERMINAL_STATUS │
+│ ❱  483 │   │   │   │   return await _process_result(                         │
+│    484 │   │   │   │   │   await_response.output.result, await_response.outp │
+│                                                                              │
+│ /Users/siddhantparashar/projects/TASK1_CYBER/.venv/lib/python3.12/site-packa │
+│ ges/modal/_utils/function_utils.py:574 in _process_result                    │
+│                                                                              │
+│   573 │   │                                                                  │
+│ ❱ 574 │   │   raise RemoteError(result.exception)                            │
+│   575                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────╯
+RemoteError: Function call was cancelled by user or a failure.

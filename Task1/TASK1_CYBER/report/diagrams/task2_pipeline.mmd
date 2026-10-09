@@ -1,0 +1,68 @@
+%%{init: {"theme":"base", "themeVariables": {
+  "fontFamily":"-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+  "fontSize":"14px",
+  "primaryColor":"#7d66b8",
+  "primaryTextColor":"#ffffff",
+  "primaryBorderColor":"#5e4b96",
+  "lineColor":"#9a8cc4",
+  "secondaryColor":"#f1edf9",
+  "tertiaryColor":"#ffffff",
+  "clusterBkg":"#f8f6fc",
+  "clusterBorder":"#d5cdea",
+  "edgeLabelBackground":"#ffffff",
+  "nodeBorder":"#7d66b8"
+}}}%%
+flowchart TB
+    classDef data fill:#fdf3e3,stroke:#d99b3d,stroke-width:1.4px,color:#5b3d12;
+    classDef stage fill:#e7f2e9,stroke:#5e9d6b,stroke-width:1.4px,color:#23482a;
+    classDef model fill:#efe9f7,stroke:#7d66b8,stroke-width:1.4px,color:#3a2a66;
+    classDef score fill:#fbe9ee,stroke:#c95f83,stroke-width:1.4px,color:#5c1d33;
+    classDef guard fill:#fdeaea,stroke:#c05050,stroke-width:1.4px,color:#5c1d1d;
+
+    subgraph D["Inputs"]
+        D1["100 cases × 9 evidence tracks<br/>(docx + xlsx registers)"]:::data
+        D2["Rules 2021 PDF<br/>184 policy sections"]:::data
+        D3["41 checking points (CP1–CP41)<br/>4 compliance elements"]:::data
+    end
+
+    subgraph E["Deterministic ETL (no compliance logic)"]
+        E1["docx paragraphs + tables<br/>xlsx sheets → labelled rows"]:::stage
+        E2["evidence_context.md per case<br/>identity anchor = folder RE number"]:::stage
+        E3["flag irregularities:<br/>doubled folder · 2 missing Track 1"]:::stage
+        E1 --> E2 --> E3
+    end
+
+    subgraph K["OKF knowledge bundle (offline, once)"]
+        K1["PDF chunked by section<br/>→ policy/section_*.md"]:::stage
+        K2["CP → governing section mapping<br/>(LLM-derived, human-reviewed)"]:::stage
+        K3["okf/reference.md<br/>18 unique sections deduped"]:::stage
+        K1 --> K2 --> K3
+    end
+
+    subgraph I["Grounded inference (per case)"]
+        I1["full-context prompt<br/>evidence + OKF bundle"]:::model
+        I2["persona: Standard auditor<br/>(T=0, single pass, all 41 CPs)"]:::model
+        I3["JSON verdicts<br/>1 / 0 / N/A + reasoning + evidence"]:::model
+        I1 --> I2 --> I3
+    end
+
+    subgraph C["Compliance guardrails"]
+        C1["no CP pass/fail logic<br/>hard-coded in prompts"]:::guard
+        C2["pinned model + exact prompts<br/>declared for verification"]:::guard
+        C3["MD5-keyed response cache<br/>reproducible rerun"]:::guard
+    end
+
+    subgraph R["Result"]
+        R1["submission: 100 rows × CP1–CP41"]:::score
+        R2["dev set (10 cases): 90.98%<br/>(Sonnet single-pass)"]:::score
+        R3["shipped: Gemini 3.5 Flash<br/>full-context single-pass"]:::score
+    end
+
+    D1 --> E
+    D2 --> K
+    D3 --> K
+    E --> I
+    K --> I
+    I --> R1 --> R2
+    R1 --> R3
+    C -. enforced in prompts & scripts .-> I

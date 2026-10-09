@@ -1,0 +1,78 @@
+%%{init: {"theme":"base", "themeVariables": {
+  "fontFamily":"-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+  "fontSize":"14px",
+  "primaryColor":"#3b6ea5",
+  "primaryTextColor":"#ffffff",
+  "primaryBorderColor":"#2c5480",
+  "lineColor":"#8aa4c0",
+  "secondaryColor":"#eef4fa",
+  "tertiaryColor":"#ffffff",
+  "clusterBkg":"#f6f9fc",
+  "clusterBorder":"#c9d8e8",
+  "edgeLabelBackground":"#ffffff",
+  "nodeBorder":"#3b6ea5"
+}}}%%
+flowchart TB
+    classDef data fill:#fdf3e3,stroke:#d99b3d,stroke-width:1.4px,color:#5b3d12;
+    classDef stage fill:#e7f2e9,stroke:#5e9d6b,stroke-width:1.4px,color:#23482a;
+    classDef model fill:#dcebf7,stroke:#3b6ea5,stroke-width:1.4px,color:#1d3a5f;
+    classDef score fill:#fbe9ee,stroke:#c95f83,stroke-width:1.4px,color:#5c1d33;
+    classDef guard fill:#fdeaea,stroke:#c05050,stroke-width:1.4px,color:#5c1d1d;
+
+    subgraph D["Data"]
+        DT["train: 200 pairs<br/>1,407 GT boxes"]:::data
+        DV["test: 100 pairs<br/>labels withheld"]:::data
+        DS["synthetic corpus<br/>6,400 small-mark pairs"]:::data
+    end
+
+    subgraph S0["Stage 0 · Preprocessing (label-free)"]
+        A0["template + photo (BGR)"]:::stage
+        A1["phase-correlation align<br/>p95 residual ≤ 0.26 px"]:::stage
+        A2["template blur-match<br/>Laplacian-variance grid"]:::stage
+        A3["ink map: Gauss(σ=31) − gray<br/>shadow/tone invariant"]:::stage
+        A0 --> A1 --> A2 --> A3
+    end
+
+    subgraph S1["Stage 1 · Siamese detector (5-fold)"]
+        B0["SiamCenterNet<br/>shared ConvNeXt-tiny, stride 2"]:::model
+        B1["4 heads: hm · wh · off · seg"]:::model
+        B2["8× dihedral TTA · tiles 768/576"]:::model
+        B3["WBF fusion · topk 64 · thr 0.02"]:::model
+        B0 --> B1 --> B2 --> B3
+    end
+
+    subgraph S2["Stage 2 · Cross-fold verifier"]
+        C0["candidate → 96×96×8 crop"]:::model
+        C1["ResNet-18 · cls prob + box Δ"]:::model
+        C2["score blend p^0.5 · s^0.5<br/>corner refinement"]:::model
+        C0 --> C1 --> C2
+    end
+
+    subgraph P["Decode & post-process"]
+        P1["polarity filter (0 deletions)<br/>ink snap + 1 px margin"]:::stage
+        P2["one global threshold<br/>swept on OOF only → 0.43"]:::stage
+        P1 --> P2
+    end
+
+    subgraph G["Leakage discipline"]
+        G1["synthetic pairs fold-scoped<br/>by source template"]:::guard
+        G2["verifier trains on folds ≠ k"]:::guard
+        G3["each pair scored only by<br/>models that never trained on it"]:::guard
+    end
+
+    subgraph R["Result"]
+        R1["pooled global F1 = 0.9465<br/>P 0.963 · R 0.930"]:::score
+        R2["TP 1309 · FP 50 · FN 98"]:::score
+        R3["submission: 668 boxes<br/>100/100 images"]:::score
+    end
+
+    DT --> S0
+    DV --> S0
+    DS -. fold-safe synthesis .-> S1
+    S0 --> S1
+    S1 --> S2
+    S2 --> P
+    P --> R1 --> R2
+    R1 --> R3
+    G -. enforced in code .-> S1
+    G -. enforced in code .-> S2

@@ -1,0 +1,73 @@
+flowchart TD
+    subgraph RAW["Raw dataset"]
+        TR["train: 200 pairs + train.csv (1407 GT boxes)"]
+        TE["test: 100 pairs, labels withheld"]
+    end
+
+    subgraph S0["Stage 0 · Preprocessing — label-free per pair"]
+        direction TB
+        A0["template + photo (BGR) full-res"]
+        A1["phase-correlation registration<br/>(p95 residual ≤ 0.26 px, translate if needed)"]
+        A2["template blur-match to photo (σ grid,<br/>equalizes Laplacian variance)"]
+        A3["ink map = GaussBlur(gray, σ=31) − gray<br/>(invariant to shadow + tone shift)"]
+        A0 --> A1 --> A2 --> A3
+    end
+
+    subgraph SYN["Synthetic small-mark corpus — 6400 pairs"]
+        S1["16 CPU shards × 400, small-bias 0.6"]
+        S2["boxes invented · layout real · source template recorded"]
+        S1 --> S2
+    end
+
+    subgraph CARDS["Stage 1 · Detectors — 5-fold CV"]
+        direction TB
+        F["fold split: 200 pairs → 5 × 40 val (seeded)"]
+        M1["_aug · ConvNeXt-tiny siamese CenterNet<br/>40 epochs, dihedral aug, real pairs"]
+        M2["_augsyn · same model + 1500 fold-safe<br/>synthetic pairs, 15 epochs"]
+        F --> M1 & M2
+        S2 -. "fold-safe only (drop pairs from own val templates, 836–892/fold)" .-> M2
+    end
+
+    subgraph OOF["Out-of-fold candidates — each pair predicted by models that never trained on it"]
+        direction TB
+        P1["per fold: ensemble _aug + _augsyn<br/>8× TTA dihedral views, tiles 768/576"]
+        P2["decoder: heatmap topk · stride 2 · score_thr 0.02<br/>WBF across tiles+views (agreement-scaled μ)<br/>cap 300 boxes"]
+        P3["postprocess: polarity filter (no deletions)<br/>+ ink-blob snap + 1px margin"]
+        P1 --> P2 --> P3
+    end
+
+    subgraph V["Stage 2 · Cross-fold verifier (ResNet-18)"]
+        direction TB
+        V1["train for fold k on candidates from folds ≠ k<br/>~11k records, 8:1 neg:pos, 96×96×8 crops"]
+        V2["apply to fold k: prob + 4-corner delta<br/>score blend p^0.5 · s^0.5 · boxes refined"]
+        V1 --> V2
+    end
+
+    subgraph Eval["Pooled scoring (competition semantics)"]
+        E1["union of 5 folds' verified candidates<br/>(200 pairs, 1407 boxes)"]
+        E2["one global threshold swept on OOF only<br/>→ 0.43"]
+        E3["global F1: TP/FP/FN accumulated across ALL images<br/>IoU ≥ 0.5 · P 0.963 · R 0.930 · F1 0.9465"]
+        E1 --> E2 --> E3
+    end
+
+    subgraph Sub["Test submission"]
+        T1["all 10 detectors (5 folds × 2 recipes)<br/>+ 8× TTA, ensemble → WBF"]
+        T2["all 5 verifiers averaged, blend with detector score"]
+        T3["threshold 0.43 → submission.csv<br/>668 boxes · 6.68/image · 100/100 pairs"]
+        T1 --> T2 --> T3
+    end
+
+    TR --> S0
+    TE --> S0
+    TR --> SYN
+    SYN -.-> CARDS
+    S0 --> CARDS
+    CARDS --> OOF
+    OOF --> V
+    V --> Eval
+    S0 --> T1
+    CARDS --> T1
+    T1 --> T2 --> T3
+
+    style E3 fill:#d9ead3,stroke:#274e13,stroke-width:2px
+    style T3 fill:#fce5cd,stroke:#783f04,stroke-width:2px
